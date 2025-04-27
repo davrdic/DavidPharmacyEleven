@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "doctorservice.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,7 +27,10 @@ private slots:
 
     void on_editDoctorButton_clicked();
 
+    void populateDoctorsList();
+
 private:
     Ui::MainWindow *ui;
+    DoctorService* doctorService;
 };
 #endif // MAINWINDOW_H

@@ -7,8 +7,15 @@ DoctorService::DoctorService(const QString& dbName, const QString& user, const Q
     db.setUserName(user);
     db.setPassword(password);
 
+    // Attempt to open the database
     if (!db.open()) {
+        // If connection fails, print the error
         qDebug() << "Error: Unable to connect to database!";
+        qDebug() << "user: " << user;
+        qDebug() << "password: " << password;
+        qDebug() << "Database error: " << db.lastError().text();  // Show detailed error
+    } else {
+        qDebug() << "Successfully connected to the database!";
     }
 }
 

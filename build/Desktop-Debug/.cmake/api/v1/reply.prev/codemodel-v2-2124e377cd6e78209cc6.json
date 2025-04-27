@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-3167580f40d7d1d2642d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DavidPharmacyEleven",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DavidPharmacyEleven::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DavidPharmacyEleven-Debug-8d3663ccf8e19d0accbd.json",
+					"name" : "DavidPharmacyEleven",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DavidPharmacyEleven_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DavidPharmacyEleven_autogen-Debug-291729082dee4e66153a.json",
+					"name" : "DavidPharmacyEleven_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DavidPharmacyEleven_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DavidPharmacyEleven_autogen_timestamp_deps-Debug-87f8a363162b4dd78cd1.json",
+					"name" : "DavidPharmacyEleven_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/david/DavidPharmacyEleven/build/Desktop-Debug",
+		"source" : "/home/david/DavidPharmacyEleven"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

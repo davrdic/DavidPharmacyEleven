@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "DavidPharmacyEleven_autogen/timestamp" "custom" "DavidPharmacyEleven_autogen/deps"
   "/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/mocs_compilation.cpp" "CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o.d"
+  "/home/david/DavidPharmacyEleven/doctor.cpp" "CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o.d"
+  "/home/david/DavidPharmacyEleven/doctorservice.cpp" "CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o.d"
   "/home/david/DavidPharmacyEleven/main.cpp" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o.d"
   "/home/david/DavidPharmacyEleven/mainwindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o.d"
   )

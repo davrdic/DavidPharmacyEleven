@@ -1,7 +1,9 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "doctor.h"
 #include <QMessageBox>
 #include <QDebug>
+#include <QInputDialog>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -53,6 +55,8 @@ void MainWindow::populateDoctorsList() {
 
 void MainWindow::on_editDoctorButton_clicked()
 {
-
+    bool ok = false;
+    QStringList doctorNames = doctorService->getDoctorsList();
+    QString doctorName = QInputDialog::getItem(this, "Select Doctor", "Choose a doctor to edit:", doctorNames, 0, false, &ok);
 }
 

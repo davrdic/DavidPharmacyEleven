@@ -1,0 +1,9 @@
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/DavidPharmacyEleven.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/install.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps.dir
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/DavidPharmacyEleven_autogen.dir

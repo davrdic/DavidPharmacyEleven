@@ -45,6 +45,16 @@ else()
             doctorbusinesslayer.h doctorbusinesslayer.cpp
             doctoreditdialog.h doctoreditdialog.cpp
             SortingUtils.h
+            managedoctorswindow.h managedoctorswindow.cpp managedoctorswindow.ui
+
+
+
+
+
+
+
+
+
         )
     endif()
 endif()
@@ -76,3 +86,5 @@ install(TARGETS DavidPharmacyEleven
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(DavidPharmacyEleven)
 endif()
+
+include_directories(${CMAKE_SOURCE_DIR})

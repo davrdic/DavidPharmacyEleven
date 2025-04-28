@@ -334,4 +334,9 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../SortingUtils.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctoreditdialog.h
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctoreditdialog.h \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../managedoctorswindow.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_managedoctorswindow.cpp \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../managedoctorswindow.h

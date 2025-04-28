@@ -34,7 +34,7 @@
           </property>
          </widget>
         </widget>
-        <widget class="QWidget" name="page_2">
+        <widget class="ManageDoctorsWindow" name="page_2">
          <widget class="QPushButton" name="addDoctorButton">
           <property name="geometry">
            <rect>
@@ -113,6 +113,14 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ManageDoctorsWindow</class>
+   <extends>QWidget</extends>
+   <header>managedoctorswindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

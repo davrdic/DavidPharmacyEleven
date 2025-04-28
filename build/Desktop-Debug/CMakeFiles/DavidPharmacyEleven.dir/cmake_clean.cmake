@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o.d"
   "CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o"
   "CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o.d"
+  "CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o"
+  "CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o.d"
   "DavidPharmacyEleven"
   "DavidPharmacyEleven.pdb"
   "DavidPharmacyEleven_autogen/mocs_compilation.cpp"

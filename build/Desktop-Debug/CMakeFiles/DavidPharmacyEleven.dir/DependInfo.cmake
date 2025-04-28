@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/david/DavidPharmacyEleven/doctorservice.cpp" "CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o.d"
   "/home/david/DavidPharmacyEleven/main.cpp" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o.d"
   "/home/david/DavidPharmacyEleven/mainwindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o.d"
+  "/home/david/DavidPharmacyEleven/managedoctorswindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

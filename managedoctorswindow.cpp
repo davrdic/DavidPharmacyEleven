@@ -1,52 +1,47 @@
-#include "mainwindow.h"
-#include "./ui_mainwindow.h"
-#include "doctor.h"
-#include <QMessageBox>
-#include <QDebug>
-#include <QInputDialog>
+#include "managedoctorswindow.h"
+#include "ui_managedoctorswindow.h"
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::ManageDoctorsWindow)
 {
     ui->setupUi(this);
-    setWindowTitle("Dave's Pharmacy Management System");
+    setWindowTitle("Manage Doctors");
     const char* database = std::getenv("database");
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
-
-    // Create the manageDoctorsWindow ONCE
-    manageDoctorsWindow = new ManageDoctorsWindow(this);
-    ui->stackedWidget->addWidget(manageDoctorsWindow);
-
     doctorService = new DoctorService(database, username, password);
     doctorBusinessLayer = new DoctorBusinessLayer(doctorService);
-    connect(ui->manageDoctorsButton, &QPushButton::clicked, this, &MainWindow::on_manageDoctorsButton_clicked);
-    connect(ui->doctorsBackButton, &QPushButton::clicked, this, &MainWindow::on_doctorsBackButton_clicked);
-    connect(manageDoctorsWindow, &ManageDoctorsWindow::backClicked, this, &MainWindow::on_manageDoctorsBackClicked);
+    loadDoctorsIntoComboBox();
 }
 
-MainWindow::~MainWindow()
+ManageDoctorsWindow::~ManageDoctorsWindow()
 {
     delete ui;
 }
 
-void MainWindow::on_manageDoctorsButton_clicked()
+void ManageDoctorsWindow::on_backButton_clicked()
 {
-    ui->stackedWidget->setCurrentWidget(manageDoctorsWindow);
+    emit backClicked();
 }
 
-void MainWindow::on_manageDoctorsBackClicked()
+void ManageDoctorsWindow::loadDoctorsIntoComboBox()
 {
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->doctorComboBox->clear();
+
+    // Add the default placeholder value to the combo box
+    ui->doctorComboBox->addItem("Select Doctor", -1);  // -1 or any value that doesn't tie to an actual doctor ID
+
+    QList<DoctorDTO> doctors = doctorBusinessLayer->getDoctorList();
+
+    // Add doctors to the combo box
+    for (const DoctorDTO& doctor : doctors) {
+        ui->doctorComboBox->addItem(doctor.name, doctor.id);
+    }
 }
 
-void MainWindow::on_doctorsBackButton_clicked()
+void ManageDoctorsWindow::on_addDoctorButton_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(0);
-}
-
-void MainWindow::on_addDoctorButton_clicked() {
     QString doctorName = ui->doctorNameLineEdit->text();
     DoctorDTO doctor;
     doctor.name = doctorName;
@@ -58,7 +53,9 @@ void MainWindow::on_addDoctorButton_clicked() {
     }
 }
 
-void MainWindow::on_editDoctorButton_clicked() {
+
+void ManageDoctorsWindow::on_editDoctorButton_clicked()
+{
     // Get the currently selected doctor name from the combo box
     QString oldDoctorName = ui->doctorComboBox->currentText();
     int doctorId = ui->doctorComboBox->currentData().toInt();
@@ -106,17 +103,3 @@ void MainWindow::on_editDoctorButton_clicked() {
     }
 }
 
-void MainWindow::loadDoctorsIntoComboBox()
-{
-    ui->doctorComboBox->clear();
-
-    // Add the default placeholder value to the combo box
-    ui->doctorComboBox->addItem("Select Doctor", -1);  // -1 or any value that doesn't tie to an actual doctor ID
-
-    QList<DoctorDTO> doctors = doctorBusinessLayer->getDoctorList();
-
-    // Add doctors to the combo box
-    for (const DoctorDTO& doctor : doctors) {
-        ui->doctorComboBox->addItem(doctor.name, doctor.id);
-    }
-}

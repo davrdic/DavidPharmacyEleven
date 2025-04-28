@@ -15,7 +15,8 @@
 			"target_link_libraries",
 			"set_property",
 			"_populate_Widgets_target_properties",
-			"find_package"
+			"find_package",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -37,13 +38,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 69,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 52,
+				"line" : 63,
 				"parent" : 0
 			},
 			{
@@ -77,6 +78,12 @@
 				"file" : 1,
 				"line" : 57,
 				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
 			}
 		]
 	},
@@ -117,6 +124,10 @@
 				{
 					"backtrace" : 0,
 					"path" : "/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/david/DavidPharmacyEleven"
 				},
 				{
 					"backtrace" : 3,
@@ -166,7 +177,8 @@
 				6,
 				8,
 				11,
-				13
+				13,
+				16
 			]
 		}
 	],
@@ -249,7 +261,8 @@
 				6,
 				8,
 				11,
-				13
+				13,
+				16
 			]
 		},
 		{
@@ -262,7 +275,10 @@
 				9,
 				10,
 				12,
-				14
+				14,
+				15,
+				18,
+				19
 			]
 		},
 		{
@@ -270,14 +286,15 @@
 			"sourceIndexes" : 
 			[
 				4,
-				15
+				17,
+				20
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				16
+				21
 			]
 		}
 	],
@@ -362,9 +379,36 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 1,
+			"path" : "SortingUtils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "managedoctorswindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "managedoctorswindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "managedoctorswindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop-Debug/DavidPharmacyEleven_autogen/include/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/DavidPharmacyEleven_autogen/include/ui_managedoctorswindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{

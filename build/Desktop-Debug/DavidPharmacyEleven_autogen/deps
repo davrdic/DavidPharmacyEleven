@@ -17,6 +17,8 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/main.cpp \
 	/home/david/DavidPharmacyEleven/mainwindow.cpp \
 	/home/david/DavidPharmacyEleven/mainwindow.h \
+	/home/david/DavidPharmacyEleven/managedoctorswindow.cpp \
+	/home/david/DavidPharmacyEleven/managedoctorswindow.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
 	/usr/include/assert.h \
@@ -368,6 +370,7 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
@@ -449,4 +452,5 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
 	/home/david/DavidPharmacyEleven/mainwindow.ui \
+	/home/david/DavidPharmacyEleven/managedoctorswindow.ui \
 	/usr/bin/cmake

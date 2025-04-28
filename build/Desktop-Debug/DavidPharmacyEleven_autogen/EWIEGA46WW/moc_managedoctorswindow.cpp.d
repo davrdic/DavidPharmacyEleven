@@ -1,11 +1,10 @@
-/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/david/DavidPharmacyEleven/mainwindow.h \
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_managedoctorswindow.cpp: /home/david/DavidPharmacyEleven/managedoctorswindow.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
   /home/david/DavidPharmacyEleven/DoctorDTO.h \
   /home/david/DavidPharmacyEleven/SortingUtils.h \
   /home/david/DavidPharmacyEleven/doctorbusinesslayer.h \
   /home/david/DavidPharmacyEleven/doctoreditdialog.h \
   /home/david/DavidPharmacyEleven/doctorservice.h \
-  /home/david/DavidPharmacyEleven/managedoctorswindow.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
@@ -354,7 +353,6 @@
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
@@ -366,10 +364,8 @@
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \

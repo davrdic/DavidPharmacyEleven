@@ -43,6 +43,7 @@ else()
             doctorservice.h doctorservice.cpp
             DoctorDTO.h
             doctorbusinesslayer.h doctorbusinesslayer.cpp
+            doctoreditdialog.h doctoreditdialog.cpp
         )
     endif()
 endif()

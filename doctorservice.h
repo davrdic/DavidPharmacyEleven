@@ -14,7 +14,7 @@ public:
 
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
-    bool deleteDoctor(const QString& doctorName);
+    bool deleteDoctor(const DoctorDTO& doctor);
     QList<DoctorDTO>getDoctorsList() const;
 
 private:

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "doctorbusinesslayer.h"
+#include "doctoreditdialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -33,6 +34,7 @@ private:
     Ui::MainWindow *ui;
     DoctorService* doctorService;
     DoctorBusinessLayer* doctorBusinessLayer;
+    DoctorEditDialog* doctorEditDialog;
     QStringList doctorList;
 };
 #endif // MAINWINDOW_H

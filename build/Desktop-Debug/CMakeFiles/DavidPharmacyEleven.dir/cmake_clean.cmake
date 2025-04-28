@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o.d"
   "CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o"
   "CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o.d"
+  "CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o"
+  "CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o.d"
   "CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o"
   "CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o.d"
   "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o"

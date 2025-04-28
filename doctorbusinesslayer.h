@@ -9,7 +9,8 @@ public:
 
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
-    QList<DoctorDTO> getDoctors() const;
+    bool deleteDoctor(const DoctorDTO& doctor);
+    QList<DoctorDTO> getDoctorList() const;
 
 private:
     DoctorService* m_doctorService;

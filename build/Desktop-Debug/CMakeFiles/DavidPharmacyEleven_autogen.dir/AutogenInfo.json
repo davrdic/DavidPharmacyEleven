@@ -101,6 +101,12 @@
 			null
 		],
 		[
+			"/home/david/DavidPharmacyEleven/doctoreditdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_doctoreditdialog.cpp",
+			null
+		],
+		[
 			"/home/david/DavidPharmacyEleven/doctorservice.h",
 			"MU",
 			"EWIEGA46WW/moc_doctorservice.cpp",
@@ -167,6 +173,7 @@
 	[
 		[ "/home/david/DavidPharmacyEleven/doctor.cpp", "MU", null ],
 		[ "/home/david/DavidPharmacyEleven/doctorbusinesslayer.cpp", "MU", null ],
+		[ "/home/david/DavidPharmacyEleven/doctoreditdialog.cpp", "MU", null ],
 		[ "/home/david/DavidPharmacyEleven/doctorservice.cpp", "MU", null ],
 		[ "/home/david/DavidPharmacyEleven/main.cpp", "MU", null ],
 		[ "/home/david/DavidPharmacyEleven/mainwindow.cpp", "MU", null ]

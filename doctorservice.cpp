@@ -44,10 +44,10 @@ bool DoctorService::editDoctor(const DoctorDTO& doctor) {
     return true;
 }
 
-bool DoctorService::deleteDoctor(const QString& doctorName) {
+bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
-    query.prepare("DELETE FROM doctor WHERE name = :name");
-    query.bindValue(":name", doctorName);
+    query.prepare("DELETE FROM doctor WHERE id = :id");
+    query.bindValue(":id", doctor.id);
 
     if (!query.exec()) {
         qDebug() << "Error deleting doctor:" << query.lastError();

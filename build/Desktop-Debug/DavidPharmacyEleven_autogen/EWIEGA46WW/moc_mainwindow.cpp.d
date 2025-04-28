@@ -1,6 +1,7 @@
 /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/david/DavidPharmacyEleven/mainwindow.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
   /home/david/DavidPharmacyEleven/DoctorDTO.h \
+  /home/david/DavidPharmacyEleven/doctorbusinesslayer.h \
   /home/david/DavidPharmacyEleven/doctorservice.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

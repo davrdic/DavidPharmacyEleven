@@ -287,6 +287,7 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctorbusinesslayer.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctorservice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \

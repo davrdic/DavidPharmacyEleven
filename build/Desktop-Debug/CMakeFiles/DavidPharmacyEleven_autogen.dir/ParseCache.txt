@@ -12,6 +12,7 @@
  mmc:Q_OBJECT
  mdp:/home/david/DavidPharmacyEleven/DoctorDTO.h
  mdp:/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h
+ mdp:/home/david/DavidPharmacyEleven/doctorbusinesslayer.h
  mdp:/home/david/DavidPharmacyEleven/doctorservice.h
  mdp:/home/david/DavidPharmacyEleven/mainwindow.h
  mdp:/usr/include/asm-generic/errno-base.h

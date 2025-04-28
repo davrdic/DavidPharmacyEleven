@@ -1,10 +1,18 @@
 #ifndef DOCTORBUSINESSLAYER_H
 #define DOCTORBUSINESSLAYER_H
 
-class DoctorBusinessLayer
-{
+#include "doctorservice.h"
+
+class DoctorBusinessLayer {
 public:
-    DoctorBusinessLayer();
+    DoctorBusinessLayer(DoctorService* doctorService);
+
+    bool addDoctor(const DoctorDTO& doctor);
+    bool editDoctor(const DoctorDTO& doctor);
+    QList<DoctorDTO> getDoctors() const;
+
+private:
+    DoctorService* m_doctorService;
 };
 
 #endif // DOCTORBUSINESSLAYER_H

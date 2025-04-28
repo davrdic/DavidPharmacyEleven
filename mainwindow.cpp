@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     const char* password = std::getenv("password");
 
     doctorService = new DoctorService(database, username, password);
+    doctorBusinessLayer = new DoctorBusinessLayer(doctorService);
     connect(ui->manageDoctorsButton, &QPushButton::clicked, this, &MainWindow::on_manageDoctorsButton_clicked);
     connect(ui->doctorsBackButton, &QPushButton::clicked, this, &MainWindow::on_doctorsBackButton_clicked);
 }
@@ -36,14 +37,15 @@ void MainWindow::on_doctorsBackButton_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-void MainWindow::on_addDoctorButton_clicked()
-{
-    DoctorDTO newDoctor;
-    newDoctor.name = ui->doctorNameLineEdit->text();
-
-    if (doctorService->addDoctor(newDoctor)) {
+void MainWindow::on_addDoctorButton_clicked() {
+    QString doctorName = ui->doctorNameLineEdit->text();
+    DoctorDTO doctor;
+    doctor.name = doctorName;
+    if (doctorBusinessLayer->addDoctor(doctor)) {
         qDebug() << "Doctor added successfully!";
-        loadDoctorsIntoComboBox();
+        loadDoctorsIntoComboBox(); // Refresh the list
+    } else {
+        qDebug() << "Failed to add doctor.";
     }
 }
 

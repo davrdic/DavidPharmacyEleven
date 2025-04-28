@@ -41,6 +41,8 @@ else()
             ${PROJECT_SOURCES}
             doctor.h doctor.cpp
             doctorservice.h doctorservice.cpp
+            DoctorDTO.h
+            doctorbusinesslayer.h doctorbusinesslayer.cpp
         )
     endif()
 endif()

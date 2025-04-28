@@ -19,10 +19,10 @@ DoctorService::DoctorService(const QString& dbName, const QString& user, const Q
     }
 }
 
-bool DoctorService::addDoctor(const QString& doctorName) {
+bool DoctorService::addDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
     query.prepare("INSERT INTO doctor (name) VALUES (:name)");
-    query.bindValue(":name", doctorName);
+    query.bindValue(":name", doctor.name);
 
     if (!query.exec()) {
         qDebug() << "Error adding doctor:" << query.lastError();
@@ -31,14 +31,14 @@ bool DoctorService::addDoctor(const QString& doctorName) {
     return true;
 }
 
-bool DoctorService::editDoctor(const QString& oldName, const QString& newName) {
+bool DoctorService::editDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
-    query.prepare("UPDATE doctor SET name = :newName WHERE name = :oldName");
-    query.bindValue(":newName", newName);
-    query.bindValue(":oldName", oldName);
+    query.prepare("UPDATE doctor SET name = :name WHERE id = :id");
+    query.bindValue(":name", doctor.name);
+    query.bindValue(":id", doctor.id);
 
     if (!query.exec()) {
-        qDebug() << "Error updating doctor:" << query.lastError();
+        qDebug() << "Error editing doctor:" << query.lastError();
         return false;
     }
     return true;
@@ -56,12 +56,16 @@ bool DoctorService::deleteDoctor(const QString& doctorName) {
     return true;
 }
 
-QList<QString> DoctorService::getDoctorsList() const {
-    QList<QString> doctors;
+QList<DoctorDTO> DoctorService::getDoctorsList() const {
+    QList<DoctorDTO> doctors;
 
-    QSqlQuery query("SELECT name FROM doctor");
+    QSqlQuery query("SELECT id, name FROM doctor"); // Fetch both id and name
     while (query.next()) {
-        doctors.append(query.value(0).toString());
+        DoctorDTO doctor;
+        doctor.id = query.value(0).toInt();  // The id is stored in the first column
+        doctor.name = query.value(1).toString();  // The name is stored in the second column
+
+        doctors.append(doctor);  // Add the DTO to the list
     }
     return doctors;
 }

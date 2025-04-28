@@ -83,9 +83,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/david/DavidPharmacyEleven/DoctorDTO.h",
+			"MU",
+			"EWIEGA46WW/moc_DoctorDTO.cpp",
+			null
+		],
+		[
 			"/home/david/DavidPharmacyEleven/doctor.h",
 			"MU",
 			"EWIEGA46WW/moc_doctor.cpp",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/doctorbusinesslayer.h",
+			"MU",
+			"EWIEGA46WW/moc_doctorbusinesslayer.cpp",
 			null
 		],
 		[
@@ -154,6 +166,7 @@
 	"SOURCES" : 
 	[
 		[ "/home/david/DavidPharmacyEleven/doctor.cpp", "MU", null ],
+		[ "/home/david/DavidPharmacyEleven/doctorbusinesslayer.cpp", "MU", null ],
 		[ "/home/david/DavidPharmacyEleven/doctorservice.cpp", "MU", null ],
 		[ "/home/david/DavidPharmacyEleven/main.cpp", "MU", null ],
 		[ "/home/david/DavidPharmacyEleven/mainwindow.cpp", "MU", null ]

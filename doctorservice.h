@@ -6,15 +6,16 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
+#include "DoctorDTO.h"
 
 class DoctorService {
 public:
     DoctorService(const QString& dbName, const QString& user, const QString& password);
 
-    bool addDoctor(const QString& doctorName);
-    bool editDoctor(const QString& oldName, const QString& newName);
+    bool addDoctor(const DoctorDTO& doctor);
+    bool editDoctor(const DoctorDTO& doctor);
     bool deleteDoctor(const QString& doctorName);
-    QList<QString> getDoctorsList() const;
+    QList<DoctorDTO>getDoctorsList() const;
 
 private:
     QSqlDatabase db;

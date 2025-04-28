@@ -27,6 +27,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_manageDoctorsButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
+    loadDoctorsIntoComboBox();
 }
 
 
@@ -35,28 +36,46 @@ void MainWindow::on_doctorsBackButton_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
-
 void MainWindow::on_addDoctorButton_clicked()
 {
-    QString doctorName = ui->doctorNameLineEdit->text();
-    if (doctorService->addDoctor(doctorName)) {
-        qDebug() << "Doctor added successfully!";
-        populateDoctorsList(); // Refresh the list
-    }
-}
+    DoctorDTO newDoctor;
+    newDoctor.name = ui->doctorNameLineEdit->text();
 
-void MainWindow::populateDoctorsList() {
-    // QList<QString> doctors = doctorService->getDoctorsList();
-    // ui->doctorsListWidget->clear();
-    // for (const QString& doctor : doctors) {
-    //     ui->doctorsListWidget->addItem(doctor);
-    // }
+    if (doctorService->addDoctor(newDoctor)) {
+        qDebug() << "Doctor added successfully!";
+        loadDoctorsIntoComboBox();
+    }
 }
 
 void MainWindow::on_editDoctorButton_clicked()
 {
-    bool ok = false;
-    QStringList doctorNames = doctorService->getDoctorsList();
-    QString doctorName = QInputDialog::getItem(this, "Select Doctor", "Choose a doctor to edit:", doctorNames, 0, false, &ok);
+    DoctorDTO doctor;
+    doctor.name = ui->doctorComboBox->currentText();
+    doctor.id = ui->doctorComboBox->currentData().toInt(); // 👈 Get the hidden ID!
+
+    bool ok;
+    QString newDoctorName = QInputDialog::getText(this, tr("Edit Doctor"),
+                                                  tr("New doctor name:"), QLineEdit::Normal,
+                                                  doctor.name, &ok);
+    if (ok && !newDoctorName.isEmpty()) {
+        doctor.name = newDoctorName;
+
+        if (doctorService->editDoctor(doctor)) {
+            qDebug() << "Doctor updated successfully!";
+            loadDoctorsIntoComboBox();
+        } else {
+            qDebug() << "Failed to update doctor.";
+        }
+    }
+}
+
+void MainWindow::loadDoctorsIntoComboBox()
+{
+    ui->doctorComboBox->clear();
+    QList<DoctorDTO> doctors = doctorService->getDoctorsList();
+
+    for (const DoctorDTO& doctor : doctors) {
+        ui->doctorComboBox->addItem(doctor.name, doctor.id);
+    }
 }
 

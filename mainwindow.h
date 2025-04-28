@@ -27,10 +27,11 @@ private slots:
 
     void on_editDoctorButton_clicked();
 
-    void populateDoctorsList();
+    void loadDoctorsIntoComboBox();
 
 private:
     Ui::MainWindow *ui;
     DoctorService* doctorService;
+    QStringList doctorList;
 };
 #endif // MAINWINDOW_H

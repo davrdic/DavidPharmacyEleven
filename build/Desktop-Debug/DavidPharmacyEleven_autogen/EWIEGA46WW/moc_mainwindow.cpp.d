@@ -1,6 +1,7 @@
 /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/david/DavidPharmacyEleven/mainwindow.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
   /home/david/DavidPharmacyEleven/DoctorDTO.h \
+  /home/david/DavidPharmacyEleven/SortingUtils.h \
   /home/david/DavidPharmacyEleven/doctorbusinesslayer.h \
   /home/david/DavidPharmacyEleven/doctoreditdialog.h \
   /home/david/DavidPharmacyEleven/doctorservice.h \
@@ -250,6 +251,7 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \

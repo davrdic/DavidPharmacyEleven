@@ -31,7 +31,6 @@ void MainWindow::on_manageDoctorsButton_clicked()
     loadDoctorsIntoComboBox();
 }
 
-
 void MainWindow::on_doctorsBackButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
@@ -52,54 +51,62 @@ void MainWindow::on_addDoctorButton_clicked() {
 void MainWindow::on_editDoctorButton_clicked() {
     // Get the currently selected doctor name from the combo box
     QString oldDoctorName = ui->doctorComboBox->currentText();
+    int doctorId = ui->doctorComboBox->currentData().toInt();
 
-    DoctorEditDialog editDialog(oldDoctorName, this);
+    if (doctorId > 0 ) {
+        DoctorEditDialog editDialog(oldDoctorName, this);
 
-    // Show the dialog and check if the user clicked save, cancel, or delete
-    connect(&editDialog, &DoctorEditDialog::saveClicked, this, [this, &editDialog]() {
-        QString newDoctorName = editDialog.getNewDoctorName();
+        // Show the dialog and check if the user clicked save, cancel, or delete
+        connect(&editDialog, &DoctorEditDialog::saveClicked, this, [this, &editDialog]() {
+            QString newDoctorName = editDialog.getNewDoctorName();
+            int doctorId = ui->doctorComboBox->currentData().toInt();
 
-        if (!newDoctorName.isEmpty()) {
+            if (!newDoctorName.isEmpty()) {
+                DoctorDTO doctor;
+                doctor.name = newDoctorName;
+                doctor.id = doctorId;
+
+                if (doctorBusinessLayer->editDoctor(doctor)) {
+                    qDebug() << "Doctor updated successfully!";
+                    loadDoctorsIntoComboBox(); // Refresh the combo box
+                    editDialog.accept();  // Close the dialog on successful save
+                } else {
+                    qDebug() << "Failed to update doctor.";
+                }
+            }
+        });
+
+        connect(&editDialog, &DoctorEditDialog::cancelClicked, &editDialog, &QDialog::reject);
+
+        connect(&editDialog, &DoctorEditDialog::deleteClicked, this, [this, &editDialog]() {
             DoctorDTO doctor;
-            doctor.name = newDoctorName;
             doctor.id = ui->doctorComboBox->currentData().toInt();
 
-            if (doctorBusinessLayer->editDoctor(doctor)) {
-                qDebug() << "Doctor updated successfully!";
+            if (doctorBusinessLayer->deleteDoctor(doctor)) {
+                qDebug() << "Doctor deleted successfully!";
                 loadDoctorsIntoComboBox(); // Refresh the combo box
                 editDialog.accept();  // Close the dialog on successful save
             } else {
-                qDebug() << "Failed to update doctor.";
+                qDebug() << "Failed to delete doctor.";
             }
-        }
-    });
+        });
 
-    connect(&editDialog, &DoctorEditDialog::cancelClicked, &editDialog, &QDialog::reject);
-
-    connect(&editDialog, &DoctorEditDialog::deleteClicked, this, [this, &editDialog]() {
-        DoctorDTO doctor;
-        doctor.id = ui->doctorComboBox->currentData().toInt();
-
-        if (doctorBusinessLayer->deleteDoctor(doctor)) {
-            qDebug() << "Doctor deleted successfully!";
-            loadDoctorsIntoComboBox(); // Refresh the combo box
-            editDialog.accept();  // Close the dialog on successful save
-        } else {
-            qDebug() << "Failed to delete doctor.";
-        }
-    });
-
-    // Execute the dialog
-    editDialog.exec();
+        // Execute the dialog
+        editDialog.exec();
+    }
 }
 
 void MainWindow::loadDoctorsIntoComboBox()
 {
     ui->doctorComboBox->clear();
+
+    // Add the default placeholder value to the combo box
+    ui->doctorComboBox->addItem("Select Doctor", -1);  // -1 or any value that doesn't tie to an actual doctor ID
+
     QList<DoctorDTO> doctors = doctorBusinessLayer->getDoctorList();
 
+    // Add doctors to the combo box
     for (const DoctorDTO& doctor : doctors) {
         ui->doctorComboBox->addItem(doctor.name, doctor.id);
     }
 }
-

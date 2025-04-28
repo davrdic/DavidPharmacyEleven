@@ -271,4 +271,7 @@ CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o: \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /home/david/DavidPharmacyEleven/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DoctorDTO.h \
+ /home/david/DavidPharmacyEleven/SortingUtils.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h

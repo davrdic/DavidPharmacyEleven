@@ -44,6 +44,7 @@ else()
             DoctorDTO.h
             doctorbusinesslayer.h doctorbusinesslayer.cpp
             doctoreditdialog.h doctoreditdialog.cpp
+            SortingUtils.h
         )
     endif()
 endif()

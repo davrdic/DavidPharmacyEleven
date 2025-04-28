@@ -16,5 +16,7 @@ bool DoctorBusinessLayer::deleteDoctor(const DoctorDTO& doctor) {
 }
 
 QList<DoctorDTO> DoctorBusinessLayer::getDoctorList() const {
-    return m_doctorService->getDoctorsList();
+    QList<DoctorDTO> doctorList = m_doctorService->getDoctorsList();
+    SortingUtils<DoctorDTO>::sortList(doctorList);
+    return doctorList;
 }

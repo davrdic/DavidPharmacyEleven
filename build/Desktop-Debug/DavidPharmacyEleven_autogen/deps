@@ -1,6 +1,7 @@
 DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/CMakeLists.txt \
 	/home/david/DavidPharmacyEleven/DoctorDTO.h \
+	/home/david/DavidPharmacyEleven/SortingUtils.h \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeSystem.cmake \
@@ -262,6 +263,7 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
+	/usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
 	/usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
 	/usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \

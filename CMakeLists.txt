@@ -93,6 +93,7 @@ target_include_directories(DavidPharmacyEleven PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/MainWindow
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/ManageCustomersWindow
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/CustomDialogs/DoctorDialogs
+    ${CMAKE_CURRENT_SOURCE_DIR}/UI/CustomDialogs/CustomerDialogs
 )
 
 # macOS bundle identifier (for Mac/iOS if needed)

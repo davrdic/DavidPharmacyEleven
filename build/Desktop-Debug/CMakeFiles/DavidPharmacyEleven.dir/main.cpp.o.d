@@ -315,6 +315,10 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.h \
+ /home/david/DavidPharmacyEleven/Services/customerservice.h \
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
+ /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
+ /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \

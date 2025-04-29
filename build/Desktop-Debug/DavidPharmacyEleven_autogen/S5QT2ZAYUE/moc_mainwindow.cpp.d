@@ -1,8 +1,12 @@
 /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/S5QT2ZAYUE/moc_mainwindow.cpp: /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
+  /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
   /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
+  /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
   /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
+  /home/david/DavidPharmacyEleven/Services/customerservice.h \
   /home/david/DavidPharmacyEleven/Services/doctorservice.h \
+  /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h \
   /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
   /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.h \
   /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \

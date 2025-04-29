@@ -38,13 +38,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 112,
+				"line" : 114,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 83,
+				"line" : 84,
 				"parent" : 0
 			},
 			{
@@ -82,7 +82,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 86,
+				"line" : 87,
 				"parent" : 0
 			}
 		]
@@ -156,6 +156,10 @@
 				{
 					"backtrace" : 10,
 					"path" : "/home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs"
 				},
 				{
 					"backtrace" : 3,

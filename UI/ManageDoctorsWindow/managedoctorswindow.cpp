@@ -55,6 +55,7 @@ void ManageDoctorsWindow::on_addDoctorButton_clicked()
     if (doctorService->addDoctor(doctor)) {
         qDebug() << "Doctor added successfully!";
         loadDoctorsIntoComboBox(); // Refresh the list
+        ui->doctorNameLineEdit->clear();
     } else {
         qDebug() << "Failed to add doctor.";
     }

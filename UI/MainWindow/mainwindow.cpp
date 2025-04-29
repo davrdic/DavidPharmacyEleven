@@ -15,8 +15,11 @@ MainWindow::MainWindow(QWidget *parent)
     manageCustomersWindow = new ManageCustomersWindow(this);
     ui->stackedWidget->addWidget(manageCustomersWindow);
 
+    // Create connections between windows
     connect(ui->manageDoctorsButton, &QPushButton::clicked, this, &MainWindow::on_manageDoctorsButton_clicked);
-    connect(manageDoctorsWindow, &ManageDoctorsWindow::backClicked, this, &MainWindow::on_manageDoctorsBackClicked);
+    connect(manageDoctorsWindow, &ManageDoctorsWindow::backClicked, this, &MainWindow::on_BackToMainClicked);
+
+    connect(manageCustomersWindow, &ManageCustomersWindow::backClicked, this, &MainWindow::on_BackToMainClicked);
 }
 
 MainWindow::~MainWindow()
@@ -30,7 +33,7 @@ void MainWindow::on_manageDoctorsButton_clicked()
     ui->stackedWidget->setCurrentWidget(manageDoctorsWindow);
 }
 
-void MainWindow::on_manageDoctorsBackClicked()
+void MainWindow::on_BackToMainClicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
     setWindowTitle("Dave's Pharmacy Management System");

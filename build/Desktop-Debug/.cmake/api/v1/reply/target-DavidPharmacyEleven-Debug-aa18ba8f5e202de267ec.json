@@ -38,7 +38,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 113,
+				"line" : 114,
 				"parent" : 0
 			},
 			{
@@ -156,6 +156,10 @@
 				{
 					"backtrace" : 10,
 					"path" : "/home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs"
 				},
 				{
 					"backtrace" : 3,

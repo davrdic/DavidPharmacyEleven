@@ -24,7 +24,7 @@ private slots:
 
     void on_doctorsBackButton_clicked();
 
-    void on_manageDoctorsBackClicked();
+    void on_BackToMainClicked();
 
     void on_manageCustomersButton_clicked();
 

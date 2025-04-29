@@ -321,6 +321,10 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.h \
+ /home/david/DavidPharmacyEleven/Services/customerservice.h \
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
+ /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
+ /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/IPGVJ4D5DB/moc_managecustomerswindow.cpp \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/IPGVJ4D5DB/../../../../UI/ManageCustomersWindow/managecustomerswindow.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/moc_managedoctorswindow.cpp \

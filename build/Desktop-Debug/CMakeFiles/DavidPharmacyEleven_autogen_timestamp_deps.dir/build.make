@@ -66,10 +66,10 @@ include CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps.dir/compiler_depen
 # Include the progress variables for this target.
 include CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps.dir/progress.make
 
+CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.13
-CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 
 DavidPharmacyEleven_autogen_timestamp_deps: CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps
 DavidPharmacyEleven_autogen_timestamp_deps: CMakeFiles/DavidPharmacyEleven_autogen_timestamp_deps.dir/build.make

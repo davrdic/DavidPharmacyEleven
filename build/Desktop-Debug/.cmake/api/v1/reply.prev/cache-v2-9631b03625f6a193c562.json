@@ -1542,6 +1542,18 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5"
 		},
 		{
+			"name" : "Qt_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Qt_DIR-NOTFOUND"
+		},
+		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
 			"properties" : 
 			[

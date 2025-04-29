@@ -1,5 +1,6 @@
 #include "managedoctorswindow.h"
 #include "ui_managedoctorswindow.h"
+#include "doctorrepository.h"
 
 ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
     : QWidget(parent)
@@ -9,8 +10,10 @@ ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
     const char* database = std::getenv("database");
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
-    doctorService = new DoctorRepository(database, username, password);
-    doctorBusinessLayer = new DoctorService(doctorService);
+
+    doctorRepository = std::make_shared<DoctorRepository>(database, username, password);
+
+    doctorService = new DoctorService(doctorRepository);
 
     loadDoctorsIntoComboBox();
 }
@@ -18,6 +21,7 @@ ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
 ManageDoctorsWindow::~ManageDoctorsWindow()
 {
     delete ui;
+    delete doctorService;
 }
 
 void ManageDoctorsWindow::on_backButton_clicked()
@@ -32,7 +36,7 @@ void ManageDoctorsWindow::loadDoctorsIntoComboBox()
     // Add the default placeholder value to the combo box
     ui->doctorComboBox->addItem("           --Select Doctor--", -1);  // -1 or any value that doesn't tie to an actual doctor ID
 
-    QList<DoctorDTO> doctors = doctorBusinessLayer->getDoctorList();
+    QList<DoctorDTO> doctors = doctorService->getDoctorList();
 
     // Add doctors to the combo box
     for (const DoctorDTO& doctor : doctors) {
@@ -45,7 +49,7 @@ void ManageDoctorsWindow::on_addDoctorButton_clicked()
     QString doctorName = ui->doctorNameLineEdit->text();
     DoctorDTO doctor;
     doctor.name = doctorName;
-    if (doctorBusinessLayer->addDoctor(doctor)) {
+    if (doctorService->addDoctor(doctor)) {
         qDebug() << "Doctor added successfully!";
         loadDoctorsIntoComboBox(); // Refresh the list
     } else {
@@ -73,7 +77,7 @@ void ManageDoctorsWindow::on_editDoctorButton_clicked()
                 doctor.name = newDoctorName;
                 doctor.id = doctorId;
 
-                if (doctorBusinessLayer->editDoctor(doctor)) {
+                if (doctorService->editDoctor(doctor)) {
                     qDebug() << "Doctor updated successfully!";
                     loadDoctorsIntoComboBox(); // Refresh the combo box
                     editDialog.accept();  // Close the dialog on successful save
@@ -89,7 +93,7 @@ void ManageDoctorsWindow::on_editDoctorButton_clicked()
             DoctorDTO doctor;
             doctor.id = ui->doctorComboBox->currentData().toInt();
 
-            if (doctorBusinessLayer->deleteDoctor(doctor)) {
+            if (doctorService->deleteDoctor(doctor)) {
                 qDebug() << "Doctor deleted successfully!";
                 loadDoctorsIntoComboBox(); // Refresh the combo box
                 editDialog.accept();  // Close the dialog on successful save

@@ -1,22 +1,23 @@
 #include "doctorservice.h"
+#include "sortingutils.h"
 
-DoctorService::DoctorService(DoctorRepository* doctorService)
-    : m_doctorService(doctorService) {}
+DoctorService::DoctorService(std::shared_ptr<IDoctorRepository> iDoctorRepository)
+    : iDoctorRepository(iDoctorRepository) {}
 
 bool DoctorService::addDoctor(const DoctorDTO& doctor) {
-    return m_doctorService->addDoctor(doctor);
+    return iDoctorRepository->addDoctor(doctor);
 }
 
 bool DoctorService::editDoctor(const DoctorDTO& doctor) {
-    return m_doctorService->editDoctor(doctor);
+    return iDoctorRepository->editDoctor(doctor);
 }
 
 bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
-    return m_doctorService->deleteDoctor(doctor);
+    return iDoctorRepository->deleteDoctor(doctor);
 }
 
 QList<DoctorDTO> DoctorService::getDoctorList() const {
-    QList<DoctorDTO> doctorList = m_doctorService->getDoctorsList();
+    QList<DoctorDTO> doctorList = iDoctorRepository->getDoctorsList();
     SortingUtils<DoctorDTO>::sortList(doctorList);
     return doctorList;
 }

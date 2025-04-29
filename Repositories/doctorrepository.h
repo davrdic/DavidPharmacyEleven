@@ -7,8 +7,9 @@
 #include <QSqlError>
 #include <QDebug>
 #include "doctordto.h"
+#include "IRepositories/idoctorrepository.h"
 
-class DoctorRepository {
+class DoctorRepository : public IDoctorRepository {
 public:
     DoctorRepository(const QString& dbName, const QString& user, const QString& password);
 

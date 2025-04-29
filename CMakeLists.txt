@@ -57,7 +57,8 @@ else()
     if(ANDROID)
         add_library(DavidPharmacyEleven SHARED ${PROJECT_SOURCES})
     else()
-        add_executable(DavidPharmacyEleven ${PROJECT_SOURCES})
+        add_executable(DavidPharmacyEleven ${PROJECT_SOURCES}
+            Repositories/IRepositories/idoctorrepository.h)
     endif()
 endif()
 

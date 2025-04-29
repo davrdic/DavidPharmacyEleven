@@ -290,31 +290,10 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
- /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlQuery \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqlquery.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlError \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqlerror.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
- /usr/include/c++/13/variant \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
- /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
- /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
@@ -323,6 +302,9 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+ /usr/include/c++/13/variant \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
@@ -345,6 +327,7 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \

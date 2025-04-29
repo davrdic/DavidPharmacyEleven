@@ -28,10 +28,10 @@ private slots:
 
 private:
     Ui::ManageDoctorsWindow *ui;
-    DoctorRepository* doctorService;
-    DoctorService* doctorBusinessLayer;
-    DoctorEditDialog* doctorEditDialog;
+    DoctorService *doctorService;
+    DoctorEditDialog *doctorEditDialog;
     QStringList doctorList;
+    std::shared_ptr<IDoctorRepository> doctorRepository;
 
 signals:
     void backClicked();

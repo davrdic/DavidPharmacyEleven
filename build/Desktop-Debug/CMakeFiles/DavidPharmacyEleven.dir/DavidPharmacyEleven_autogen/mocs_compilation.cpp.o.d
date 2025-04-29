@@ -315,28 +315,10 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
- /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlQuery \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqlquery.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlError \
- /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqlerror.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
- /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
- /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/moc_managedoctorswindow.cpp \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/../../../../UI/ManageDoctorsWindow/managedoctorswindow.h

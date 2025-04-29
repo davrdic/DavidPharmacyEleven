@@ -4,6 +4,7 @@
 #include <QWidget>
 #include "customerservice.h"
 #include "customereditdialog.h"
+#include "doctorservice.h"
 
 namespace Ui {
 class ManageCustomersWindow;
@@ -28,8 +29,11 @@ private:
     Ui::ManageCustomersWindow *ui;
     CustomerService *customerService;
     std::shared_ptr<ICustomerRepository> customerRepository;
+    DoctorService *doctorService;
+    std::shared_ptr<IDoctorRepository> doctorRepository;
+    std::vector<DoctorDTO> doctorList;
 
-    void loadCustomersIntoComboBox();
+    void loadCustomersIntoTableWidget();
 
 signals:
     void backClicked();

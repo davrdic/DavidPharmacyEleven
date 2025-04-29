@@ -18,6 +18,7 @@ class CustomerEditDialog : public QDialog
     Q_OBJECT
 
 public:
+    explicit CustomerEditDialog(QWidget* parent = nullptr);
     explicit CustomerEditDialog(const QVariantMap& customer, QWidget* parent = nullptr);
     ~CustomerEditDialog();
 
@@ -38,6 +39,7 @@ private:
     DoctorService *doctorService;
     std::vector<DoctorDTO> doctorList;
     std::shared_ptr<IDoctorRepository> doctorRepository;
+    bool isEditMode = false;
 };
 
 #endif // CUSTOMEREDITDIALOG_H

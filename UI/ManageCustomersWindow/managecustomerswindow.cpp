@@ -1,4 +1,5 @@
 #include <QDebug>
+#include <QStandardItem>
 
 #include "managecustomerswindow.h"
 #include "ui_managecustomerswindow.h"
@@ -10,22 +11,30 @@ ManageCustomersWindow::ManageCustomersWindow(QWidget *parent)
     , ui(new Ui::ManageCustomersWindow)
 {
     ui->setupUi(this);
-    ui->customerComboBox->setEditable(true);
+    ui->customerTableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->customerTableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
+    ui->customerTableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->customerTableWidget->setAlternatingRowColors(true);
+    ui->customerTableWidget->verticalHeader()->setVisible(false);
+
     const char* database = std::getenv("database");
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
 
     customerRepository = std::make_shared<CustomerQSqlRepository>(database, username, password);
-
     customerService = new CustomerService(customerRepository);
 
-    loadCustomersIntoComboBox();
+    doctorRepository = std::make_shared<DoctorQSqlRepository>(database, username, password);
+    doctorService = new DoctorService(doctorRepository);
+
+    loadCustomersIntoTableWidget();
 }
 
 ManageCustomersWindow::~ManageCustomersWindow()
 {
     delete ui;
     delete customerService;
+    delete doctorService;
 }
 
 void ManageCustomersWindow::on_backButton_clicked()
@@ -34,51 +43,104 @@ void ManageCustomersWindow::on_backButton_clicked()
 }
 
 
-void ManageCustomersWindow::loadCustomersIntoComboBox()
+void ManageCustomersWindow::loadCustomersIntoTableWidget()
 {
-    ui->customerComboBox->clear();
     std::vector<CustomerDTO> customers = customerService->getCustomerList();
-    ui->customerComboBox->addItem("", -1);
-    for (const CustomerDTO& customer : customers) {
+    doctorList = doctorService->getDoctorList();
+
+    std::unordered_map<int, QString> doctorIdToName;
+    for (const DoctorDTO& doctor : doctorList) {
+        doctorIdToName[doctor.id] = QString::fromStdString(doctor.name);
+    }
+
+    ui->customerTableWidget->setRowCount(customers.size()); // set row count appropriately
+    ui->customerTableWidget->setColumnCount(2); // make sure the table has enough columns
+    QStringList headers = {"Name", "Doctor"};
+    ui->customerTableWidget->setHorizontalHeaderLabels(headers);
+
+    for (int i = 0; i < static_cast<int>(customers.size()); ++i) {
+        QTableWidgetItem* nameItem = new QTableWidgetItem(QString::fromStdString(customers[i].name));
+        QTableWidgetItem* doctorItem = new QTableWidgetItem();
+
+        QString doctorName = "Unknown";
+        auto it = doctorIdToName.find(customers[i].doctor_id);
+        if (it != doctorIdToName.end()) {
+            doctorName = it->second;
+        }
+        doctorItem->setText(doctorName);
+
+        // Store the full CustomerDTO in the name column item using QVariantMap
         QVariantMap customerData;
-        customerData["id"] = customer.id;
-        customerData["name"] = StringUtils::toQString(customer.name);
-        customerData["doctor_id"] = customer.doctor_id;
+        customerData["id"] = customers[i].id;
+        customerData["name"] = QString::fromStdString(customers[i].name);
+        customerData["doctor_id"] = customers[i].doctor_id;
+        nameItem->setData(Qt::UserRole, customerData);
 
-        qDebug() << "doctor_id:" << customerData["doctor_id"];
-
-        // Add name as display text, and store the map explicitly at Qt::UserRole
-        ui->customerComboBox->addItem(customerData["name"].toString());
-        int index = ui->customerComboBox->count() - 1;
-        ui->customerComboBox->setItemData(index, customerData, Qt::UserRole);
+        ui->customerTableWidget->setItem(i, 0, nameItem);
+        ui->customerTableWidget->setItem(i, 1, doctorItem);
     }
 }
 
 void ManageCustomersWindow::on_addCustomerButton_clicked()
 {
-    QString customerName = ui->customerNameLineEdit->text();
-    CustomerDTO customer;
-    customer.name = StringUtils::toStdString(customerName);
-    if (customerService->addCustomer(customer)) {
-        qDebug() << "Customer added successfully!";
-        loadCustomersIntoComboBox(); // Refresh the list
-        ui->customerNameLineEdit->clear();
-    } else {
-        qDebug() << "Failed to add customer.";
-    }
+    // QString customerName = ui->customerNameLineEdit->text();
+    // CustomerDTO customer;
+    // customer.name = StringUtils::toStdString(customerName);
+    // if (customerService->addCustomer(customer)) {
+    //     qDebug() << "Customer added successfully!";
+    //     loadCustomersIntoTableWidget(); // Refresh the list
+    //     ui->customerNameLineEdit->clear();
+    // } else {
+    //     qDebug() << "Failed to add customer.";
+    // }
+
+    // QTableWidgetItem* nameItem = ui->customerTableWidget->item(selectedRow, 0);
+    // QVariantMap customerData = nameItem->data(Qt::UserRole).toMap();
+
+    CustomerEditDialog editDialog(this);  // No customer data passed, it's a new customer
+
+    // Connect save button for adding new customer
+    connect(&editDialog, &CustomerEditDialog::saveClicked, this, [this, &editDialog]() {
+        QString newCustomerName = editDialog.getNewCustomerName();
+        int newDoctorId = editDialog.getNewDoctorId();
+
+        if (!newCustomerName.isEmpty() && newDoctorId > 0) {
+            CustomerDTO customer;
+            customer.name = StringUtils::toStdString(newCustomerName);
+            customer.doctor_id = newDoctorId;
+
+            if (customerService->addCustomer(customer)) {
+                qDebug() << "Customer added successfully!";
+                loadCustomersIntoTableWidget();
+                editDialog.accept();  // Close dialog
+            } else {
+                qDebug() << "Failed to add customer.";
+            }
+        }
+    });
+
+    // Cancel just closes the dialog
+    connect(&editDialog, &CustomerEditDialog::cancelClicked, &editDialog, &QDialog::reject);
+
+    // For Add mode, you can hide or disable the delete button if it's visible
+    editDialog.findChild<QPushButton*>("deleteButton")->hide();  // Optional
+
+    editDialog.exec();  // Show the dialog modally
 }
 
 
 void ManageCustomersWindow::on_editCustomerButton_clicked()
 {
-    // Get the customer data stored at Qt::UserRole
-    QVariantMap customerData = ui->customerComboBox->currentData(Qt::UserRole).toMap();
+    int selectedRow = ui->customerTableWidget->currentRow();
+    if (selectedRow < 0) {
+        qDebug() << "No customer selected.";
+        return;
+    }
 
-    // Extract the customer ID and doctor ID from the customer data map
+    QTableWidgetItem* nameItem = ui->customerTableWidget->item(selectedRow, 0);
+    QVariantMap customerData = nameItem->data(Qt::UserRole).toMap();
+
     int customerId = customerData["id"].toInt();
-    int oldDoctorId = customerData["doctor_id"].toInt();
-
-    qDebug() << "oldDoctorId:" << oldDoctorId;
 
     // Proceed if the customer ID is valid
     if (customerId > 0) {
@@ -89,7 +151,11 @@ void ManageCustomersWindow::on_editCustomerButton_clicked()
         connect(&editDialog, &CustomerEditDialog::saveClicked, this, [this, &editDialog]() {
             QString newCustomerName = editDialog.getNewCustomerName();
             int newDoctorId = editDialog.getNewDoctorId();
-            int customerId = ui->customerComboBox->currentData(Qt::UserRole).toMap()["id"].toInt();
+
+            int selectedRow = ui->customerTableWidget->currentRow();
+            QTableWidgetItem* nameItem = ui->customerTableWidget->item(selectedRow, 0);
+            QVariantMap customerData = nameItem->data(Qt::UserRole).toMap();
+            int customerId = customerData["id"].toInt();
 
             if (!newCustomerName.isEmpty()) {
                 CustomerDTO customer;
@@ -99,7 +165,7 @@ void ManageCustomersWindow::on_editCustomerButton_clicked()
 
                 if (customerService->updateCustomer(customer)) {
                     qDebug() << "Customer updated successfully!";
-                    loadCustomersIntoComboBox(); // Refresh the combo box
+                    loadCustomersIntoTableWidget(); // Refresh the table too
                     editDialog.accept();  // Close the dialog on successful save
                 } else {
                     qDebug() << "Failed to update customer.";
@@ -113,11 +179,11 @@ void ManageCustomersWindow::on_editCustomerButton_clicked()
         // Connect the delete button to delete the customer
         connect(&editDialog, &CustomerEditDialog::deleteClicked, this, [this, &editDialog]() {
             CustomerDTO customer;
-            customer.id = ui->customerComboBox->currentData(Qt::UserRole).toMap()["id"].toInt();
+            //customer.id = ui->customerComboBox->currentData(Qt::UserRole).toMap()["id"].toInt();
 
             if (customerService->deleteCustomer(customer)) {
                 qDebug() << "Customer deleted successfully!";
-                loadCustomersIntoComboBox(); // Refresh the combo box
+                loadCustomersIntoTableWidget(); // Refresh the combo box
                 editDialog.accept();  // Close the dialog on successful delete
             } else {
                 qDebug() << "Failed to delete customer.";

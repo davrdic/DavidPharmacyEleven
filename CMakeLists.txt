@@ -31,9 +31,9 @@ set(PROJECT_SOURCES
 
     Utilities/sortingutils.h
 
-    ManageDoctorsWindow/managedoctorswindow.cpp
-    ManageDoctorsWindow/managedoctorswindow.h
-    ManageDoctorsWindow/managedoctorswindow.ui
+    UI/ManageDoctorsWindow/managedoctorswindow.cpp
+    UI/ManageDoctorsWindow/managedoctorswindow.h
+    UI/ManageDoctorsWindow/managedoctorswindow.ui
 
     MainWindow/mainwindow.cpp
     MainWindow/mainwindow.h
@@ -61,7 +61,7 @@ target_link_libraries(DavidPharmacyEleven PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
 target_include_directories(DavidPharmacyEleven PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/Doctor
     ${CMAKE_CURRENT_SOURCE_DIR}/Utilities
-    ${CMAKE_CURRENT_SOURCE_DIR}/ManageDoctorsWindow
+    ${CMAKE_CURRENT_SOURCE_DIR}/UI/ManageDoctorsWindow
     ${CMAKE_CURRENT_SOURCE_DIR}/MainWindow
 )
 

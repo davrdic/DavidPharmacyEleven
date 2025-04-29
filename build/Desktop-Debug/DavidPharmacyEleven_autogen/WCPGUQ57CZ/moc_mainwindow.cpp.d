@@ -4,7 +4,7 @@
   /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
   /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
   /home/david/DavidPharmacyEleven/Doctor/doctorservice.h \
-  /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
+  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
   /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

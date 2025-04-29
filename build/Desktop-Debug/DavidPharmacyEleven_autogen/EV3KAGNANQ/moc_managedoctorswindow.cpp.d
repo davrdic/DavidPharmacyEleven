@@ -1,4 +1,4 @@
-/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/VO5ELVYGDR/moc_managedoctorswindow.cpp: /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/moc_managedoctorswindow.cpp: /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
   /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h \
   /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \

@@ -114,9 +114,9 @@
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h",
+			"/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h",
 			"MU",
-			"VO5ELVYGDR/moc_managedoctorswindow.cpp",
+			"EV3KAGNANQ/moc_managedoctorswindow.cpp",
 			null
 		],
 		[
@@ -141,7 +141,7 @@
 	[
 		"/home/david/DavidPharmacyEleven/Doctor",
 		"/home/david/DavidPharmacyEleven/Utilities",
-		"/home/david/DavidPharmacyEleven/ManageDoctorsWindow",
+		"/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow",
 		"/home/david/DavidPharmacyEleven/MainWindow",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
@@ -204,7 +204,7 @@
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp",
+			"/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp",
 			"MU",
 			null
 		],

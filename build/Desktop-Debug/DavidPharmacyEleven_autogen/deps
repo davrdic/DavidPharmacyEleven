@@ -11,8 +11,8 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/Doctor/doctorservice.h \
 	/home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp \
 	/home/david/DavidPharmacyEleven/MainWindow/mainwindow.h \
-	/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp \
-	/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
+	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp \
+	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
 	/home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
@@ -452,5 +452,5 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
 	/home/david/DavidPharmacyEleven/MainWindow/mainwindow.ui \
-	/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.ui \
+	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.ui \
 	/usr/bin/cmake

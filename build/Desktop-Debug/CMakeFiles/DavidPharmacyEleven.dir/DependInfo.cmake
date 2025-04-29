@@ -15,7 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp" "CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o.d"
   "/home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp" "CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o.d"
   "/home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o.d"
-  "/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o.d"
+  "/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o.d"
   "/home/david/DavidPharmacyEleven/main.cpp" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o.d"
   )
 

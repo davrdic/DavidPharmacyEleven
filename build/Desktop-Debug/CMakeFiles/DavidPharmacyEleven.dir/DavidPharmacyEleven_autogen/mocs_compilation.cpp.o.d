@@ -311,7 +311,7 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
- /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
+ /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
@@ -338,5 +338,5 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/VO5ELVYGDR/moc_managedoctorswindow.cpp \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/VO5ELVYGDR/../../../../ManageDoctorsWindow/managedoctorswindow.h
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/moc_managedoctorswindow.cpp \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/../../../../UI/ManageDoctorsWindow/managedoctorswindow.h

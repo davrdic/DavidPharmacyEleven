@@ -286,7 +286,7 @@ CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
+ /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \

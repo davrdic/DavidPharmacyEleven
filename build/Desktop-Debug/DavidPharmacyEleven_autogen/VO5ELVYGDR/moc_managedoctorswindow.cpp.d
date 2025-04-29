@@ -1,10 +1,10 @@
-/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_managedoctorswindow.cpp: /home/david/DavidPharmacyEleven/managedoctorswindow.h \
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/VO5ELVYGDR/moc_managedoctorswindow.cpp: /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
-  /home/david/DavidPharmacyEleven/DoctorDTO.h \
-  /home/david/DavidPharmacyEleven/SortingUtils.h \
-  /home/david/DavidPharmacyEleven/doctorbusinesslayer.h \
-  /home/david/DavidPharmacyEleven/doctoreditdialog.h \
-  /home/david/DavidPharmacyEleven/doctorservice.h \
+  /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h \
+  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
+  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
+  /home/david/DavidPharmacyEleven/Doctor/doctorservice.h \
+  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \

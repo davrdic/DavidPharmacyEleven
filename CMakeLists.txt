@@ -2,72 +2,74 @@ cmake_minimum_required(VERSION 3.5)
 
 project(DavidPharmacyEleven VERSION 0.1 LANGUAGES CXX)
 
+# Auto UIC, MOC, and RCC (Qt macros)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
+# C++ settings
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
-find_package(Qt5 REQUIRED COMPONENTS Widgets Sql)
+# Find Qt libraries
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Sql)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
 
+# List all your source and header files
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+    main.cpp
+
+    Doctor/doctor.cpp
+    Doctor/doctor.h
+    Doctor/doctorbusinesslayer.cpp
+    Doctor/doctorbusinesslayer.h
+    Doctor/DoctorDTO.h
+    Doctor/doctorservice.cpp
+    Doctor/doctorservice.h
+    Doctor/doctoreditdialog.h
+    Doctor/DoctorEditDialog.cpp
+
+    Utilities/sortingutils.h
+
+    ManageDoctorsWindow/managedoctorswindow.cpp
+    ManageDoctorsWindow/managedoctorswindow.h
+    ManageDoctorsWindow/managedoctorswindow.ui
+
+    MainWindow/mainwindow.cpp
+    MainWindow/mainwindow.h
+    MainWindow/mainwindow.ui
 )
 
+# Create executable
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(DavidPharmacyEleven
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET DavidPharmacyEleven APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(DavidPharmacyEleven SHARED
-            ${PROJECT_SOURCES}
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+        add_library(DavidPharmacyEleven SHARED ${PROJECT_SOURCES})
     else()
-        add_executable(DavidPharmacyEleven
-            ${PROJECT_SOURCES}
-            doctor.h doctor.cpp
-            doctorservice.h doctorservice.cpp
-            DoctorDTO.h
-            doctorbusinesslayer.h doctorbusinesslayer.cpp
-            doctoreditdialog.h doctoreditdialog.cpp
-            SortingUtils.h
-            managedoctorswindow.h managedoctorswindow.cpp managedoctorswindow.ui
-
-
-
-
-
-
-
-
-
-        )
+        add_executable(DavidPharmacyEleven ${PROJECT_SOURCES})
     endif()
 endif()
 
 # Link Qt libraries
 target_link_libraries(DavidPharmacyEleven PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql)
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
+# Include directories (so all headers are found properly)
+target_include_directories(DavidPharmacyEleven PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/Doctor
+    ${CMAKE_CURRENT_SOURCE_DIR}/Utilities
+    ${CMAKE_CURRENT_SOURCE_DIR}/ManageDoctorsWindow
+    ${CMAKE_CURRENT_SOURCE_DIR}/MainWindow
+)
+
+# macOS bundle identifier (for Mac/iOS if needed)
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.DavidPharmacyEleven)
+    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.DavidPharmacyEleven)
 endif()
+
 set_target_properties(DavidPharmacyEleven PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
@@ -76,6 +78,7 @@ set_target_properties(DavidPharmacyEleven PROPERTIES
     WIN32_EXECUTABLE TRUE
 )
 
+# Installation
 include(GNUInstallDirs)
 install(TARGETS DavidPharmacyEleven
     BUNDLE DESTINATION .
@@ -83,8 +86,7 @@ install(TARGETS DavidPharmacyEleven
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
+# Qt 6 finalization
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(DavidPharmacyEleven)
 endif()
-
-include_directories(${CMAKE_SOURCE_DIR})

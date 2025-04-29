@@ -2,8 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "doctorbusinesslayer.h"
-#include "doctoreditdialog.h"
 #include "managedoctorswindow.h"
 
 QT_BEGIN_NAMESPACE
@@ -25,20 +23,10 @@ private slots:
 
     void on_doctorsBackButton_clicked();
 
-    void on_addDoctorButton_clicked();
-
-    void on_editDoctorButton_clicked();
-
-    void loadDoctorsIntoComboBox();
-
     void on_manageDoctorsBackClicked();
 
 private:
     Ui::MainWindow *ui;
-    DoctorService* doctorService;
-    DoctorBusinessLayer* doctorBusinessLayer;
-    DoctorEditDialog* doctorEditDialog;
-    QStringList doctorList;
     ManageDoctorsWindow* manageDoctorsWindow;
 };
 #endif // MAINWINDOW_H

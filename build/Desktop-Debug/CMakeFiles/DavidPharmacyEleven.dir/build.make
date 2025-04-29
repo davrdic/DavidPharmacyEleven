@@ -104,112 +104,112 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/main.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/main.cpp -o CMakeFiles/DavidPharmacyEleven.dir/main.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o: /home/david/DavidPharmacyEleven/mainwindow.cpp
-CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o -c /home/david/DavidPharmacyEleven/mainwindow.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o: /home/david/DavidPharmacyEleven/Doctor/doctor.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o -c /home/david/DavidPharmacyEleven/Doctor/doctor.cpp
 
-CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/mainwindow.cpp > CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.i
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/Doctor/doctor.cpp > CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.i
 
-CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/mainwindow.cpp -o CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.s
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/Doctor/doctor.cpp -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o: /home/david/DavidPharmacyEleven/doctor.cpp
-CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o -c /home/david/DavidPharmacyEleven/doctor.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o: /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o -c /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp
 
-CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/doctor.cpp > CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.i
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp > CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.i
 
-CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/doctor.cpp -o CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.s
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o: /home/david/DavidPharmacyEleven/doctorservice.cpp
-CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o -c /home/david/DavidPharmacyEleven/doctorservice.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o: /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o -c /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp
 
-CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/doctorservice.cpp > CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.i
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp > CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.i
 
-CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/doctorservice.cpp -o CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.s
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o: /home/david/DavidPharmacyEleven/doctorbusinesslayer.cpp
-CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o -c /home/david/DavidPharmacyEleven/doctorbusinesslayer.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o: /home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o -c /home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp
 
-CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/doctorbusinesslayer.cpp > CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.i
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp > CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.i
 
-CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/doctorbusinesslayer.cpp -o CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.s
+CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp -o CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o: /home/david/DavidPharmacyEleven/doctoreditdialog.cpp
-CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o -c /home/david/DavidPharmacyEleven/doctoreditdialog.cpp
+CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o: /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp
+CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o -c /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp
 
-CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/doctoreditdialog.cpp > CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.i
+CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp > CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.i
 
-CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/doctoreditdialog.cpp -o CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.s
+CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp -o CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o: /home/david/DavidPharmacyEleven/managedoctorswindow.cpp
-CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o -c /home/david/DavidPharmacyEleven/managedoctorswindow.cpp
+CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o: /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp
+CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o -c /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp
 
-CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/managedoctorswindow.cpp > CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.i
+CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp > CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.i
 
-CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/managedoctorswindow.cpp -o CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.s
+CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp -o CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.s
 
 # Object files for target DavidPharmacyEleven
 DavidPharmacyEleven_OBJECTS = \
 "CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o"
+"CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o"
 
 # External object files for target DavidPharmacyEleven
 DavidPharmacyEleven_EXTERNAL_OBJECTS =
 
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/mainwindow.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/doctor.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/doctorservice.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/doctorbusinesslayer.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/doctoreditdialog.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/managedoctorswindow.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Doctor/DoctorEditDialog.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/ManageDoctorsWindow/managedoctorswindow.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/build.make
 DavidPharmacyEleven: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 DavidPharmacyEleven: /usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.13

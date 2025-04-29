@@ -1,6 +1,6 @@
 CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /home/david/DavidPharmacyEleven/main.cpp /usr/include/stdc-predef.h \
- /home/david/DavidPharmacyEleven/mainwindow.h \
+ /home/david/DavidPharmacyEleven/MainWindow/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -285,8 +285,11 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- /home/david/DavidPharmacyEleven/doctorbusinesslayer.h \
- /home/david/DavidPharmacyEleven/doctorservice.h \
+ /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
+ /home/david/DavidPharmacyEleven/Doctor/doctorservice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
@@ -307,11 +310,11 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /usr/include/c++/13/variant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
- /home/david/DavidPharmacyEleven/DoctorDTO.h \
- /home/david/DavidPharmacyEleven/SortingUtils.h \
+ /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h \
+ /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
- /home/david/DavidPharmacyEleven/doctoreditdialog.h \
+ /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
@@ -331,9 +334,6 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
- /home/david/DavidPharmacyEleven/managedoctorswindow.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \

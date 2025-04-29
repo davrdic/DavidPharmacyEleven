@@ -2,8 +2,6 @@
 #define SORTINGUTILS_H
 
 #include <QList>
-#include <QString>
-#include <algorithm>
 
 template <typename T>
 class SortingUtils {

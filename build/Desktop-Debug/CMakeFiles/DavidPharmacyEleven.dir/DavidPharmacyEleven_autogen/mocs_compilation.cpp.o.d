@@ -1,7 +1,7 @@
 CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o: \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_doctoreditdialog.cpp \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/YQF7VEYMFC/moc_doctoreditdialog.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctoreditdialog.h \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/YQF7VEYMFC/../../../../Doctor/doctoreditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -306,13 +306,16 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_mainwindow.cpp \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../mainwindow.h \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/WCPGUQ57CZ/moc_mainwindow.cpp \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/WCPGUQ57CZ/../../../../MainWindow/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctorbusinesslayer.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctorservice.h \
+ /home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
+ /home/david/DavidPharmacyEleven/Doctor/doctorservice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
@@ -330,13 +333,10 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../DoctorDTO.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../SortingUtils.h \
+ /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h \
+ /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../doctoreditdialog.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../managedoctorswindow.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/moc_managedoctorswindow.cpp \
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EWIEGA46WW/../../../../managedoctorswindow.h
+ /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/VO5ELVYGDR/moc_managedoctorswindow.cpp \
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/VO5ELVYGDR/../../../../ManageDoctorsWindow/managedoctorswindow.h

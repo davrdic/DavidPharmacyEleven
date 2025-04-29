@@ -2,7 +2,7 @@
 #define DOCTORBUSINESSLAYER_H
 
 #include "doctorservice.h"
-#include "SortingUtils.h"
+#include "sortingutils.h"
 
 class DoctorBusinessLayer {
 public:

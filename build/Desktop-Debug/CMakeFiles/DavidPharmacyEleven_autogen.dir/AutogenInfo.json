@@ -68,11 +68,6 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake",
 		"/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
@@ -83,51 +78,51 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/david/DavidPharmacyEleven/DoctorDTO.h",
+			"/home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h",
 			"MU",
-			"EWIEGA46WW/moc_DoctorDTO.cpp",
+			"YQF7VEYMFC/moc_DoctorDTO.cpp",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/SortingUtils.h",
+			"/home/david/DavidPharmacyEleven/Doctor/doctor.h",
 			"MU",
-			"EWIEGA46WW/moc_SortingUtils.cpp",
+			"YQF7VEYMFC/moc_doctor.cpp",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/doctor.h",
+			"/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h",
 			"MU",
-			"EWIEGA46WW/moc_doctor.cpp",
+			"YQF7VEYMFC/moc_doctorbusinesslayer.cpp",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/doctorbusinesslayer.h",
+			"/home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h",
 			"MU",
-			"EWIEGA46WW/moc_doctorbusinesslayer.cpp",
+			"YQF7VEYMFC/moc_doctoreditdialog.cpp",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/doctoreditdialog.h",
+			"/home/david/DavidPharmacyEleven/Doctor/doctorservice.h",
 			"MU",
-			"EWIEGA46WW/moc_doctoreditdialog.cpp",
+			"YQF7VEYMFC/moc_doctorservice.cpp",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/doctorservice.h",
+			"/home/david/DavidPharmacyEleven/MainWindow/mainwindow.h",
 			"MU",
-			"EWIEGA46WW/moc_doctorservice.cpp",
+			"WCPGUQ57CZ/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/mainwindow.h",
+			"/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.h",
 			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
+			"VO5ELVYGDR/moc_managedoctorswindow.cpp",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/managedoctorswindow.h",
+			"/home/david/DavidPharmacyEleven/Utilities/sortingutils.h",
 			"MU",
-			"EWIEGA46WW/moc_managedoctorswindow.cpp",
+			"NGZIYILPTJ/moc_sortingutils.cpp",
 			null
 		]
 	],
@@ -144,7 +139,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/david/DavidPharmacyEleven",
+		"/home/david/DavidPharmacyEleven/Doctor",
+		"/home/david/DavidPharmacyEleven/Utilities",
+		"/home/david/DavidPharmacyEleven/ManageDoctorsWindow",
+		"/home/david/DavidPharmacyEleven/MainWindow",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -184,13 +182,33 @@
 	"SETTINGS_FILE" : "/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/DavidPharmacyEleven_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/david/DavidPharmacyEleven/doctor.cpp", "MU", null ],
-		[ "/home/david/DavidPharmacyEleven/doctorbusinesslayer.cpp", "MU", null ],
-		[ "/home/david/DavidPharmacyEleven/doctoreditdialog.cpp", "MU", null ],
-		[ "/home/david/DavidPharmacyEleven/doctorservice.cpp", "MU", null ],
-		[ "/home/david/DavidPharmacyEleven/main.cpp", "MU", null ],
-		[ "/home/david/DavidPharmacyEleven/mainwindow.cpp", "MU", null ],
-		[ "/home/david/DavidPharmacyEleven/managedoctorswindow.cpp", "MU", null ]
+		[
+			"/home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp",
+			"MU",
+			null
+		],
+		[ "/home/david/DavidPharmacyEleven/Doctor/doctor.cpp", "MU", null ],
+		[
+			"/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/ManageDoctorsWindow/managedoctorswindow.cpp",
+			"MU",
+			null
+		],
+		[ "/home/david/DavidPharmacyEleven/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

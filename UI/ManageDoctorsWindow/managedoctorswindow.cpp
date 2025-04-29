@@ -10,6 +10,7 @@ ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
     , ui(new Ui::ManageDoctorsWindow)
 {
     ui->setupUi(this);
+    ui->doctorComboBox->setEditable(true);
     const char* database = std::getenv("database");
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
@@ -35,12 +36,8 @@ void ManageDoctorsWindow::on_backButton_clicked()
 void ManageDoctorsWindow::loadDoctorsIntoComboBox()
 {
     ui->doctorComboBox->clear();
-
-    // Add the default placeholder value to the combo box
-    ui->doctorComboBox->addItem("           --Select Doctor--", -1);  // -1 or any value that doesn't tie to an actual doctor ID
-
     std::vector<DoctorDTO> doctors = doctorService->getDoctorList();
-
+    ui->doctorComboBox->addItem("", -1);
     // Add doctors to the combo box
     for (const DoctorDTO& doctor : doctors) {
         ui->doctorComboBox->addItem(StringUtils::toQString(doctor.name), doctor.id);

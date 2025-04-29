@@ -306,24 +306,45 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+ /home/david/DavidPharmacyEleven/Services/doctorservice.h \
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
+ /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
+ /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/7AVWINLNAW/moc_doctoreditdialog.cpp \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/7AVWINLNAW/../../../../UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/S5QT2ZAYUE/moc_mainwindow.cpp \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/S5QT2ZAYUE/../../../../UI/MainWindow/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/david/DavidPharmacyEleven/Services/doctorservice.h \
- /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
- /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.h \
  /home/david/DavidPharmacyEleven/Services/customerservice.h \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
- /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/IPGVJ4D5DB/moc_managecustomerswindow.cpp \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/IPGVJ4D5DB/../../../../UI/ManageCustomersWindow/managecustomerswindow.h \

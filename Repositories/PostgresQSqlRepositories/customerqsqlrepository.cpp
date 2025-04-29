@@ -38,9 +38,10 @@ bool CustomerQSqlRepository::addCustomer(const CustomerDTO& customer) {
 
 bool CustomerQSqlRepository::updateCustomer(const CustomerDTO& customer) {
     QSqlQuery query;
-    query.prepare("UPDATE customer SET name = :name WHERE id = :id");
+    query.prepare("UPDATE customer SET name = :name, doctor_id = :doctor_id WHERE id = :id");
     query.bindValue(":name", StringUtils::toQString(customer.name));
     query.bindValue(":id", customer.id);
+    query.bindValue(":doctor_id", customer.doctor_id);
 
     if (!query.exec()) {
         qDebug() << "Error editing customer:" << query.lastError();
@@ -64,11 +65,12 @@ bool CustomerQSqlRepository::deleteCustomer(const CustomerDTO& customer) {
 std::vector<CustomerDTO> CustomerQSqlRepository::getCustomerList() const {
     std::vector<CustomerDTO> customers;
 
-    QSqlQuery query("SELECT id, name FROM customer"); // Fetch both id and name
+    QSqlQuery query("SELECT id, name, doctor_id FROM customer"); // Fetch both id and name
     while (query.next()) {
         CustomerDTO customer;
         customer.id = query.value(0).toInt();  // The id is stored in the first column
         customer.name = StringUtils::toStdString(query.value(1).toString());  // The name is stored in the second column
+        customer.doctor_id = query.value(2).toInt(); // doctor_id
 
         customers.push_back(customer);  // Add the DTO to the list
     }

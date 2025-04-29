@@ -1,5 +1,10 @@
 /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/YSJPZV7PCJ/moc_customereditdialog.cpp: /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
+  /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
+  /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
+  /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
+  /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h \
+  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
@@ -239,6 +244,8 @@
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h \
@@ -262,6 +269,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h \
@@ -278,6 +286,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h \
@@ -322,14 +331,24 @@
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
@@ -337,7 +356,13 @@
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \

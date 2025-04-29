@@ -30,7 +30,6 @@ private:
     Ui::ManageDoctorsWindow *ui;
     DoctorService *doctorService;
     DoctorEditDialog *doctorEditDialog;
-    QStringList doctorList;
     std::shared_ptr<IDoctorRepository> doctorRepository;
 
 signals:

@@ -305,5 +305,37 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customeredit
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+ /home/david/DavidPharmacyEleven/Services/doctorservice.h \
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
+ /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
+ /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+ /home/david/DavidPharmacyEleven/Utilities/stringutils.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h

@@ -319,11 +319,31 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
  /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+ /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h

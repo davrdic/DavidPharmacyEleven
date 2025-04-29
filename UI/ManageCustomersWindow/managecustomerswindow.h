@@ -22,6 +22,8 @@ private slots:
 
     void on_addCustomerButton_clicked();
 
+    void on_editCustomerButton_clicked();
+
 private:
     Ui::ManageCustomersWindow *ui;
     CustomerService *customerService;

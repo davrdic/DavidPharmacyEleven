@@ -1,4 +1,4 @@
-/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/YQF7VEYMFC/moc_doctoreditdialog.cpp: /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
+/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/7AVWINLNAW/moc_doctoreditdialog.cpp: /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

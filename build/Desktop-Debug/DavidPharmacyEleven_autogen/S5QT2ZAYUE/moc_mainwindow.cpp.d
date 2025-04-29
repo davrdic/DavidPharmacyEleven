@@ -1,9 +1,9 @@
 /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/S5QT2ZAYUE/moc_mainwindow.cpp: /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h \
   /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/moc_predefs.h \
   /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
-  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
   /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
-  /home/david/DavidPharmacyEleven/Services/doctorbusinesslayer.h \
+  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
+  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
   /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
   /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
   /usr/include/asm-generic/errno-base.h \

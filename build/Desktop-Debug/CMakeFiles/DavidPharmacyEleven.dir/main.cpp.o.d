@@ -288,7 +288,7 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/david/DavidPharmacyEleven/Services/doctorbusinesslayer.h \
+ /home/david/DavidPharmacyEleven/Services/doctorservice.h \
  /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
@@ -314,7 +314,7 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o: \
  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
- /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
+ /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \

@@ -1,12 +1,12 @@
-#ifndef DOCTORBUSINESSLAYER_H
-#define DOCTORBUSINESSLAYER_H
+#ifndef DOCTORSERVICE_H
+#define DOCTORSERVICE_H
 
 #include "doctorrepository.h"
 #include "sortingutils.h"
 
-class DoctorBusinessLayer {
+class DoctorService {
 public:
-    DoctorBusinessLayer(DoctorRepository* doctorService);
+    DoctorService(DoctorRepository* doctorService);
 
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
@@ -17,4 +17,4 @@ private:
     DoctorRepository* m_doctorService;
 };
 
-#endif // DOCTORBUSINESSLAYER_H
+#endif

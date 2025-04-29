@@ -19,9 +19,6 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
 set(PROJECT_SOURCES
     main.cpp
 
-    Doctor/doctoreditdialog.h
-    Doctor/DoctorEditDialog.cpp
-
     #DTOs
     DTOs/doctordto.h
 
@@ -30,18 +27,24 @@ set(PROJECT_SOURCES
     Repositories/doctorrepository.h
 
     # Services - Business Logic
-    Services/doctorbusinesslayer.cpp
-    Services/doctorbusinesslayer.h
+    Services/doctorservice.cpp
+    Services/doctorservice.h
 
+    # Utilities
     Utilities/sortingutils.h
+
+    # Windows
+    UI/MainWindow/mainwindow.cpp
+    UI/MainWindow/mainwindow.h
+    UI/MainWindow/mainwindow.ui
 
     UI/ManageDoctorsWindow/managedoctorswindow.cpp
     UI/ManageDoctorsWindow/managedoctorswindow.h
     UI/ManageDoctorsWindow/managedoctorswindow.ui
 
-    UI/MainWindow/mainwindow.cpp
-    UI/MainWindow/mainwindow.h
-    UI/MainWindow/mainwindow.ui
+    # Custom Dialogs
+    UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h
+    UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp
 )
 
 # Create executable
@@ -63,13 +66,13 @@ target_link_libraries(DavidPharmacyEleven PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
 
 # Include directories (so all headers are found properly)
 target_include_directories(DavidPharmacyEleven PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/Doctor
     ${CMAKE_CURRENT_SOURCE_DIR}/DTOs
     ${CMAKE_CURRENT_SOURCE_DIR}/Repositories
     ${CMAKE_CURRENT_SOURCE_DIR}/Services
     ${CMAKE_CURRENT_SOURCE_DIR}/Utilities
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/ManageDoctorsWindow
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/MainWindow
+    ${CMAKE_CURRENT_SOURCE_DIR}/UI/CustomDialogs/DoctorDialogs
 )
 
 # macOS bundle identifier (for Mac/iOS if needed)

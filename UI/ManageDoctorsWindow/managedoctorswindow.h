@@ -2,7 +2,7 @@
 #define MANAGEDOCTORSWINDOW_H
 
 #include <QWidget>
-#include "doctorbusinesslayer.h"
+#include "doctorservice.h"
 #include "doctoreditdialog.h"
 
 namespace Ui {
@@ -29,7 +29,7 @@ private slots:
 private:
     Ui::ManageDoctorsWindow *ui;
     DoctorRepository* doctorService;
-    DoctorBusinessLayer* doctorBusinessLayer;
+    DoctorService* doctorBusinessLayer;
     DoctorEditDialog* doctorEditDialog;
     QStringList doctorList;
 

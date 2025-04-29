@@ -19,19 +19,19 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
 set(PROJECT_SOURCES
     main.cpp
 
-    Doctor/doctor.cpp
-    Doctor/doctor.h
-    Doctor/doctorbusinesslayer.cpp
-    Doctor/doctorbusinesslayer.h
     Doctor/doctoreditdialog.h
     Doctor/DoctorEditDialog.cpp
 
     #DTOs
     DTOs/doctordto.h
 
-    # Repositories
+    # Repositories - Database Communications
     Repositories/doctorrepository.cpp
     Repositories/doctorrepository.h
+
+    # Services - Business Logic
+    Services/doctorbusinesslayer.cpp
+    Services/doctorbusinesslayer.h
 
     Utilities/sortingutils.h
 
@@ -66,6 +66,7 @@ target_include_directories(DavidPharmacyEleven PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/Doctor
     ${CMAKE_CURRENT_SOURCE_DIR}/DTOs
     ${CMAKE_CURRENT_SOURCE_DIR}/Repositories
+    ${CMAKE_CURRENT_SOURCE_DIR}/Services
     ${CMAKE_CURRENT_SOURCE_DIR}/Utilities
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/ManageDoctorsWindow
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/MainWindow

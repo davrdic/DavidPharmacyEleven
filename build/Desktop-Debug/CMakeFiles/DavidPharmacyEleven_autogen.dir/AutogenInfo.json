@@ -84,18 +84,6 @@
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/Doctor/doctor.h",
-			"MU",
-			"YQF7VEYMFC/moc_doctor.cpp",
-			null
-		],
-		[
-			"/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h",
-			"MU",
-			"YQF7VEYMFC/moc_doctorbusinesslayer.cpp",
-			null
-		],
-		[
 			"/home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h",
 			"MU",
 			"YQF7VEYMFC/moc_doctoreditdialog.cpp",
@@ -105,6 +93,12 @@
 			"/home/david/DavidPharmacyEleven/Repositories/doctorrepository.h",
 			"MU",
 			"7LASNSSLXA/moc_doctorrepository.cpp",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Services/doctorbusinesslayer.h",
+			"MU",
+			"4VYEQU4VHD/moc_doctorbusinesslayer.cpp",
 			null
 		],
 		[
@@ -142,6 +136,7 @@
 		"/home/david/DavidPharmacyEleven/Doctor",
 		"/home/david/DavidPharmacyEleven/DTOs",
 		"/home/david/DavidPharmacyEleven/Repositories",
+		"/home/david/DavidPharmacyEleven/Services",
 		"/home/david/DavidPharmacyEleven/Utilities",
 		"/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow",
 		"/home/david/DavidPharmacyEleven/UI/MainWindow",
@@ -189,14 +184,13 @@
 			"MU",
 			null
 		],
-		[ "/home/david/DavidPharmacyEleven/Doctor/doctor.cpp", "MU", null ],
 		[
-			"/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp",
+			"/home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp",
+			"/home/david/DavidPharmacyEleven/Services/doctorbusinesslayer.cpp",
 			"MU",
 			null
 		],

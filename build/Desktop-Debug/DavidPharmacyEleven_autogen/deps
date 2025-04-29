@@ -2,13 +2,11 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/CMakeLists.txt \
 	/home/david/DavidPharmacyEleven/DTOs/doctordto.h \
 	/home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp \
-	/home/david/DavidPharmacyEleven/Doctor/doctor.cpp \
-	/home/david/DavidPharmacyEleven/Doctor/doctor.h \
-	/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp \
-	/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
 	/home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
 	/home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp \
 	/home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
+	/home/david/DavidPharmacyEleven/Services/doctorbusinesslayer.cpp \
+	/home/david/DavidPharmacyEleven/Services/doctorbusinesslayer.h \
 	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp \
 	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp \

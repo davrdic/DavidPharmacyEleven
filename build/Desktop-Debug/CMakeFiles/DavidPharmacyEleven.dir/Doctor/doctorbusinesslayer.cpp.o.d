@@ -2,7 +2,7 @@ CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o: \
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp \
  /usr/include/stdc-predef.h \
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h \
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h \
@@ -271,7 +271,7 @@ CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o: \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h \
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h

@@ -9,7 +9,7 @@ ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
     const char* database = std::getenv("database");
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
-    doctorService = new DoctorService(database, username, password);
+    doctorService = new DoctorRepository(database, username, password);
     doctorBusinessLayer = new DoctorBusinessLayer(doctorService);
 
     loadDoctorsIntoComboBox();

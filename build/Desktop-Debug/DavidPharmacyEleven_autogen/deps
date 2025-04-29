@@ -1,16 +1,16 @@
 DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/CMakeLists.txt \
-	/home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h \
+	/home/david/DavidPharmacyEleven/DTOs/doctordto.h \
 	/home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp \
 	/home/david/DavidPharmacyEleven/Doctor/doctor.cpp \
 	/home/david/DavidPharmacyEleven/Doctor/doctor.h \
 	/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp \
 	/home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h \
 	/home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h \
-	/home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp \
-	/home/david/DavidPharmacyEleven/Doctor/doctorservice.h \
-	/home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp \
-	/home/david/DavidPharmacyEleven/MainWindow/mainwindow.h \
+	/home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp \
+	/home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
+	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp \
+	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
 	/home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
@@ -451,6 +451,6 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
-	/home/david/DavidPharmacyEleven/MainWindow/mainwindow.ui \
+	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.ui \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.ui \
 	/usr/bin/cmake

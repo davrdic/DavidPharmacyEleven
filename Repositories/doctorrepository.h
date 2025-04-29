@@ -1,16 +1,16 @@
-#ifndef DOCTORSERVICE_H
-#define DOCTORSERVICE_H
+#ifndef DOCTORREPOSITORY_H
+#define DOCTORREPOSITORY_H
 
 #include <QString>
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
-#include "DoctorDTO.h"
+#include "doctordto.h"
 
-class DoctorService {
+class DoctorRepository {
 public:
-    DoctorService(const QString& dbName, const QString& user, const QString& password);
+    DoctorRepository(const QString& dbName, const QString& user, const QString& password);
 
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
@@ -21,4 +21,4 @@ private:
     QSqlDatabase db;
 };
 
-#endif // DOCTORSERVICE_H
+#endif

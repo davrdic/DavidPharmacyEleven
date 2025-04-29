@@ -1,6 +1,6 @@
-#include "doctorservice.h"
+#include "doctorrepository.h"
 
-DoctorService::DoctorService(const QString& dbName, const QString& user, const QString& password) {
+DoctorRepository::DoctorRepository(const QString& dbName, const QString& user, const QString& password) {
     db = QSqlDatabase::addDatabase("QPSQL");  // Use PostgreSQL
     db.setHostName("localhost");
     db.setDatabaseName(dbName);
@@ -19,7 +19,7 @@ DoctorService::DoctorService(const QString& dbName, const QString& user, const Q
     }
 }
 
-bool DoctorService::addDoctor(const DoctorDTO& doctor) {
+bool DoctorRepository::addDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
     query.prepare("INSERT INTO doctor (name) VALUES (:name)");
     query.bindValue(":name", doctor.name);
@@ -31,7 +31,7 @@ bool DoctorService::addDoctor(const DoctorDTO& doctor) {
     return true;
 }
 
-bool DoctorService::editDoctor(const DoctorDTO& doctor) {
+bool DoctorRepository::editDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
     query.prepare("UPDATE doctor SET name = :name WHERE id = :id");
     query.bindValue(":name", doctor.name);
@@ -44,7 +44,7 @@ bool DoctorService::editDoctor(const DoctorDTO& doctor) {
     return true;
 }
 
-bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
+bool DoctorRepository::deleteDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
     query.prepare("DELETE FROM doctor WHERE id = :id");
     query.bindValue(":id", doctor.id);
@@ -56,7 +56,7 @@ bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
     return true;
 }
 
-QList<DoctorDTO> DoctorService::getDoctorsList() const {
+QList<DoctorDTO> DoctorRepository::getDoctorsList() const {
     QList<DoctorDTO> doctors;
 
     QSqlQuery query("SELECT id, name FROM doctor"); // Fetch both id and name

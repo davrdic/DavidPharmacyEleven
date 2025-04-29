@@ -28,7 +28,7 @@ private slots:
 
 private:
     Ui::ManageDoctorsWindow *ui;
-    DoctorService* doctorService;
+    DoctorRepository* doctorService;
     DoctorBusinessLayer* doctorBusinessLayer;
     DoctorEditDialog* doctorEditDialog;
     QStringList doctorList;

@@ -1,6 +1,6 @@
 #include "doctorbusinesslayer.h"
 
-DoctorBusinessLayer::DoctorBusinessLayer(DoctorService* doctorService)
+DoctorBusinessLayer::DoctorBusinessLayer(DoctorRepository* doctorService)
     : m_doctorService(doctorService) {}
 
 bool DoctorBusinessLayer::addDoctor(const DoctorDTO& doctor) {

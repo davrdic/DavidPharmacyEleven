@@ -3,18 +3,18 @@
 
 /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/timestamp
  /home/david/DavidPharmacyEleven/CMakeLists.txt
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctor.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctor.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.ui
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.ui
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.ui
@@ -458,18 +458,18 @@
  /usr/share/cmake-3.28/Modules/Platform/Linux.cmake
  /usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake
  /home/david/DavidPharmacyEleven/CMakeLists.txt
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctor.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctor.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.ui
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.ui
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.ui
@@ -913,18 +913,18 @@
  /usr/share/cmake-3.28/Modules/Platform/Linux.cmake
  /usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake
  /home/david/DavidPharmacyEleven/CMakeLists.txt
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/DoctorEditDialog.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctor.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctor.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.ui
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.ui
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.ui
@@ -1370,16 +1370,16 @@
 
 CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/mocs_compilation.cpp
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/moc_managedoctorswindow.cpp
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.h
- /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/WCPGUQ57CZ/moc_mainwindow.cpp
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h
+ /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/S5QT2ZAYUE/moc_mainwindow.cpp
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/YQF7VEYMFC/moc_doctoreditdialog.cpp
  /usr/include/alloca.h
@@ -2253,9 +2253,9 @@ CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctor.cpp.o
 
 CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.cpp
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
@@ -2574,10 +2574,10 @@ CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorbusinesslayer.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
-CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.cpp
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
+CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -2894,13 +2894,13 @@ CMakeFiles/DavidPharmacyEleven.dir/Doctor/doctorservice.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
-CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.cpp
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.h
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/include/ui_mainwindow.h
@@ -3295,10 +3295,10 @@ CMakeFiles/DavidPharmacyEleven.dir/MainWindow/mainwindow.cpp.o
 
 CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/include/ui_managedoctorswindow.h
@@ -3694,11 +3694,11 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cp
 
 CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o
  /home/david/DavidPharmacyEleven/main.cpp
- /home/david/DavidPharmacyEleven/Doctor/DoctorDTO.h
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h
  /home/david/DavidPharmacyEleven/Doctor/doctorbusinesslayer.h
  /home/david/DavidPharmacyEleven/Doctor/doctoreditdialog.h
- /home/david/DavidPharmacyEleven/Doctor/doctorservice.h
- /home/david/DavidPharmacyEleven/MainWindow/mainwindow.h
+ /home/david/DavidPharmacyEleven/Repositories/doctorrepository.h
+ /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h
  /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  /home/david/DavidPharmacyEleven/Utilities/sortingutils.h
  /usr/include/alloca.h

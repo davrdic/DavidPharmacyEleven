@@ -23,11 +23,15 @@ set(PROJECT_SOURCES
     Doctor/doctor.h
     Doctor/doctorbusinesslayer.cpp
     Doctor/doctorbusinesslayer.h
-    Doctor/DoctorDTO.h
-    Doctor/doctorservice.cpp
-    Doctor/doctorservice.h
     Doctor/doctoreditdialog.h
     Doctor/DoctorEditDialog.cpp
+
+    #DTOs
+    DTOs/doctordto.h
+
+    # Repositories
+    Repositories/doctorrepository.cpp
+    Repositories/doctorrepository.h
 
     Utilities/sortingutils.h
 
@@ -35,9 +39,9 @@ set(PROJECT_SOURCES
     UI/ManageDoctorsWindow/managedoctorswindow.h
     UI/ManageDoctorsWindow/managedoctorswindow.ui
 
-    MainWindow/mainwindow.cpp
-    MainWindow/mainwindow.h
-    MainWindow/mainwindow.ui
+    UI/MainWindow/mainwindow.cpp
+    UI/MainWindow/mainwindow.h
+    UI/MainWindow/mainwindow.ui
 )
 
 # Create executable
@@ -60,9 +64,11 @@ target_link_libraries(DavidPharmacyEleven PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
 # Include directories (so all headers are found properly)
 target_include_directories(DavidPharmacyEleven PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/Doctor
+    ${CMAKE_CURRENT_SOURCE_DIR}/DTOs
+    ${CMAKE_CURRENT_SOURCE_DIR}/Repositories
     ${CMAKE_CURRENT_SOURCE_DIR}/Utilities
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/ManageDoctorsWindow
-    ${CMAKE_CURRENT_SOURCE_DIR}/MainWindow
+    ${CMAKE_CURRENT_SOURCE_DIR}/UI/MainWindow
 )
 
 # macOS bundle identifier (for Mac/iOS if needed)

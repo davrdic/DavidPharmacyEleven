@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++-13
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/include -I/home/david/DavidPharmacyEleven/Doctor -I/home/david/DavidPharmacyEleven/Utilities -I/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow -I/home/david/DavidPharmacyEleven/MainWindow -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql
+CXX_INCLUDES = -I/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/include -I/home/david/DavidPharmacyEleven/Doctor -I/home/david/DavidPharmacyEleven/DTOs -I/home/david/DavidPharmacyEleven/Repositories -I/home/david/DavidPharmacyEleven/Utilities -I/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow -I/home/david/DavidPharmacyEleven/UI/MainWindow -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql
 
 CXX_FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
 

@@ -1,12 +1,12 @@
 #ifndef DOCTORBUSINESSLAYER_H
 #define DOCTORBUSINESSLAYER_H
 
-#include "doctorservice.h"
+#include "doctorrepository.h"
 #include "sortingutils.h"
 
 class DoctorBusinessLayer {
 public:
-    DoctorBusinessLayer(DoctorService* doctorService);
+    DoctorBusinessLayer(DoctorRepository* doctorService);
 
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
@@ -14,7 +14,7 @@ public:
     QList<DoctorDTO> getDoctorList() const;
 
 private:
-    DoctorService* m_doctorService;
+    DoctorRepository* m_doctorService;
 };
 
 #endif // DOCTORBUSINESSLAYER_H

@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "DavidPharmacyEleven_autogen/timestamp" "custom" "DavidPharmacyEleven_autogen/deps"
   "/home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/mocs_compilation.cpp" "CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o.d"
-  "/home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp" "CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o.d"
+  "/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp" "CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o.d"
   "/home/david/DavidPharmacyEleven/Services/doctorservice.cpp" "CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o.d"
   "/home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o.d"
   "/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o.d"

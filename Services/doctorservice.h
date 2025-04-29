@@ -3,8 +3,8 @@
 
 #include <memory>
 
-#include "IRepositories/idoctorrepository.h"  // Use the interface instead of the implementation
-#include "doctordto.h"           // Include your DoctorDTO header
+#include "IRepositories/idoctorrepository.h"
+#include "doctordto.h"
 
 class DoctorService {
 public:

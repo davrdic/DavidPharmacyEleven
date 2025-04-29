@@ -23,8 +23,8 @@ set(PROJECT_SOURCES
     DTOs/doctordto.h
 
     # Repositories - Database Communications
-    Repositories/doctorrepository.cpp
-    Repositories/doctorrepository.h
+    Repositories/PostgresQSqlRepositories/doctorrepository.cpp
+    Repositories/PostgresQSqlRepositories/doctorrepository.h
 
     # Services - Business Logic
     Services/doctorservice.cpp

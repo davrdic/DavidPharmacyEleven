@@ -16,7 +16,7 @@ public:
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
     bool deleteDoctor(const DoctorDTO& doctor);
-    QList<DoctorDTO>getDoctorsList() const;
+    QList<DoctorDTO> getDoctorsList() const;
 
 private:
     QSqlDatabase db;

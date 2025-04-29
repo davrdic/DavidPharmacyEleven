@@ -2,8 +2,8 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/CMakeLists.txt \
 	/home/david/DavidPharmacyEleven/DTOs/doctordto.h \
 	/home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
-	/home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp \
-	/home/david/DavidPharmacyEleven/Repositories/doctorrepository.h \
+	/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp \
+	/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.h \
 	/home/david/DavidPharmacyEleven/Services/doctorservice.cpp \
 	/home/david/DavidPharmacyEleven/Services/doctorservice.h \
 	/home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp \

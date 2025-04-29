@@ -104,19 +104,19 @@ CMakeFiles/DavidPharmacyEleven.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/main.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/main.cpp -o CMakeFiles/DavidPharmacyEleven.dir/main.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o: /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp
-CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o -c /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o: /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp
+CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o -c /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp
 
-CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp > CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.i
+CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp > CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.i
 
-CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp -o CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.s
+CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp -o CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.s
 
 CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
 CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o: /home/david/DavidPharmacyEleven/Services/doctorservice.cpp
@@ -178,7 +178,7 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdial
 DavidPharmacyEleven_OBJECTS = \
 "CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o" \
@@ -189,7 +189,7 @@ DavidPharmacyEleven_EXTERNAL_OBJECTS =
 
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Repositories/doctorrepository.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorrepository.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o

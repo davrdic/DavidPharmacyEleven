@@ -90,9 +90,9 @@
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/Repositories/doctorrepository.h",
+			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.h",
 			"MU",
-			"7LASNSSLXA/moc_doctorrepository.cpp",
+			"KBE2PFRXHE/moc_doctorrepository.cpp",
 			null
 		],
 		[
@@ -186,7 +186,7 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/david/DavidPharmacyEleven/Repositories/doctorrepository.cpp",
+			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp",
 			"MU",
 			null
 		],

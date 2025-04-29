@@ -1,6 +1,6 @@
 #include "managedoctorswindow.h"
 #include "ui_managedoctorswindow.h"
-#include "doctorrepository.h"
+#include "PostgresQSqlRepositories/doctorrepository.h"
 
 ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
     : QWidget(parent)
@@ -56,7 +56,6 @@ void ManageDoctorsWindow::on_addDoctorButton_clicked()
         qDebug() << "Failed to add doctor.";
     }
 }
-
 
 void ManageDoctorsWindow::on_editDoctorButton_clicked()
 {

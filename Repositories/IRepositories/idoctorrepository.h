@@ -2,6 +2,7 @@
 #define IDOCTORREPOSITORY_H
 
 #include "doctordto.h"
+#include <QString>
 
 class IDoctorRepository {
 public:

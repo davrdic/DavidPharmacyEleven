@@ -1079,8 +1079,9 @@
 /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp
 /home/david/DavidPharmacyEleven/Services/doctorservice.h
 /home/david/DavidPharmacyEleven/Utilities/sortingutils.h
-/home/david/DavidPharmacyEleven/Services/doctorservice.cpp
-/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.h
+/home/david/DavidPharmacyEleven/Utilities/stringutils.h
 /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h
+/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.h
+/home/david/DavidPharmacyEleven/Services/doctorservice.cpp
 /home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp
  uic:ui_mainwindow.h

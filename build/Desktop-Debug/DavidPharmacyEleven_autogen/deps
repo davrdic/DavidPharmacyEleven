@@ -13,6 +13,7 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
 	/home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
+	/home/david/DavidPharmacyEleven/Utilities/stringutils.h \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeSystem.cmake \

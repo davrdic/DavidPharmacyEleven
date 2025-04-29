@@ -271,4 +271,5 @@ CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/doctorr
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
- /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
+ /home/david/DavidPharmacyEleven/Utilities/stringutils.h

@@ -58,7 +58,8 @@ else()
         add_library(DavidPharmacyEleven SHARED ${PROJECT_SOURCES})
     else()
         add_executable(DavidPharmacyEleven ${PROJECT_SOURCES}
-            Repositories/IRepositories/idoctorrepository.h)
+            Repositories/IRepositories/idoctorrepository.h
+            Utilities/stringutils.h)
     endif()
 endif()
 

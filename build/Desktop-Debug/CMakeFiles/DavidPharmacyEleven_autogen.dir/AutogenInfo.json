@@ -124,6 +124,12 @@
 			"MU",
 			"NGZIYILPTJ/moc_sortingutils.cpp",
 			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Utilities/stringutils.h",
+			"MU",
+			"NGZIYILPTJ/moc_stringutils.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],

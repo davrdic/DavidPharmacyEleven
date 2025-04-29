@@ -38,13 +38,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 94,
+				"line" : 95,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 66,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
@@ -82,7 +82,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 69,
+				"line" : 70,
 				"parent" : 0
 			}
 		]
@@ -300,7 +300,8 @@
 				14,
 				16,
 				17,
-				18
+				18,
+				19
 			]
 		},
 		{
@@ -309,14 +310,14 @@
 			[
 				10,
 				13,
-				19
+				20
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				20
+				21
 			]
 		}
 	],
@@ -413,6 +414,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Repositories/IRepositories/idoctorrepository.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Utilities/stringutils.h",
 			"sourceGroupIndex" : 1
 		},
 		{

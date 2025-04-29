@@ -1,7 +1,7 @@
 #pragma once
-#include <QString>
+#include <string>
 
 struct DoctorDTO {
     int id = -1;              // Default invalid ID
-    QString name;
+    std::string name;
 };

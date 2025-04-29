@@ -1,6 +1,7 @@
 #include "managedoctorswindow.h"
 #include "ui_managedoctorswindow.h"
 #include "PostgresQSqlRepositories/doctorrepository.h"
+#include "stringutils.h"
 
 ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
     : QWidget(parent)
@@ -40,7 +41,7 @@ void ManageDoctorsWindow::loadDoctorsIntoComboBox()
 
     // Add doctors to the combo box
     for (const DoctorDTO& doctor : doctors) {
-        ui->doctorComboBox->addItem(doctor.name, doctor.id);
+        ui->doctorComboBox->addItem(StringUtils::toQString(doctor.name), doctor.id);
     }
 }
 
@@ -48,7 +49,7 @@ void ManageDoctorsWindow::on_addDoctorButton_clicked()
 {
     QString doctorName = ui->doctorNameLineEdit->text();
     DoctorDTO doctor;
-    doctor.name = doctorName;
+    doctor.name = StringUtils::toStdString(doctorName);
     if (doctorService->addDoctor(doctor)) {
         qDebug() << "Doctor added successfully!";
         loadDoctorsIntoComboBox(); // Refresh the list
@@ -73,7 +74,7 @@ void ManageDoctorsWindow::on_editDoctorButton_clicked()
 
             if (!newDoctorName.isEmpty()) {
                 DoctorDTO doctor;
-                doctor.name = newDoctorName;
+                doctor.name = StringUtils::toStdString(newDoctorName);
                 doctor.id = doctorId;
 
                 if (doctorService->editDoctor(doctor)) {

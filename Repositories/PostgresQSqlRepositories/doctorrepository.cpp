@@ -1,4 +1,5 @@
 #include "doctorrepository.h"
+#include "stringutils.h"
 
 DoctorRepository::DoctorRepository(const QString& dbName, const QString& user, const QString& password) {
     db = QSqlDatabase::addDatabase("QPSQL");  // Use PostgreSQL
@@ -22,7 +23,7 @@ DoctorRepository::DoctorRepository(const QString& dbName, const QString& user, c
 bool DoctorRepository::addDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
     query.prepare("INSERT INTO doctor (name) VALUES (:name)");
-    query.bindValue(":name", doctor.name);
+    query.bindValue(":name", StringUtils::toQString(doctor.name));
 
     if (!query.exec()) {
         qDebug() << "Error adding doctor:" << query.lastError();
@@ -34,7 +35,7 @@ bool DoctorRepository::addDoctor(const DoctorDTO& doctor) {
 bool DoctorRepository::editDoctor(const DoctorDTO& doctor) {
     QSqlQuery query;
     query.prepare("UPDATE doctor SET name = :name WHERE id = :id");
-    query.bindValue(":name", doctor.name);
+    query.bindValue(":name", StringUtils::toQString(doctor.name));
     query.bindValue(":id", doctor.id);
 
     if (!query.exec()) {
@@ -63,7 +64,7 @@ QList<DoctorDTO> DoctorRepository::getDoctorsList() const {
     while (query.next()) {
         DoctorDTO doctor;
         doctor.id = query.value(0).toInt();  // The id is stored in the first column
-        doctor.name = query.value(1).toString();  // The name is stored in the second column
+        doctor.name = StringUtils::toStdString(query.value(1).toString());  // The name is stored in the second column
 
         doctors.append(doctor);  // Add the DTO to the list
     }

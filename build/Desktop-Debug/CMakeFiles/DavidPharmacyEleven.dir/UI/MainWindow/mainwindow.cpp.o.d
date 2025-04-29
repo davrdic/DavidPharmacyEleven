@@ -292,8 +292,6 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o: \
  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
  /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \

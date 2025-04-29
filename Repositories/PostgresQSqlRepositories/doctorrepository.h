@@ -8,6 +8,7 @@
 #include <QDebug>
 #include "doctordto.h"
 #include "IRepositories/idoctorrepository.h"
+#include <vector>
 
 class DoctorRepository : public IDoctorRepository {
 public:
@@ -16,7 +17,7 @@ public:
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
     bool deleteDoctor(const DoctorDTO& doctor);
-    QList<DoctorDTO> getDoctorsList() const;
+    std::vector<DoctorDTO> getDoctorsList() const;
 
 private:
     QSqlDatabase db;

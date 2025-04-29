@@ -286,8 +286,6 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cp
  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
  /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
@@ -342,6 +340,8 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cp
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \

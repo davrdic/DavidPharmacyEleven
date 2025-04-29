@@ -317,8 +317,6 @@ CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.
  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
  /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/moc_managedoctorswindow.cpp \
  /home/david/DavidPharmacyEleven/build/Desktop-Debug/DavidPharmacyEleven_autogen/EV3KAGNANQ/../../../../UI/ManageDoctorsWindow/managedoctorswindow.h

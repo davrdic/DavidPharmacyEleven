@@ -27,6 +27,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    ManageDoctorsWindow* manageDoctorsWindow;
+    ManageDoctorsWindow *manageDoctorsWindow;
 };
 #endif // MAINWINDOW_H

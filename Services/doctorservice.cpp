@@ -16,8 +16,8 @@ bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
     return iDoctorRepository->deleteDoctor(doctor);
 }
 
-QList<DoctorDTO> DoctorService::getDoctorList() const {
-    QList<DoctorDTO> doctorList = iDoctorRepository->getDoctorsList();
-    SortingUtils<DoctorDTO>::sortList(doctorList);
+std::vector<DoctorDTO> DoctorService::getDoctorList() const {
+    std::vector<DoctorDTO> doctorList = iDoctorRepository->getDoctorsList();
+    SortingUtils<DoctorDTO>::sortVectorByDTOName(doctorList);
     return doctorList;
 }

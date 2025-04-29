@@ -57,8 +57,8 @@ bool DoctorRepository::deleteDoctor(const DoctorDTO& doctor) {
     return true;
 }
 
-QList<DoctorDTO> DoctorRepository::getDoctorsList() const {
-    QList<DoctorDTO> doctors;
+std::vector<DoctorDTO> DoctorRepository::getDoctorsList() const {
+    std::vector<DoctorDTO> doctors;
 
     QSqlQuery query("SELECT id, name FROM doctor"); // Fetch both id and name
     while (query.next()) {
@@ -66,7 +66,7 @@ QList<DoctorDTO> DoctorRepository::getDoctorsList() const {
         doctor.id = query.value(0).toInt();  // The id is stored in the first column
         doctor.name = StringUtils::toStdString(query.value(1).toString());  // The name is stored in the second column
 
-        doctors.append(doctor);  // Add the DTO to the list
+        doctors.push_back(doctor);  // Add the DTO to the list
     }
     return doctors;
 }

@@ -37,7 +37,7 @@ void ManageDoctorsWindow::loadDoctorsIntoComboBox()
     // Add the default placeholder value to the combo box
     ui->doctorComboBox->addItem("           --Select Doctor--", -1);  // -1 or any value that doesn't tie to an actual doctor ID
 
-    QList<DoctorDTO> doctors = doctorService->getDoctorList();
+    std::vector<DoctorDTO> doctors = doctorService->getDoctorList();
 
     // Add doctors to the combo box
     for (const DoctorDTO& doctor : doctors) {

@@ -5,6 +5,7 @@
 
 #include "IRepositories/idoctorrepository.h"
 #include "doctordto.h"
+#include <vector>
 
 class DoctorService {
 public:
@@ -13,7 +14,7 @@ public:
     bool addDoctor(const DoctorDTO& doctor);
     bool editDoctor(const DoctorDTO& doctor);
     bool deleteDoctor(const DoctorDTO& doctor);
-    QList<DoctorDTO> getDoctorList() const;
+    std::vector<DoctorDTO> getDoctorList() const;
 
 private:
     // Store a shared pointer to the repository interface

@@ -160,10 +160,24 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp -o CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.s
 
+CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o: /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp
+CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o -c /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp
+
+CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp > CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.i
+
+CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp -o CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.s
+
 CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
 CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o: /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp
 CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o -c /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp
 
 CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.i: cmake_force
@@ -174,10 +188,24 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdial
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp -o CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.s
 
+CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
+CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o: /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
+CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o -c /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
+
+CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp > CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.i
+
+CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp -o CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.s
+
 CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
 CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o: /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp
 CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o -c /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp
 
 CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.i: cmake_force
@@ -191,7 +219,7 @@ CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/custome
 CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
 CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o: /home/david/DavidPharmacyEleven/Services/customerservice.cpp
 CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o -c /home/david/DavidPharmacyEleven/Services/customerservice.cpp
 
 CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.i: cmake_force
@@ -202,20 +230,6 @@ CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/Services/customerservice.cpp -o CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.s
 
-CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/flags.make
-CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o: /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
-CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o: CMakeFiles/DavidPharmacyEleven.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o -MF CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o.d -o CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o -c /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
-
-CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp > CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.i
-
-CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp -o CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.s
-
 # Object files for target DavidPharmacyEleven
 DavidPharmacyEleven_OBJECTS = \
 "CMakeFiles/DavidPharmacyEleven.dir/DavidPharmacyEleven_autogen/mocs_compilation.cpp.o" \
@@ -224,10 +238,11 @@ DavidPharmacyEleven_OBJECTS = \
 "CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o" \
+"CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o" \
 "CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o" \
-"CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o"
+"CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o"
 
 # External object files for target DavidPharmacyEleven
 DavidPharmacyEleven_EXTERNAL_OBJECTS =
@@ -238,17 +253,18 @@ DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSq
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o
+DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o
-DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/build.make
 DavidPharmacyEleven: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 DavidPharmacyEleven: /usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.13
 DavidPharmacyEleven: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 DavidPharmacyEleven: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 DavidPharmacyEleven: CMakeFiles/DavidPharmacyEleven.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable DavidPharmacyEleven"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/david/DavidPharmacyEleven/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable DavidPharmacyEleven"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DavidPharmacyEleven.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

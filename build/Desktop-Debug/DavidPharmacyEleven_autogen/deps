@@ -18,6 +18,8 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h \
 	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp \
 	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.h \
+	/home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp \
+	/home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.h \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h \
 	/home/david/DavidPharmacyEleven/Utilities/sortingutils.h \
@@ -438,5 +440,6 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
 	/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.ui \
+	/home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.ui \
 	/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.ui \
 	/usr/bin/cmake

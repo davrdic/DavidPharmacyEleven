@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "managedoctorswindow.h"
+#include "managecustomerswindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,8 +26,11 @@ private slots:
 
     void on_manageDoctorsBackClicked();
 
+    void on_manageCustomersButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     ManageDoctorsWindow *manageDoctorsWindow;
+    ManageCustomersWindow *manageCustomersWindow;
 };
 #endif // MAINWINDOW_H

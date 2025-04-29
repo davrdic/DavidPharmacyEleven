@@ -2,4 +2,5 @@
 #include "YSJPZV7PCJ/moc_customereditdialog.cpp"
 #include "7AVWINLNAW/moc_doctoreditdialog.cpp"
 #include "S5QT2ZAYUE/moc_mainwindow.cpp"
+#include "IPGVJ4D5DB/moc_managecustomerswindow.cpp"
 #include "EV3KAGNANQ/moc_managedoctorswindow.cpp"

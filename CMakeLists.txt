@@ -43,9 +43,16 @@ set(PROJECT_SOURCES
     UI/ManageDoctorsWindow/managedoctorswindow.h
     UI/ManageDoctorsWindow/managedoctorswindow.ui
 
+    UI/ManageCustomersWindow/managecustomerswindow.cpp
+    UI/ManageCustomersWindow/managecustomerswindow.h
+    UI/ManageCustomersWindow/managecustomerswindow.ui
+
     # Custom Dialogs
-    UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h
     UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp
+    UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h
+
+    UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
+    UI/CustomDialogs/CustomerDialogs/customereditdialog.h
 )
 
 # Create executable
@@ -66,6 +73,8 @@ else()
             Repositories/PostgresQSqlRepositories/customerqsqlrepository.h Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp
             Services/customerservice.h Services/customerservice.cpp
             UI/CustomDialogs/CustomerDialogs/customereditdialog.h UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
+            UI/ManageCustomersWindow/managecustomerswindow.h UI/ManageCustomersWindow/managecustomerswindow.cpp UI/ManageCustomersWindow/managecustomerswindow.ui
+
 
         )
     endif()
@@ -82,6 +91,7 @@ target_include_directories(DavidPharmacyEleven PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/Utilities
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/ManageDoctorsWindow
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/MainWindow
+    ${CMAKE_CURRENT_SOURCE_DIR}/UI/ManageCustomersWindow
     ${CMAKE_CURRENT_SOURCE_DIR}/UI/CustomDialogs/DoctorDialogs
 )
 

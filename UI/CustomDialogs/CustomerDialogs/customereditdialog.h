@@ -13,6 +13,7 @@ class CustomerEditDialog : public QDialog
 
 public:
     explicit CustomerEditDialog(const QString& customerName, QWidget* parent = nullptr);
+    ~CustomerEditDialog();
 
     QString getNewCustomerName() const;
 

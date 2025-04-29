@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DavidPharmacyEleven_autogen"
   "DavidPharmacyEleven_autogen/include/UI/MainWindow/ui_mainwindow.h"
+  "DavidPharmacyEleven_autogen/include/UI/ManageCustomersWindow/ui_managecustomerswindow.h"
   "DavidPharmacyEleven_autogen/include/UI/ManageDoctorsWindow/ui_managedoctorswindow.h"
   "DavidPharmacyEleven_autogen/mocs_compilation.cpp"
   "DavidPharmacyEleven_autogen/timestamp"

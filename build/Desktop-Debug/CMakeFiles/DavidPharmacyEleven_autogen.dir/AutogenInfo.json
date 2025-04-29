@@ -144,6 +144,12 @@
 			null
 		],
 		[
+			"/home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.h",
+			"MU",
+			"IPGVJ4D5DB/moc_managecustomerswindow.cpp",
+			null
+		],
+		[
 			"/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h",
 			"MU",
 			"EV3KAGNANQ/moc_managedoctorswindow.cpp",
@@ -181,6 +187,7 @@
 		"/home/david/DavidPharmacyEleven/Utilities",
 		"/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow",
 		"/home/david/DavidPharmacyEleven/UI/MainWindow",
+		"/home/david/DavidPharmacyEleven/UI/ManageCustomersWindow",
 		"/home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
@@ -253,6 +260,11 @@
 		],
 		[
 			"/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp",
 			"MU",
 			null
 		],

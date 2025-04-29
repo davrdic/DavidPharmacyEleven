@@ -25,7 +25,7 @@
            <rect>
             <x>20</x>
             <y>20</y>
-            <width>121</width>
+            <width>141</width>
             <height>26</height>
            </rect>
           </property>
@@ -33,8 +33,22 @@
            <string>Manage Doctors</string>
           </property>
          </widget>
+         <widget class="QPushButton" name="manageCustomersButton">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>141</width>
+            <height>26</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Manage Customers</string>
+          </property>
+         </widget>
         </widget>
         <widget class="ManageDoctorsWindow" name="page_2"/>
+        <widget class="ManageCustomersWindow" name="page_3"/>
        </widget>
       </item>
      </layout>
@@ -58,6 +72,12 @@
    <class>ManageDoctorsWindow</class>
    <extends>QWidget</extends>
    <header>managedoctorswindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ManageCustomersWindow</class>
+   <extends>QWidget</extends>
+   <header>managecustomerswindow.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

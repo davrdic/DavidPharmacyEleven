@@ -13,6 +13,7 @@ class DoctorEditDialog : public QDialog
 
 public:
     explicit DoctorEditDialog(const QString& doctorName, QWidget* parent = nullptr);
+    ~DoctorEditDialog();
 
     QString getNewDoctorName() const;
 

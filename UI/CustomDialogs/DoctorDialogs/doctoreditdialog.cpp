@@ -29,6 +29,9 @@ DoctorEditDialog::DoctorEditDialog(const QString& doctorName, QWidget* parent)
     setWindowTitle(tr("Edit Doctor"));
 }
 
+DoctorEditDialog::~DoctorEditDialog() {
+}
+
 QString DoctorEditDialog::getNewDoctorName() const {
     return doctorNameLineEdit->text();
 }

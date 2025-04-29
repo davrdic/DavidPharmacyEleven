@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp.o.d"
   "/home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o.d"
   "/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o.d"
+  "/home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o.d"
   "/home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp" "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o.d"
   "/home/david/DavidPharmacyEleven/main.cpp" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o" "gcc" "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o.d"
   )

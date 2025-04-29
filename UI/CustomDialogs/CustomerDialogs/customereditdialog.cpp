@@ -29,6 +29,8 @@ CustomerEditDialog::CustomerEditDialog(const QString& customerName, QWidget* par
     setWindowTitle(tr("Edit Customer"));
 }
 
+CustomerEditDialog::~CustomerEditDialog() {}
+
 QString CustomerEditDialog::getNewCustomerName() const {
     return customerNameLineEdit->text();
 }

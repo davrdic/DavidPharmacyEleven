@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp.o.d"
   "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o"
   "CMakeFiles/DavidPharmacyEleven.dir/UI/MainWindow/mainwindow.cpp.o.d"
+  "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o"
+  "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindow.cpp.o.d"
   "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o"
   "CMakeFiles/DavidPharmacyEleven.dir/UI/ManageDoctorsWindow/managedoctorswindow.cpp.o.d"
   "CMakeFiles/DavidPharmacyEleven.dir/main.cpp.o"

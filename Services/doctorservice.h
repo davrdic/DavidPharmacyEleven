@@ -12,7 +12,7 @@ public:
     // Constructor, accept shared pointer to repository
     DoctorService(std::shared_ptr<IDoctorRepository> iDoctorRepository);
     bool addDoctor(const DoctorDTO& doctor);
-    bool editDoctor(const DoctorDTO& doctor);
+    bool updateDoctor(const DoctorDTO& doctor);
     bool deleteDoctor(const DoctorDTO& doctor);
     std::vector<DoctorDTO> getDoctorList() const;
 

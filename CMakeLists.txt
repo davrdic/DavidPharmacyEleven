@@ -21,10 +21,11 @@ set(PROJECT_SOURCES
 
     #DTOs
     DTOs/doctordto.h
+    DTOs/customerdto.h
 
     # Repositories - Database Communications
-    Repositories/PostgresQSqlRepositories/doctorrepository.cpp
-    Repositories/PostgresQSqlRepositories/doctorrepository.h
+    Repositories/PostgresQSqlRepositories/doctorqsqlrepository.cpp
+    Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h
 
     # Services - Business Logic
     Services/doctorservice.cpp
@@ -59,7 +60,14 @@ else()
     else()
         add_executable(DavidPharmacyEleven ${PROJECT_SOURCES}
             Repositories/IRepositories/idoctorrepository.h
-            Utilities/stringutils.h)
+            Utilities/stringutils.h
+            DTOs/customerdto.h
+            Repositories/IRepositories/icustomerrepository.h
+            Repositories/PostgresQSqlRepositories/customerqsqlrepository.h Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp
+            Services/customerservice.h Services/customerservice.cpp
+            UI/CustomDialogs/CustomerDialogs/customereditdialog.h UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
+
+        )
     endif()
 endif()
 

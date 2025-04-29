@@ -3,21 +3,18 @@
 
 #include <QString>
 #include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QSqlError>
-#include <QDebug>
 #include "doctordto.h"
 #include "IRepositories/idoctorrepository.h"
 #include <vector>
 
-class DoctorRepository : public IDoctorRepository {
+class DoctorQSqlRepository : public IDoctorRepository {
 public:
-    DoctorRepository(const QString& dbName, const QString& user, const QString& password);
+    DoctorQSqlRepository(const QString& dbName, const QString& user, const QString& password);
 
     bool addDoctor(const DoctorDTO& doctor);
-    bool editDoctor(const DoctorDTO& doctor);
+    bool updateDoctor(const DoctorDTO& doctor);
     bool deleteDoctor(const DoctorDTO& doctor);
-    std::vector<DoctorDTO> getDoctorsList() const;
+    std::vector<DoctorDTO> getDoctorList() const;
 
 private:
     QSqlDatabase db;

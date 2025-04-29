@@ -8,8 +8,8 @@ bool DoctorService::addDoctor(const DoctorDTO& doctor) {
     return iDoctorRepository->addDoctor(doctor);
 }
 
-bool DoctorService::editDoctor(const DoctorDTO& doctor) {
-    return iDoctorRepository->editDoctor(doctor);
+bool DoctorService::updateDoctor(const DoctorDTO& doctor) {
+    return iDoctorRepository->updateDoctor(doctor);
 }
 
 bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
@@ -17,7 +17,7 @@ bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
 }
 
 std::vector<DoctorDTO> DoctorService::getDoctorList() const {
-    std::vector<DoctorDTO> doctorList = iDoctorRepository->getDoctorsList();
+    std::vector<DoctorDTO> doctorList = iDoctorRepository->getDoctorList();
     SortingUtils<DoctorDTO>::sortVectorByDTOName(doctorList);
     return doctorList;
 }

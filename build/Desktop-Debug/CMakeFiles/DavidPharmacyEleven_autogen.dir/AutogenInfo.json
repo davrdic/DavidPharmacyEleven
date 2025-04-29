@@ -78,9 +78,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/david/DavidPharmacyEleven/DTOs/customerdto.h",
+			"MU",
+			"J6V3K6BGLQ/moc_customerdto.cpp",
+			null
+		],
+		[
 			"/home/david/DavidPharmacyEleven/DTOs/doctordto.h",
 			"MU",
 			"J6V3K6BGLQ/moc_doctordto.cpp",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h",
+			"MU",
+			"NZ4STNQU6W/moc_icustomerrepository.cpp",
 			null
 		],
 		[
@@ -90,15 +102,33 @@
 			null
 		],
 		[
-			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.h",
+			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.h",
 			"MU",
-			"KBE2PFRXHE/moc_doctorrepository.cpp",
+			"KBE2PFRXHE/moc_customerqsqlrepository.cpp",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h",
+			"MU",
+			"KBE2PFRXHE/moc_doctorqsqlrepository.cpp",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Services/customerservice.h",
+			"MU",
+			"4VYEQU4VHD/moc_customerservice.cpp",
 			null
 		],
 		[
 			"/home/david/DavidPharmacyEleven/Services/doctorservice.h",
 			"MU",
 			"4VYEQU4VHD/moc_doctorservice.cpp",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h",
+			"MU",
+			"YSJPZV7PCJ/moc_customereditdialog.cpp",
 			null
 		],
 		[
@@ -192,12 +222,27 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorrepository.cpp",
+			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/Services/customerservice.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/david/DavidPharmacyEleven/Services/doctorservice.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp",
 			"MU",
 			null
 		],

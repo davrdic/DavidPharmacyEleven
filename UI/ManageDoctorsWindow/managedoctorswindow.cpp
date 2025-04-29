@@ -1,6 +1,8 @@
+#include <QDebug>
+
 #include "managedoctorswindow.h"
 #include "ui_managedoctorswindow.h"
-#include "PostgresQSqlRepositories/doctorrepository.h"
+#include "PostgresQSqlRepositories/doctorqsqlrepository.h"
 #include "stringutils.h"
 
 ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
@@ -12,7 +14,7 @@ ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
 
-    doctorRepository = std::make_shared<DoctorRepository>(database, username, password);
+    doctorRepository = std::make_shared<DoctorQSqlRepository>(database, username, password);
 
     doctorService = new DoctorService(doctorRepository);
 
@@ -77,7 +79,7 @@ void ManageDoctorsWindow::on_editDoctorButton_clicked()
                 doctor.name = StringUtils::toStdString(newDoctorName);
                 doctor.id = doctorId;
 
-                if (doctorService->editDoctor(doctor)) {
+                if (doctorService->updateDoctor(doctor)) {
                     qDebug() << "Doctor updated successfully!";
                     loadDoctorsIntoComboBox(); // Refresh the combo box
                     editDialog.accept();  // Close the dialog on successful save

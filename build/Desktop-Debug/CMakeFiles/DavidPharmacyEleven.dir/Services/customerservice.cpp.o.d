@@ -1,7 +1,7 @@
-CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o: \
- /home/david/DavidPharmacyEleven/Services/doctorservice.cpp \
+CMakeFiles/DavidPharmacyEleven.dir/Services/customerservice.cpp.o: \
+ /home/david/DavidPharmacyEleven/Services/customerservice.cpp \
  /usr/include/stdc-predef.h \
- /home/david/DavidPharmacyEleven/Services/doctorservice.h \
+ /home/david/DavidPharmacyEleven/Services/customerservice.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,8 +116,8 @@ CMakeFiles/DavidPharmacyEleven.dir/Services/doctorservice.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
- /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
+ /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
+ /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \

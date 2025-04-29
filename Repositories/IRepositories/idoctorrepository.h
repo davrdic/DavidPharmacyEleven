@@ -8,9 +8,9 @@ class IDoctorRepository {
 public:
     virtual ~IDoctorRepository() = default;
     virtual bool addDoctor(const DoctorDTO& doctor) = 0;
-    virtual bool editDoctor(const DoctorDTO& doctor) = 0;
+    virtual bool updateDoctor(const DoctorDTO& doctor) = 0;
     virtual bool deleteDoctor(const DoctorDTO& doctor) = 0;
-    virtual std::vector<DoctorDTO> getDoctorsList() const = 0;
+    virtual std::vector<DoctorDTO> getDoctorList() const = 0;
 };
 
 #endif // IDOCTORREPOSITORY_H

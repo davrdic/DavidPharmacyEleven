@@ -1,22 +1,22 @@
-#include <QDebug>
-
 #include "managedoctorswindow.h"
 #include "ui_managedoctorswindow.h"
+
 #include "PostgresQSqlRepositories/doctorqsqlrepository.h"
-#include "stringutils.h"
+#include "stringutils.h" // TODO - Refactor Utilize ui adaptor to convert DTO to UI Q objects.
+#include <QDebug>
 
 ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::ManageDoctorsWindow)
+    : QWidget(parent),
+    ui(new Ui::ManageDoctorsWindow)
 {
     ui->setupUi(this);
     ui->doctorComboBox->setEditable(true);
+
     const char* database = std::getenv("database");
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
 
     doctorRepository = std::make_shared<DoctorQSqlRepository>(database, username, password);
-
     doctorService = new DoctorService(doctorRepository);
 
     loadDoctorsIntoComboBox();
@@ -24,8 +24,8 @@ ManageDoctorsWindow::ManageDoctorsWindow(QWidget *parent)
 
 ManageDoctorsWindow::~ManageDoctorsWindow()
 {
-    delete ui;
     delete doctorService;
+    delete ui;
 }
 
 void ManageDoctorsWindow::on_backButton_clicked()
@@ -37,73 +37,77 @@ void ManageDoctorsWindow::loadDoctorsIntoComboBox()
 {
     ui->doctorComboBox->clear();
     std::vector<DoctorDTO> doctors = doctorService->getDoctorList();
-    ui->doctorComboBox->addItem("", -1);
-    // Add doctors to the combo box
+
+    ui->doctorComboBox->addItem("", -1); // Blank option
+
     for (const DoctorDTO& doctor : doctors) {
         ui->doctorComboBox->addItem(StringUtils::toQString(doctor.name), doctor.id);
     }
 }
-
+// TODO Move conversion logic (ui adaptor).
 void ManageDoctorsWindow::on_addDoctorButton_clicked()
 {
     QString doctorName = ui->doctorNameLineEdit->text();
-    DoctorDTO doctor;
-    doctor.name = StringUtils::toStdString(doctorName);
-    if (doctorService->addDoctor(doctor)) {
-        qDebug() << "Doctor added successfully!";
-        loadDoctorsIntoComboBox(); // Refresh the list
-        ui->doctorNameLineEdit->clear();
-    } else {
-        qDebug() << "Failed to add doctor.";
+
+    if (!doctorName.isEmpty()) {
+        DoctorDTO doctor;
+        doctor.name = StringUtils::toStdString(doctorName);
+
+        if (doctorService->addDoctor(doctor)) {
+            qDebug() << "Doctor added successfully!";
+            loadDoctorsIntoComboBox();
+            ui->doctorNameLineEdit->clear();
+        } else {
+            qDebug() << "Failed to add doctor.";
+        }
     }
 }
-
+// TODO Move conversion and assignment logic. (ui adaptor)
 void ManageDoctorsWindow::on_editDoctorButton_clicked()
 {
-    // Get the currently selected doctor name from the combo box
-    QString oldDoctorName = ui->doctorComboBox->currentText();
     int doctorId = ui->doctorComboBox->currentData().toInt();
+    QString oldDoctorName = ui->doctorComboBox->currentText();
 
-    if (doctorId > 0 ) {
-        DoctorEditDialog editDialog(oldDoctorName, this);
+    if (doctorId <= 0)
+        return;
 
-        // Show the dialog and check if the user clicked save, cancel, or delete
-        connect(&editDialog, &DoctorEditDialog::saveClicked, this, [this, &editDialog]() {
-            QString newDoctorName = editDialog.getNewDoctorName();
-            int doctorId = ui->doctorComboBox->currentData().toInt();
+    DoctorEditDialog editDialog(oldDoctorName, this);
 
-            if (!newDoctorName.isEmpty()) {
-                DoctorDTO doctor;
-                doctor.name = StringUtils::toStdString(newDoctorName);
-                doctor.id = doctorId;
+    connect(&editDialog, &DoctorEditDialog::saveClicked, this, [this, &editDialog]() {
+        QString newDoctorName = editDialog.getNewDoctorName();
+        int doctorId = ui->doctorComboBox->currentData().toInt();
 
-                if (doctorService->updateDoctor(doctor)) {
-                    qDebug() << "Doctor updated successfully!";
-                    loadDoctorsIntoComboBox(); // Refresh the combo box
-                    editDialog.accept();  // Close the dialog on successful save
-                } else {
-                    qDebug() << "Failed to update doctor.";
-                }
-            }
-        });
-
-        connect(&editDialog, &DoctorEditDialog::cancelClicked, &editDialog, &QDialog::reject);
-
-        connect(&editDialog, &DoctorEditDialog::deleteClicked, this, [this, &editDialog]() {
+        if (!newDoctorName.isEmpty()) {
             DoctorDTO doctor;
-            doctor.id = ui->doctorComboBox->currentData().toInt();
+            doctor.id = doctorId;
+            doctor.name = StringUtils::toStdString(newDoctorName);
 
-            if (doctorService->deleteDoctor(doctor)) {
-                qDebug() << "Doctor deleted successfully!";
-                loadDoctorsIntoComboBox(); // Refresh the combo box
-                editDialog.accept();  // Close the dialog on successful save
+            if (doctorService->updateDoctor(doctor)) {
+                qDebug() << "Doctor updated successfully!";
+                loadDoctorsIntoComboBox();
+                editDialog.accept();
             } else {
-                qDebug() << "Failed to delete doctor.";
+                qDebug() << "Failed to update doctor.";
             }
-        });
+        }
+    });
 
-        // Execute the dialog
-        editDialog.exec();
-    }
+    connect(&editDialog, &DoctorEditDialog::cancelClicked, &editDialog, &QDialog::reject);
+
+    connect(&editDialog, &DoctorEditDialog::deleteClicked, this, [this, &editDialog]() {
+        int doctorId = ui->doctorComboBox->currentData().toInt();
+
+        DoctorDTO doctor;
+        doctor.id = doctorId;
+
+        if (doctorService->deleteDoctor(doctor)) {
+            qDebug() << "Doctor deleted successfully!";
+            loadDoctorsIntoComboBox();
+            editDialog.accept();
+        } else {
+            qDebug() << "Failed to delete doctor.";
+        }
+    });
+
+    editDialog.exec();
 }
-

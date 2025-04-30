@@ -52,12 +52,10 @@ private:
     Ui::ManageCustomersWindow *ui;
     CustomerService *customerService;
     std::shared_ptr<ICustomerRepository> customerRepository;
-    DoctorService *doctorService;
-    std::shared_ptr<IDoctorRepository> doctorRepository;
-    std::vector<DoctorDTO> doctorList;
+    std::vector<CustomerDTO> customerList;
 
     /**
-     * @brief Loads the list of customers and their associated doctors into the table widget.
+     * @brief Loads customers data into the table widget.
      */
     void loadCustomersIntoTableWidget();
 

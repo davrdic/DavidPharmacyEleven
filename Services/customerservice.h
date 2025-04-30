@@ -14,7 +14,7 @@ public:
     bool addCustomer(const CustomerDTO& customer);
     bool updateCustomer(const CustomerDTO& customer);
     bool deleteCustomer(const CustomerDTO& customer);
-    std::vector<CustomerDTO> getCustomerList() const;
+    std::vector<CustomerDTO> getAllCustomersData() const;
 
 private:
     // Store a shared pointer to the repository interface

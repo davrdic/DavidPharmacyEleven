@@ -23,9 +23,6 @@ set(PROJECT_SOURCES
     DTOs/doctordto.h
     DTOs/customerdto.h
 
-    #Helpers
-    Helpers/customeruiadapter.h
-
     # Repositories - Database Communications
     Repositories/PostgresQSqlRepositories/doctorqsqlrepository.cpp
     Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h
@@ -78,6 +75,7 @@ else()
             UI/CustomDialogs/CustomerDialogs/customereditdialog.h UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
             UI/ManageCustomersWindow/managecustomerswindow.h UI/ManageCustomersWindow/managecustomerswindow.cpp UI/ManageCustomersWindow/managecustomerswindow.ui
             Helpers/customeruiadapter.h
+
 
 
         )

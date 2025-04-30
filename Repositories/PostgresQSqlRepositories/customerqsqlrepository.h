@@ -14,7 +14,7 @@ public:
     bool addCustomer(const CustomerDTO& customer);
     bool updateCustomer(const CustomerDTO& customer);
     bool deleteCustomer(const CustomerDTO& customer);
-    std::vector<CustomerDTO> getCustomerList() const;
+    std::vector<CustomerDTO> getAllCustomersData() const;
 
 private:
     QSqlDatabase db;

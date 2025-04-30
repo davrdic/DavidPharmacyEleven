@@ -28,7 +28,7 @@ bool CustomerQSqlRepository::addCustomer(const CustomerDTO& customer) {
     QSqlQuery query;
     query.prepare("INSERT INTO customer (name, doctor_id) VALUES (:name, :doctor_id)");
     query.bindValue(":name", StringUtils::toQString(customer.name));
-    query.bindValue(":doctor_id", customer.doctor_id);
+    query.bindValue(":doctor_id", customer.doctor.id);
 
     if (!query.exec()) {
         qDebug() << "Error adding customer:" << query.lastError();
@@ -42,7 +42,7 @@ bool CustomerQSqlRepository::updateCustomer(const CustomerDTO& customer) {
     query.prepare("UPDATE customer SET name = :name, doctor_id = :doctor_id WHERE id = :id");
     query.bindValue(":name", StringUtils::toQString(customer.name));
     query.bindValue(":id", customer.id);
-    query.bindValue(":doctor_id", customer.doctor_id);
+    query.bindValue(":doctor_id", customer.doctor.id);
 
     if (!query.exec()) {
         qDebug() << "Error editing customer:" << query.lastError();
@@ -63,15 +63,16 @@ bool CustomerQSqlRepository::deleteCustomer(const CustomerDTO& customer) {
     return true;
 }
 
-std::vector<CustomerDTO> CustomerQSqlRepository::getCustomerList() const {
+std::vector<CustomerDTO> CustomerQSqlRepository::getAllCustomersData() const {
     std::vector<CustomerDTO> customers;
 
-    QSqlQuery query("SELECT id, name, doctor_id FROM customer"); // Fetch both id and name
+    QSqlQuery query("SELECT customer.id, customer.name, customer.doctor_id, doctor.name AS doctor_name FROM customer LEFT JOIN doctor ON customer.doctor_id = doctor.id;");
     while (query.next()) {
         CustomerDTO customer;
-        customer.id = query.value(0).toInt();  // The id is stored in the first column
-        customer.name = StringUtils::toStdString(query.value(1).toString());  // The name is stored in the second column
-        customer.doctor_id = query.value(2).toInt(); // doctor_id
+        customer.id = query.value("id").toInt();  // The id is stored in the first column
+        customer.name = StringUtils::toStdString(query.value("name").toString());  // The name is stored in the second column
+        customer.doctor.id = query.value("doctor_id").toInt(); // doctor_id
+        customer.doctor.name = StringUtils::toStdString(query.value("doctor_name").toString());
 
         customers.push_back(customer);  // Add the DTO to the list
     }

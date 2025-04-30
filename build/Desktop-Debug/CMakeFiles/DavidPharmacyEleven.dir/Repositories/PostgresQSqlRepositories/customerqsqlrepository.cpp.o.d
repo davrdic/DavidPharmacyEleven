@@ -271,5 +271,6 @@ CMakeFiles/DavidPharmacyEleven.dir/Repositories/PostgresQSqlRepositories/custome
  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
  /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
  /home/david/DavidPharmacyEleven/Utilities/stringutils.h

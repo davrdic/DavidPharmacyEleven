@@ -1,8 +1,9 @@
 #pragma once
 #include <string>
+#include "doctordto.h"
 
 struct CustomerDTO {
     int id = -1;              // Default invalid ID
     std::string name;
-    int doctor_id = -1;
+    DoctorDTO doctor;
 };

@@ -13,7 +13,7 @@ public:
         dto.id = map.contains("id") ? map["id"].toInt() : 0;
         dto.name = !nameOverride.isEmpty() ? StringUtils::toStdString(nameOverride)
                                            : StringUtils::toStdString(map["name"].toString());
-        dto.doctor_id = doctorIdOverride > 0 ? doctorIdOverride : map["doctor_id"].toInt();
+        dto.doctor.id = doctorIdOverride > 0 ? doctorIdOverride : map["doctor_id"].toInt();
         return dto;
     }
 };

@@ -23,9 +23,6 @@ ManageCustomersWindow::ManageCustomersWindow(QWidget *parent)
     customerRepository = std::make_shared<CustomerQSqlRepository>(database, username, password);
     customerService = new CustomerService(customerRepository);
 
-    doctorRepository = std::make_shared<DoctorQSqlRepository>(database, username, password);
-    doctorService = new DoctorService(doctorRepository);
-
     loadCustomersIntoTableWidget();
 }
 
@@ -33,7 +30,6 @@ ManageCustomersWindow::~ManageCustomersWindow()
 {
     delete ui;
     delete customerService;
-    delete doctorService;
 }
 
 void ManageCustomersWindow::on_backButton_clicked()
@@ -43,33 +39,22 @@ void ManageCustomersWindow::on_backButton_clicked()
 
 void ManageCustomersWindow::loadCustomersIntoTableWidget()
 {
-    std::vector<CustomerDTO> customers = customerService->getCustomerList();
-    doctorList = doctorService->getDoctorList();
+    customerList = customerService->getAllCustomersData();
 
-    std::unordered_map<int, QString> doctorIdToName;
-    for (const DoctorDTO& doctor : doctorList) {
-        doctorIdToName[doctor.id] = QString::fromStdString(doctor.name);
-    }
-
-    ui->customerTableWidget->setRowCount(customers.size());
+    ui->customerTableWidget->setRowCount(customerList.size());
     ui->customerTableWidget->setColumnCount(2);
     ui->customerTableWidget->setHorizontalHeaderLabels({"Customer", "Doctor"});
 
-    for (int i = 0; i < static_cast<int>(customers.size()); ++i) {
-        QTableWidgetItem* nameItem = new QTableWidgetItem(QString::fromStdString(customers[i].name));
-        QTableWidgetItem* doctorItem = new QTableWidgetItem();
+    for (int i = 0; i < static_cast<int>(customerList.size()); ++i) {
+        const CustomerDTO& customer = customerList[i];
 
-        QString doctorName = "Unknown";
-        auto it = doctorIdToName.find(customers[i].doctor_id);
-        if (it != doctorIdToName.end()) {
-            doctorName = it->second;
-        }
-        doctorItem->setText(doctorName);
+        QTableWidgetItem* nameItem = new QTableWidgetItem(QString::fromStdString(customer.name));
+        QTableWidgetItem* doctorItem = new QTableWidgetItem(QString::fromStdString(customer.doctor.name));
 
         QVariantMap customerData;
-        customerData["id"] = customers[i].id;
-        customerData["name"] = QString::fromStdString(customers[i].name);
-        customerData["doctor_id"] = customers[i].doctor_id;
+        customerData["id"] = customer.id;
+        customerData["name"] = QString::fromStdString(customer.name);
+        customerData["doctor_id"] = customer.doctor.id;
         nameItem->setData(Qt::UserRole, customerData);
 
         ui->customerTableWidget->setItem(i, 0, nameItem);

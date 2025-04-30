@@ -298,6 +298,7 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindo
  /home/david/DavidPharmacyEleven/Services/customerservice.h \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
  /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
+ /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
@@ -334,7 +335,6 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindo
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
  /home/david/DavidPharmacyEleven/Services/doctorservice.h \
  /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
- /home/david/DavidPharmacyEleven/DTOs/doctordto.h \
  /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \

@@ -3,7 +3,6 @@
 #include "managecustomerswindow.h"
 #include "ui_managecustomerswindow.h"
 #include "PostgresQSqlRepositories/customerqsqlrepository.h"
-#include "stringutils.h"
 #include "customeruiadapter.h"
 
 ManageCustomersWindow::ManageCustomersWindow(QWidget *parent)

@@ -26,8 +26,9 @@ CustomerQSqlRepository::CustomerQSqlRepository(const QString& dbName, const QStr
 
 bool CustomerQSqlRepository::addCustomer(const CustomerDTO& customer) {
     QSqlQuery query;
-    query.prepare("INSERT INTO customer (name) VALUES (:name)");
+    query.prepare("INSERT INTO customer (name, doctor_id) VALUES (:name, :doctor_id)");
     query.bindValue(":name", StringUtils::toQString(customer.name));
+    query.bindValue(":doctor_id", customer.doctor_id);
 
     if (!query.exec()) {
         qDebug() << "Error adding customer:" << query.lastError();

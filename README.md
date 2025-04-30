@@ -7,7 +7,7 @@ Current functionality includes:
     Adding and editing a customer who includes a doctor
 
 TODO items:
-    Add exception handling
+    Add layered exception handling
     Add more robust logging techniques.
     Add Unit Tests.
     

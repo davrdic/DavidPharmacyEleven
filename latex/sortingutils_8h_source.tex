@@ -4,15 +4,17 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <algorithm>}}
 \DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
-\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSortingUtils}{SortingUtils}}\ \{}
-\DoxyCodeLine{00005\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ KeySelector>}
-\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ sortBy(std::vector<T>\&\ list,\ KeySelector\ selector,\ \textcolor{keywordtype}{bool}\ ascending\ =\ \textcolor{keyword}{true})\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ std::sort(list.begin(),\ list.end(),\ [=](\textcolor{keyword}{const}\ T\&\ a,\ \textcolor{keyword}{const}\ T\&\ b)\ \{}
-\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ return\ ascending\ ?\ selector(a)\ <\ selector(b)\ :\ selector(a)\ >\ selector(b);}
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \});}
-\DoxyCodeLine{00011\ \ \ \ \ \}}
-\DoxyCodeLine{00012\ \};}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ PURE\ C++\ ONLY\ -\/\ TODO\ -\/\ Mark\ all\ files\ that\ are\ C++\ only\ and\ mild\ restructure\ to\ separate\ the\ files\ into\ marked\ folders.}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSortingUtils}{SortingUtils}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ KeySelector>}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ sortBy(std::vector<T>\&\ list,\ KeySelector\ selector,\ \textcolor{keywordtype}{bool}\ ascending\ =\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ std::sort(list.begin(),\ list.end(),\ [=](\textcolor{keyword}{const}\ T\&\ a,\ \textcolor{keyword}{const}\ T\&\ b)\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ return\ ascending\ ?\ selector(a)\ <\ selector(b)\ :\ selector(a)\ >\ selector(b);}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+\DoxyCodeLine{00014\ \};}
 
 \end{DoxyCode}

@@ -11,6 +11,9 @@ TODO items:
     Add doctor edit dialog.
     Add more robust logging techniques.
     Add Unit Tests.
+    Add input validation.
+    ManageCustomersWindow and ManageCustomersWindow
+        refactor on_edit... and on_add into reusable/shareable subroutines.
     Qsqlrepostiries
         Maybe return Q types instead of list (see getAllCustomersData) or move conversions to helper.
     Choose between #pragma or #ifndef for consistency

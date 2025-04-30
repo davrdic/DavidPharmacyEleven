@@ -18,6 +18,6 @@ bool CustomerService::deleteCustomer(const CustomerDTO& customer) {
 
 std::vector<CustomerDTO> CustomerService::getAllCustomersData() const {
     std::vector<CustomerDTO> customerList = iCustomerRepository->getAllCustomersData();
-    SortingUtils<CustomerDTO>::sortVectorByDTOName(customerList);
+    SortingUtils<CustomerDTO>::sortBy(customerList, [](const CustomerDTO& customer){return customer.name.empty() ? std::string("~") : customer.name; });
     return customerList;
 }

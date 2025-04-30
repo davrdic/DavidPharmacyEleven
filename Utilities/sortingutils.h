@@ -1,19 +1,12 @@
-#pragma once
-
-#include <vector>
 #include <algorithm>
 
 template <typename T>
 class SortingUtils {
 public:
-
-    static void sortVectorByDTOName(std::vector<T>& list, bool ascending = true) {
-        std::sort(list.begin(), list.end(), [ascending](const T& a, const T& b) {
-            if (ascending) {
-                return a.name < b.name;
-            } else {
-                return a.name > b.name;
-            }
+    template <typename KeySelector>
+    static void sortBy(std::vector<T>& list, KeySelector selector, bool ascending = true) {
+        std::sort(list.begin(), list.end(), [=](const T& a, const T& b) {
+            return ascending ? selector(a) < selector(b) : selector(a) > selector(b);
         });
     }
 };

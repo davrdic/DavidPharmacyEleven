@@ -2,12 +2,14 @@
 /home/david/DavidPharmacyEleven/main.cpp
 /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.cpp
  uic:ui_managedoctorswindow.h
+/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp
+/home/david/DavidPharmacyEleven/Utilities/stringutils.h
 /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.cpp
  uic:ui_managecustomerswindow.h
 /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.cpp
 /home/david/DavidPharmacyEleven/Services/customerservice.cpp
-/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp
-/home/david/DavidPharmacyEleven/Utilities/stringutils.h
+/home/david/DavidPharmacyEleven/DTOs/doctordto.h
+/home/david/DavidPharmacyEleven/DTOs/customerdto.h
 /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.cpp
 /home/david/DavidPharmacyEleven/UI/ManageDoctorsWindow/managedoctorswindow.h
  mmc:Q_OBJECT
@@ -366,14 +368,11 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
-/home/david/DavidPharmacyEleven/DTOs/customerdto.h
-/home/david/DavidPharmacyEleven/DTOs/doctordto.h
 /home/david/DavidPharmacyEleven/Helpers/customeruiadapter.h
 /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h
 /home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h
-/home/david/DavidPharmacyEleven/Services/doctorservice.cpp
 /home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h
-/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.h
+/home/david/DavidPharmacyEleven/Services/doctorservice.cpp
 /home/david/DavidPharmacyEleven/Services/customerservice.h
 /home/david/DavidPharmacyEleven/UI/CustomDialogs/CustomerDialogs/customereditdialog.h
  mmc:Q_OBJECT
@@ -752,8 +751,7 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
-/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp
- uic:ui_mainwindow.h
+/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.h
 /home/david/DavidPharmacyEleven/UI/ManageCustomersWindow/managecustomerswindow.h
  mmc:Q_OBJECT
  mdp:/home/david/DavidPharmacyEleven/DTOs/customerdto.h
@@ -1135,6 +1133,8 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
+/home/david/DavidPharmacyEleven/UI/MainWindow/mainwindow.cpp
+ uic:ui_mainwindow.h
 /home/david/DavidPharmacyEleven/Utilities/sortingutils.h
 /home/david/DavidPharmacyEleven/Services/doctorservice.h
 /home/david/DavidPharmacyEleven/UI/CustomDialogs/DoctorDialogs/doctoreditdialog.h

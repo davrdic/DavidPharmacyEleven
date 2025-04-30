@@ -18,6 +18,6 @@ bool DoctorService::deleteDoctor(const DoctorDTO& doctor) {
 
 std::vector<DoctorDTO> DoctorService::getDoctorList() const {
     std::vector<DoctorDTO> doctorList = iDoctorRepository->getDoctorList();
-    SortingUtils<DoctorDTO>::sortVectorByDTOName(doctorList);
+    SortingUtils<DoctorDTO>::sortBy(doctorList, [](const DoctorDTO& doctor){return doctor.name.empty() ? std::string("~") : doctor.name;});
     return doctorList;
 }

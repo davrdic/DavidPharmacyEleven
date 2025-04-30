@@ -1,5 +1,7 @@
 #include <algorithm>
 
+// PURE C++ ONLY - TODO - Mark all files that are C++ only and mild restructure to separate the files into marked folders.
+
 template <typename T>
 class SortingUtils {
 public:

@@ -77,6 +77,7 @@ CustomerEditDialog::CustomerEditDialog(QWidget* parent)
     }
 
     QVBoxLayout* mainLayout = new QVBoxLayout(this);
+    mainLayout->addWidget(new QLabel(tr("Enter the new customer's name:")));
     mainLayout->addWidget(customerNameLineEdit);
     mainLayout->addWidget(doctorComboBox);
 
@@ -85,6 +86,7 @@ CustomerEditDialog::CustomerEditDialog(QWidget* parent)
     buttonLayout->addWidget(cancelButton);
     buttonLayout->addWidget(deleteButton);
     mainLayout->addLayout(buttonLayout);
+    setWindowTitle(tr("Add Customer"));
 
     // Hide the delete button in add mode
     deleteButton->hide();

@@ -1,0 +1,149 @@
+\doxysection{Customer\+QSql\+Repository Class Reference}
+\hypertarget{classCustomerQSqlRepository}{}\label{classCustomerQSqlRepository}\index{CustomerQSqlRepository@{CustomerQSqlRepository}}
+
+
+The \doxylink{classCustomerQSqlRepository}{Customer\+QSql\+Repository} class implements \doxylink{classICustomerRepository}{ICustomer\+Repository} using Qt\textquotesingle{}s Postgre\+SQL driver.  
+
+
+
+
+{\ttfamily \#include $<$customerqsqlrepository.\+h$>$}
+
+
+
+Inheritance diagram for Customer\+QSql\+Repository\+:
+% FIG 0
+
+
+Collaboration diagram for Customer\+QSql\+Repository\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCustomerQSqlRepository_adb761589e948c2fecf4c4afd01637be3}{Customer\+QSql\+Repository}} (const QString \&db\+Name, const QString \&user, const QString \&password)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classCustomerQSqlRepository}{Customer\+QSql\+Repository} with the given database credentials. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCustomerQSqlRepository_adb6ae081ce3205fd9a36cfb7396bee4c}{add\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer) override
+\begin{DoxyCompactList}\small\item\em Adds a new customer to the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCustomerQSqlRepository_a439be4e701bd5a0662cdfb8ad6894e6d}{update\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer) override
+\begin{DoxyCompactList}\small\item\em Updates an existing customer\textquotesingle{}s data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCustomerQSqlRepository_a7c6fcdd7dcab51058dff8499199fe726}{delete\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer) override
+\begin{DoxyCompactList}\small\item\em Deletes a customer from the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} $>$ \mbox{\hyperlink{classCustomerQSqlRepository_af498592dcc04b9ad85a65cd84e004155}{get\+All\+Customers\+Data}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves all customers and their associated doctor data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classCustomerQSqlRepository}{Customer\+QSql\+Repository} class implements \doxylink{classICustomerRepository}{ICustomer\+Repository} using Qt\textquotesingle{}s Postgre\+SQL driver. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCustomerQSqlRepository_adb761589e948c2fecf4c4afd01637be3}\label{classCustomerQSqlRepository_adb761589e948c2fecf4c4afd01637be3} 
+\index{CustomerQSqlRepository@{CustomerQSqlRepository}!CustomerQSqlRepository@{CustomerQSqlRepository}}
+\index{CustomerQSqlRepository@{CustomerQSqlRepository}!CustomerQSqlRepository@{CustomerQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{CustomerQSqlRepository()}{CustomerQSqlRepository()}}
+{\footnotesize\ttfamily Customer\+QSql\+Repository\+::\+Customer\+QSql\+Repository (\begin{DoxyParamCaption}\item[{const QString \&}]{db\+Name,  }\item[{const QString \&}]{user,  }\item[{const QString \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classCustomerQSqlRepository}{Customer\+QSql\+Repository} with the given database credentials. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & The name of the Postgre\+SQL database. \\
+\hline
+{\em user} & The username for the database connection. \\
+\hline
+{\em password} & The password for the database connection. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCustomerQSqlRepository_adb6ae081ce3205fd9a36cfb7396bee4c}\label{classCustomerQSqlRepository_adb6ae081ce3205fd9a36cfb7396bee4c} 
+\index{CustomerQSqlRepository@{CustomerQSqlRepository}!addCustomer@{addCustomer}}
+\index{addCustomer@{addCustomer}!CustomerQSqlRepository@{CustomerQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{addCustomer()}{addCustomer()}}
+{\footnotesize\ttfamily bool Customer\+QSql\+Repository\+::add\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds a new customer to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The customer DTO containing name and associated doctor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the insertion is successful; false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classICustomerRepository_a0589b3d4a822a91f533dfe3075b30bb4}{ICustomer\+Repository}}.
+
+\Hypertarget{classCustomerQSqlRepository_a7c6fcdd7dcab51058dff8499199fe726}\label{classCustomerQSqlRepository_a7c6fcdd7dcab51058dff8499199fe726} 
+\index{CustomerQSqlRepository@{CustomerQSqlRepository}!deleteCustomer@{deleteCustomer}}
+\index{deleteCustomer@{deleteCustomer}!CustomerQSqlRepository@{CustomerQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{deleteCustomer()}{deleteCustomer()}}
+{\footnotesize\ttfamily bool Customer\+QSql\+Repository\+::delete\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Deletes a customer from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The customer DTO identifying the customer by ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the deletion is successful; false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classICustomerRepository_a3d28e1c531c9a34962445de0b2e8e264}{ICustomer\+Repository}}.
+
+\Hypertarget{classCustomerQSqlRepository_af498592dcc04b9ad85a65cd84e004155}\label{classCustomerQSqlRepository_af498592dcc04b9ad85a65cd84e004155} 
+\index{CustomerQSqlRepository@{CustomerQSqlRepository}!getAllCustomersData@{getAllCustomersData}}
+\index{getAllCustomersData@{getAllCustomersData}!CustomerQSqlRepository@{CustomerQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{getAllCustomersData()}{getAllCustomersData()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} $>$ Customer\+QSql\+Repository\+::get\+All\+Customers\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves all customers and their associated doctor data. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{structCustomerDTO}{Customer\+DTO} containing customer and related doctor info. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classICustomerRepository_a596deafb6a5ae06a52261c5a88f2fef5}{ICustomer\+Repository}}.
+
+\Hypertarget{classCustomerQSqlRepository_a439be4e701bd5a0662cdfb8ad6894e6d}\label{classCustomerQSqlRepository_a439be4e701bd5a0662cdfb8ad6894e6d} 
+\index{CustomerQSqlRepository@{CustomerQSqlRepository}!updateCustomer@{updateCustomer}}
+\index{updateCustomer@{updateCustomer}!CustomerQSqlRepository@{CustomerQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{updateCustomer()}{updateCustomer()}}
+{\footnotesize\ttfamily bool Customer\+QSql\+Repository\+::update\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates an existing customer\textquotesingle{}s data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The updated customer DTO. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the update is successful; false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classICustomerRepository_a666d661d59a644cec9c9de814e5a39c8}{ICustomer\+Repository}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/\+Postgres\+QSql\+Repositories/customerqsqlrepository.\+h\item 
+Repositories/\+Postgres\+QSql\+Repositories/customerqsqlrepository.\+cpp\end{DoxyCompactItemize}

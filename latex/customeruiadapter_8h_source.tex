@@ -1,0 +1,24 @@
+\doxysection{customeruiadapter.\+h}
+\hypertarget{customeruiadapter_8h_source}{}\label{customeruiadapter_8h_source}\index{Helpers/customeruiadapter.h@{Helpers/customeruiadapter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QVariantMap>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}customerdto.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}stringutils.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCustomerUIAdapter}{CustomerUIAdapter}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\ \mbox{\hyperlink{classCustomerUIAdapter_aedb2a397abd018b0953f061008d6d50c}{fromVariantMap}}(\textcolor{keyword}{const}\ QVariantMap\&\ map,\ \textcolor{keyword}{const}\ QString\&\ nameOverride\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{int}\ doctorIdOverride\ =\ -\/1)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\ dto;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ dto.\mbox{\hyperlink{structCustomerDTO_a1e35264ae5172076cb5b10b71f970035}{id}}\ =\ map.contains(\textcolor{stringliteral}{"{}id"{}})\ ?\ map[\textcolor{stringliteral}{"{}id"{}}].toInt()\ :\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ dto.\mbox{\hyperlink{structCustomerDTO_a43270e4e405c71dbc7577248f427cae3}{name}}\ =\ !nameOverride.isEmpty()\ ?\ StringUtils::toStdString(nameOverride)}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ StringUtils::toStdString(map[\textcolor{stringliteral}{"{}name"{}}].toString());}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ dto.\mbox{\hyperlink{structCustomerDTO_ac6ee17c336bd106b725029f081433c6e}{doctor}}.\mbox{\hyperlink{structDoctorDTO_ad51ae871c8b082aaac69244026013e52}{id}}\ =\ doctorIdOverride\ >\ 0\ ?\ doctorIdOverride\ :\ map[\textcolor{stringliteral}{"{}doctor\_id"{}}].toInt();}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ dto;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \};}
+
+\end{DoxyCode}

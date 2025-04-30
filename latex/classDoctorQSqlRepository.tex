@@ -1,0 +1,149 @@
+\doxysection{Doctor\+QSql\+Repository Class Reference}
+\hypertarget{classDoctorQSqlRepository}{}\label{classDoctorQSqlRepository}\index{DoctorQSqlRepository@{DoctorQSqlRepository}}
+
+
+The \doxylink{classDoctorQSqlRepository}{Doctor\+QSql\+Repository} class provides a concrete implementation of \doxylink{classIDoctorRepository}{IDoctor\+Repository} using Qt\textquotesingle{}s SQL module with a Postgre\+SQL backend.  
+
+
+
+
+{\ttfamily \#include $<$doctorqsqlrepository.\+h$>$}
+
+
+
+Inheritance diagram for Doctor\+QSql\+Repository\+:
+% FIG 0
+
+
+Collaboration diagram for Doctor\+QSql\+Repository\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDoctorQSqlRepository_a0707acf21942d661cb34655c4a5701ff}{Doctor\+QSql\+Repository}} (const QString \&db\+Name, const QString \&user, const QString \&password)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classDoctorQSqlRepository}{Doctor\+QSql\+Repository} and initializes the database connection. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoctorQSqlRepository_af87ee1ece0c36c586ca7c5667e00abca}{add\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor) override
+\begin{DoxyCompactList}\small\item\em Adds a new doctor to the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoctorQSqlRepository_a57d596587023f79bcec395b86010fd0a}{update\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor) override
+\begin{DoxyCompactList}\small\item\em Updates an existing doctor\textquotesingle{}s information in the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoctorQSqlRepository_a517cce04a6faa4c481b437676d5dc900}{delete\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor) override
+\begin{DoxyCompactList}\small\item\em Deletes a doctor from the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} $>$ \mbox{\hyperlink{classDoctorQSqlRepository_aaa6e8101fa733d97badf206b396e1a7a}{get\+Doctor\+List}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves a list of all doctors from the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classDoctorQSqlRepository}{Doctor\+QSql\+Repository} class provides a concrete implementation of \doxylink{classIDoctorRepository}{IDoctor\+Repository} using Qt\textquotesingle{}s SQL module with a Postgre\+SQL backend. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDoctorQSqlRepository_a0707acf21942d661cb34655c4a5701ff}\label{classDoctorQSqlRepository_a0707acf21942d661cb34655c4a5701ff} 
+\index{DoctorQSqlRepository@{DoctorQSqlRepository}!DoctorQSqlRepository@{DoctorQSqlRepository}}
+\index{DoctorQSqlRepository@{DoctorQSqlRepository}!DoctorQSqlRepository@{DoctorQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{DoctorQSqlRepository()}{DoctorQSqlRepository()}}
+{\footnotesize\ttfamily Doctor\+QSql\+Repository\+::\+Doctor\+QSql\+Repository (\begin{DoxyParamCaption}\item[{const QString \&}]{db\+Name,  }\item[{const QString \&}]{user,  }\item[{const QString \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classDoctorQSqlRepository}{Doctor\+QSql\+Repository} and initializes the database connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & The name of the Postgre\+SQL database. \\
+\hline
+{\em user} & The username for authentication. \\
+\hline
+{\em password} & The password for authentication. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDoctorQSqlRepository_af87ee1ece0c36c586ca7c5667e00abca}\label{classDoctorQSqlRepository_af87ee1ece0c36c586ca7c5667e00abca} 
+\index{DoctorQSqlRepository@{DoctorQSqlRepository}!addDoctor@{addDoctor}}
+\index{addDoctor@{addDoctor}!DoctorQSqlRepository@{DoctorQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{addDoctor()}{addDoctor()}}
+{\footnotesize\ttfamily bool Doctor\+QSql\+Repository\+::add\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds a new doctor to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The doctor data transfer object containing doctor details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the operation succeeds, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDoctorRepository_a5c0396583cbc62d73bf9c373616cbc0f}{IDoctor\+Repository}}.
+
+\Hypertarget{classDoctorQSqlRepository_a517cce04a6faa4c481b437676d5dc900}\label{classDoctorQSqlRepository_a517cce04a6faa4c481b437676d5dc900} 
+\index{DoctorQSqlRepository@{DoctorQSqlRepository}!deleteDoctor@{deleteDoctor}}
+\index{deleteDoctor@{deleteDoctor}!DoctorQSqlRepository@{DoctorQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{deleteDoctor()}{deleteDoctor()}}
+{\footnotesize\ttfamily bool Doctor\+QSql\+Repository\+::delete\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Deletes a doctor from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The doctor data transfer object identifying the doctor to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the deletion is successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDoctorRepository_ab18391ed3aa3c090201a43a87924bdbe}{IDoctor\+Repository}}.
+
+\Hypertarget{classDoctorQSqlRepository_aaa6e8101fa733d97badf206b396e1a7a}\label{classDoctorQSqlRepository_aaa6e8101fa733d97badf206b396e1a7a} 
+\index{DoctorQSqlRepository@{DoctorQSqlRepository}!getDoctorList@{getDoctorList}}
+\index{getDoctorList@{getDoctorList}!DoctorQSqlRepository@{DoctorQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{getDoctorList()}{getDoctorList()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} $>$ Doctor\+QSql\+Repository\+::get\+Doctor\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves a list of all doctors from the database. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{structDoctorDTO}{Doctor\+DTO} objects representing the doctors. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDoctorRepository_a2fc1244053c293d5548ce19b69aa842b}{IDoctor\+Repository}}.
+
+\Hypertarget{classDoctorQSqlRepository_a57d596587023f79bcec395b86010fd0a}\label{classDoctorQSqlRepository_a57d596587023f79bcec395b86010fd0a} 
+\index{DoctorQSqlRepository@{DoctorQSqlRepository}!updateDoctor@{updateDoctor}}
+\index{updateDoctor@{updateDoctor}!DoctorQSqlRepository@{DoctorQSqlRepository}}
+\doxysubsubsection{\texorpdfstring{updateDoctor()}{updateDoctor()}}
+{\footnotesize\ttfamily bool Doctor\+QSql\+Repository\+::update\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates an existing doctor\textquotesingle{}s information in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The doctor data transfer object with updated details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the update is successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDoctorRepository_aecb369ad178044dc20b9fc0e4290290c}{IDoctor\+Repository}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/\+Postgres\+QSql\+Repositories/doctorqsqlrepository.\+h\item 
+Repositories/\+Postgres\+QSql\+Repositories/doctorqsqlrepository.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\doxysection{Customer\+UIAdapter Class Reference}
+\hypertarget{classCustomerUIAdapter}{}\label{classCustomerUIAdapter}\index{CustomerUIAdapter@{CustomerUIAdapter}}
+
+
+Adapter class to convert UI data into \doxylink{structCustomerDTO}{Customer\+DTO} objects.  
+
+
+
+
+{\ttfamily \#include $<$customeruiadapter.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \mbox{\hyperlink{classCustomerUIAdapter_aedb2a397abd018b0953f061008d6d50c}{from\+Variant\+Map}} (const QVariant\+Map \&map, const QString \&name\+Override="{}"{}, int doctor\+Id\+Override=-\/1)
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{structCustomerDTO}{Customer\+DTO} from a QVariant\+Map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Adapter class to convert UI data into \doxylink{structCustomerDTO}{Customer\+DTO} objects. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCustomerUIAdapter_aedb2a397abd018b0953f061008d6d50c}\label{classCustomerUIAdapter_aedb2a397abd018b0953f061008d6d50c} 
+\index{CustomerUIAdapter@{CustomerUIAdapter}!fromVariantMap@{fromVariantMap}}
+\index{fromVariantMap@{fromVariantMap}!CustomerUIAdapter@{CustomerUIAdapter}}
+\doxysubsubsection{\texorpdfstring{fromVariantMap()}{fromVariantMap()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} Customer\+UIAdapter\+::from\+Variant\+Map (\begin{DoxyParamCaption}\item[{const QVariant\+Map \&}]{map,  }\item[{const QString \&}]{name\+Override = {\ttfamily "{}"{}},  }\item[{int}]{doctor\+Id\+Override = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a \doxylink{structCustomerDTO}{Customer\+DTO} from a QVariant\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map containing customer data. \\
+\hline
+{\em name\+Override} & Optional name override. \\
+\hline
+{\em doctor\+Id\+Override} & Optional doctor ID override. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A populated \doxylink{structCustomerDTO}{Customer\+DTO}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Helpers/customeruiadapter.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,23 @@
+\doxysection{idoctorrepository.\+h}
+\hypertarget{idoctorrepository_8h_source}{}\label{idoctorrepository_8h_source}\index{Repositories/IRepositories/idoctorrepository.h@{Repositories/IRepositories/idoctorrepository.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}doctordto.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIDoctorRepository}{IDoctorRepository}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classIDoctorRepository}{\string~IDoctorRepository}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIDoctorRepository_a5c0396583cbc62d73bf9c373616cbc0f}{addDoctor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structDoctorDTO}{DoctorDTO}}\&\ doctor)\ =\ 0;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIDoctorRepository_aecb369ad178044dc20b9fc0e4290290c}{updateDoctor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structDoctorDTO}{DoctorDTO}}\&\ doctor)\ =\ 0;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIDoctorRepository_ab18391ed3aa3c090201a43a87924bdbe}{deleteDoctor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structDoctorDTO}{DoctorDTO}}\&\ doctor)\ =\ 0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<DoctorDTO>\ \mbox{\hyperlink{classIDoctorRepository_a2fc1244053c293d5548ce19b69aa842b}{getDoctorList}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00039\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,120 @@
+\doxysection{IDoctor\+Repository Class Reference}
+\hypertarget{classIDoctorRepository}{}\label{classIDoctorRepository}\index{IDoctorRepository@{IDoctorRepository}}
+
+
+Interface for Doctor repository operations.  
+
+
+
+
+{\ttfamily \#include $<$idoctorrepository.\+h$>$}
+
+
+
+Inheritance diagram for IDoctor\+Repository\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classIDoctorRepository_a5c0396583cbc62d73bf9c373616cbc0f}{add\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor)=0
+\begin{DoxyCompactList}\small\item\em Add a new doctor to the repository. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIDoctorRepository_aecb369ad178044dc20b9fc0e4290290c}{update\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor)=0
+\begin{DoxyCompactList}\small\item\em Update an existing doctor in the repository. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIDoctorRepository_ab18391ed3aa3c090201a43a87924bdbe}{delete\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor)=0
+\begin{DoxyCompactList}\small\item\em Delete a doctor from the repository. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} $>$ \mbox{\hyperlink{classIDoctorRepository_a2fc1244053c293d5548ce19b69aa842b}{get\+Doctor\+List}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieve a list of all doctors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for Doctor repository operations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIDoctorRepository_a5c0396583cbc62d73bf9c373616cbc0f}\label{classIDoctorRepository_a5c0396583cbc62d73bf9c373616cbc0f} 
+\index{IDoctorRepository@{IDoctorRepository}!addDoctor@{addDoctor}}
+\index{addDoctor@{addDoctor}!IDoctorRepository@{IDoctorRepository}}
+\doxysubsubsection{\texorpdfstring{addDoctor()}{addDoctor()}}
+{\footnotesize\ttfamily virtual bool IDoctor\+Repository\+::add\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a new doctor to the repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The doctor data to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDoctorQSqlRepository_af87ee1ece0c36c586ca7c5667e00abca}{Doctor\+QSql\+Repository}}.
+
+\Hypertarget{classIDoctorRepository_ab18391ed3aa3c090201a43a87924bdbe}\label{classIDoctorRepository_ab18391ed3aa3c090201a43a87924bdbe} 
+\index{IDoctorRepository@{IDoctorRepository}!deleteDoctor@{deleteDoctor}}
+\index{deleteDoctor@{deleteDoctor}!IDoctorRepository@{IDoctorRepository}}
+\doxysubsubsection{\texorpdfstring{deleteDoctor()}{deleteDoctor()}}
+{\footnotesize\ttfamily virtual bool IDoctor\+Repository\+::delete\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Delete a doctor from the repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The doctor to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDoctorQSqlRepository_a517cce04a6faa4c481b437676d5dc900}{Doctor\+QSql\+Repository}}.
+
+\Hypertarget{classIDoctorRepository_a2fc1244053c293d5548ce19b69aa842b}\label{classIDoctorRepository_a2fc1244053c293d5548ce19b69aa842b} 
+\index{IDoctorRepository@{IDoctorRepository}!getDoctorList@{getDoctorList}}
+\index{getDoctorList@{getDoctorList}!IDoctorRepository@{IDoctorRepository}}
+\doxysubsubsection{\texorpdfstring{getDoctorList()}{getDoctorList()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} $>$ IDoctor\+Repository\+::get\+Doctor\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieve a list of all doctors. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{structDoctorDTO}{Doctor\+DTO} objects. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDoctorQSqlRepository_aaa6e8101fa733d97badf206b396e1a7a}{Doctor\+QSql\+Repository}}.
+
+\Hypertarget{classIDoctorRepository_aecb369ad178044dc20b9fc0e4290290c}\label{classIDoctorRepository_aecb369ad178044dc20b9fc0e4290290c} 
+\index{IDoctorRepository@{IDoctorRepository}!updateDoctor@{updateDoctor}}
+\index{updateDoctor@{updateDoctor}!IDoctorRepository@{IDoctorRepository}}
+\doxysubsubsection{\texorpdfstring{updateDoctor()}{updateDoctor()}}
+{\footnotesize\ttfamily virtual bool IDoctor\+Repository\+::update\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update an existing doctor in the repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The updated doctor data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDoctorQSqlRepository_a57d596587023f79bcec395b86010fd0a}{Doctor\+QSql\+Repository}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/\+IRepositories/idoctorrepository.\+h\end{DoxyCompactItemize}

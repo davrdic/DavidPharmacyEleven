@@ -1,0 +1,118 @@
+\doxysection{Customer\+Edit\+Dialog Class Reference}
+\hypertarget{classCustomerEditDialog}{}\label{classCustomerEditDialog}\index{CustomerEditDialog@{CustomerEditDialog}}
+
+
+The \doxylink{classCustomerEditDialog}{Customer\+Edit\+Dialog} class provides a dialog for editing or adding a customer. It allows the user to set a customer\textquotesingle{}s name and associated doctor.  
+
+
+
+
+{\ttfamily \#include $<$customereditdialog.\+h$>$}
+
+
+
+Inheritance diagram for Customer\+Edit\+Dialog\+:
+% FIG 0
+
+
+Collaboration diagram for Customer\+Edit\+Dialog\+:
+% FIG 1
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCustomerEditDialog_a47374680d9e2412f291503ee5fc28ec5}\label{classCustomerEditDialog_a47374680d9e2412f291503ee5fc28ec5} 
+void {\bfseries save\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Emitted when the user clicks the "{}\+Save"{} button. \end{DoxyCompactList}\item 
+\Hypertarget{classCustomerEditDialog_af0f51b80fb2dc22898df07574186ad8f}\label{classCustomerEditDialog_af0f51b80fb2dc22898df07574186ad8f} 
+void {\bfseries cancel\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Emitted when the user clicks the "{}\+Cancel"{} button. \end{DoxyCompactList}\item 
+\Hypertarget{classCustomerEditDialog_a881a292764b990c03d7b108fa031e8b8}\label{classCustomerEditDialog_a881a292764b990c03d7b108fa031e8b8} 
+void {\bfseries delete\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Emitted when the user clicks the "{}\+Delete"{} button (edit mode only). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCustomerEditDialog_a2ab5ab4ac3b42bbc706a4312189f1b5d}{Customer\+Edit\+Dialog}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classCustomerEditDialog}{Customer\+Edit\+Dialog} for creating a new customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCustomerEditDialog_aad191c9130f6410a9e1b09a31690e96e}{Customer\+Edit\+Dialog}} (const QVariant\+Map \&customer, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classCustomerEditDialog}{Customer\+Edit\+Dialog} for editing an existing customer. \end{DoxyCompactList}\item 
+\Hypertarget{classCustomerEditDialog_a9ca0d5828fc41bd8041ee6b9e12d2683}\label{classCustomerEditDialog_a9ca0d5828fc41bd8041ee6b9e12d2683} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Customer\+Edit\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classCustomerEditDialog_a3694d9660f8a665755b266681547e315}{get\+New\+Customer\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the new or updated customer name from the dialog. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCustomerEditDialog_a5c1de2b424d31370cf701f539cc56088}{get\+New\+Doctor\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the selected doctor ID from the dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classCustomerEditDialog}{Customer\+Edit\+Dialog} class provides a dialog for editing or adding a customer. It allows the user to set a customer\textquotesingle{}s name and associated doctor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCustomerEditDialog_a2ab5ab4ac3b42bbc706a4312189f1b5d}\label{classCustomerEditDialog_a2ab5ab4ac3b42bbc706a4312189f1b5d} 
+\index{CustomerEditDialog@{CustomerEditDialog}!CustomerEditDialog@{CustomerEditDialog}}
+\index{CustomerEditDialog@{CustomerEditDialog}!CustomerEditDialog@{CustomerEditDialog}}
+\doxysubsubsection{\texorpdfstring{CustomerEditDialog()}{CustomerEditDialog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Customer\+Edit\+Dialog\+::\+Customer\+Edit\+Dialog (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \doxylink{classCustomerEditDialog}{Customer\+Edit\+Dialog} for creating a new customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QWidget. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCustomerEditDialog_aad191c9130f6410a9e1b09a31690e96e}\label{classCustomerEditDialog_aad191c9130f6410a9e1b09a31690e96e} 
+\index{CustomerEditDialog@{CustomerEditDialog}!CustomerEditDialog@{CustomerEditDialog}}
+\index{CustomerEditDialog@{CustomerEditDialog}!CustomerEditDialog@{CustomerEditDialog}}
+\doxysubsubsection{\texorpdfstring{CustomerEditDialog()}{CustomerEditDialog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Customer\+Edit\+Dialog\+::\+Customer\+Edit\+Dialog (\begin{DoxyParamCaption}\item[{const QVariant\+Map \&}]{customer,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \doxylink{classCustomerEditDialog}{Customer\+Edit\+Dialog} for editing an existing customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A QVariant\+Map containing customer data (name, doctor\+\_\+id). \\
+\hline
+{\em parent} & The parent QWidget. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCustomerEditDialog_a3694d9660f8a665755b266681547e315}\label{classCustomerEditDialog_a3694d9660f8a665755b266681547e315} 
+\index{CustomerEditDialog@{CustomerEditDialog}!getNewCustomerName@{getNewCustomerName}}
+\index{getNewCustomerName@{getNewCustomerName}!CustomerEditDialog@{CustomerEditDialog}}
+\doxysubsubsection{\texorpdfstring{getNewCustomerName()}{getNewCustomerName()}}
+{\footnotesize\ttfamily QString Customer\+Edit\+Dialog\+::get\+New\+Customer\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the new or updated customer name from the dialog. 
+
+\begin{DoxyReturn}{Returns}
+The customer\textquotesingle{}s name as a QString. 
+\end{DoxyReturn}
+\Hypertarget{classCustomerEditDialog_a5c1de2b424d31370cf701f539cc56088}\label{classCustomerEditDialog_a5c1de2b424d31370cf701f539cc56088} 
+\index{CustomerEditDialog@{CustomerEditDialog}!getNewDoctorId@{getNewDoctorId}}
+\index{getNewDoctorId@{getNewDoctorId}!CustomerEditDialog@{CustomerEditDialog}}
+\doxysubsubsection{\texorpdfstring{getNewDoctorId()}{getNewDoctorId()}}
+{\footnotesize\ttfamily int Customer\+Edit\+Dialog\+::get\+New\+Doctor\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the selected doctor ID from the dialog. 
+
+\begin{DoxyReturn}{Returns}
+The doctor\textquotesingle{}s ID as an integer. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+UI/\+Custom\+Dialogs/\+Customer\+Dialogs/customereditdialog.\+h\item 
+UI/\+Custom\+Dialogs/\+Customer\+Dialogs/customereditdialog.\+cpp\end{DoxyCompactItemize}

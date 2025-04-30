@@ -1,0 +1,121 @@
+\doxysection{Customer\+Service Class Reference}
+\hypertarget{classCustomerService}{}\label{classCustomerService}\index{CustomerService@{CustomerService}}
+
+
+The \doxylink{classCustomerService}{Customer\+Service} class handles business logic for managing customer data. It serves as a layer between the UI/application logic and the data repository.  
+
+
+
+
+{\ttfamily \#include $<$customerservice.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCustomerService_af0c0494ee1400f3bed7c5a045106e82b}{Customer\+Service}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classICustomerRepository}{ICustomer\+Repository}} $>$ i\+Customer\+Repository)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classCustomerService}{Customer\+Service} with a given customer repository. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCustomerService_a623597e8d69e5b79ba01cc6ea6c47438}{add\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer)
+\begin{DoxyCompactList}\small\item\em Adds a new customer to the system. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCustomerService_aaafc2e6582aacf41666d6e691d971af9}{update\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer)
+\begin{DoxyCompactList}\small\item\em Updates an existing customer\textquotesingle{}s information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCustomerService_aa027c7f8ecdc309440c2c362cad4257e}{delete\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer)
+\begin{DoxyCompactList}\small\item\em Deletes a customer from the system. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} $>$ \mbox{\hyperlink{classCustomerService_aa74211225872dc0a8307aa11ce85b0eb}{get\+All\+Customers\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all customer records from the system, sorted by name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classCustomerService}{Customer\+Service} class handles business logic for managing customer data. It serves as a layer between the UI/application logic and the data repository. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCustomerService_af0c0494ee1400f3bed7c5a045106e82b}\label{classCustomerService_af0c0494ee1400f3bed7c5a045106e82b} 
+\index{CustomerService@{CustomerService}!CustomerService@{CustomerService}}
+\index{CustomerService@{CustomerService}!CustomerService@{CustomerService}}
+\doxysubsubsection{\texorpdfstring{CustomerService()}{CustomerService()}}
+{\footnotesize\ttfamily Customer\+Service\+::\+Customer\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classICustomerRepository}{ICustomer\+Repository}} $>$}]{i\+Customer\+Repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{classCustomerService}{Customer\+Service} with a given customer repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Customer\+Repository} & A shared pointer to an implementation of \doxylink{classICustomerRepository}{ICustomer\+Repository}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCustomerService_a623597e8d69e5b79ba01cc6ea6c47438}\label{classCustomerService_a623597e8d69e5b79ba01cc6ea6c47438} 
+\index{CustomerService@{CustomerService}!addCustomer@{addCustomer}}
+\index{addCustomer@{addCustomer}!CustomerService@{CustomerService}}
+\doxysubsubsection{\texorpdfstring{addCustomer()}{addCustomer()}}
+{\footnotesize\ttfamily bool Customer\+Service\+::add\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})}
+
+
+
+Adds a new customer to the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The \doxylink{structCustomerDTO}{Customer\+DTO} containing customer information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the customer was successfully added, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classCustomerService_aa027c7f8ecdc309440c2c362cad4257e}\label{classCustomerService_aa027c7f8ecdc309440c2c362cad4257e} 
+\index{CustomerService@{CustomerService}!deleteCustomer@{deleteCustomer}}
+\index{deleteCustomer@{deleteCustomer}!CustomerService@{CustomerService}}
+\doxysubsubsection{\texorpdfstring{deleteCustomer()}{deleteCustomer()}}
+{\footnotesize\ttfamily bool Customer\+Service\+::delete\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})}
+
+
+
+Deletes a customer from the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The \doxylink{structCustomerDTO}{Customer\+DTO} representing the customer to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the deletion was successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classCustomerService_aa74211225872dc0a8307aa11ce85b0eb}\label{classCustomerService_aa74211225872dc0a8307aa11ce85b0eb} 
+\index{CustomerService@{CustomerService}!getAllCustomersData@{getAllCustomersData}}
+\index{getAllCustomersData@{getAllCustomersData}!CustomerService@{CustomerService}}
+\doxysubsubsection{\texorpdfstring{getAllCustomersData()}{getAllCustomersData()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} $>$ Customer\+Service\+::get\+All\+Customers\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves all customer records from the system, sorted by name. 
+
+\begin{DoxyReturn}{Returns}
+A sorted vector of \doxylink{structCustomerDTO}{Customer\+DTO} objects. 
+\end{DoxyReturn}
+\Hypertarget{classCustomerService_aaafc2e6582aacf41666d6e691d971af9}\label{classCustomerService_aaafc2e6582aacf41666d6e691d971af9} 
+\index{CustomerService@{CustomerService}!updateCustomer@{updateCustomer}}
+\index{updateCustomer@{updateCustomer}!CustomerService@{CustomerService}}
+\doxysubsubsection{\texorpdfstring{updateCustomer()}{updateCustomer()}}
+{\footnotesize\ttfamily bool Customer\+Service\+::update\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})}
+
+
+
+Updates an existing customer\textquotesingle{}s information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The \doxylink{structCustomerDTO}{Customer\+DTO} with updated customer data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the update was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Services/customerservice.\+h\item 
+Services/customerservice.\+cpp\end{DoxyCompactItemize}

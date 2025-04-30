@@ -1,0 +1,33 @@
+\doxysection{customerqsqlrepository.\+h}
+\hypertarget{customerqsqlrepository_8h_source}{}\label{customerqsqlrepository_8h_source}\index{Repositories/PostgresQSqlRepositories/customerqsqlrepository.h@{Repositories/PostgresQSqlRepositories/customerqsqlrepository.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CUSTOMERQSQLREPOSITORY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CUSTOMERQSQLREPOSITORY\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}customerdto.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}IRepositories/icustomerrepository.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCustomerQSqlRepository}{CustomerQSqlRepository}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classICustomerRepository}{ICustomerRepository}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classCustomerQSqlRepository}{CustomerQSqlRepository}}(\textcolor{keyword}{const}\ QString\&\ dbName,\ \textcolor{keyword}{const}\ QString\&\ user,\ \textcolor{keyword}{const}\ QString\&\ password);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCustomerQSqlRepository_adb6ae081ce3205fd9a36cfb7396bee4c}{addCustomer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\&\ customer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCustomerQSqlRepository_a439be4e701bd5a0662cdfb8ad6894e6d}{updateCustomer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\&\ customer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCustomerQSqlRepository_a7c6fcdd7dcab51058dff8499199fe726}{deleteCustomer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\&\ customer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ std::vector<CustomerDTO>\ \mbox{\hyperlink{classCustomerQSqlRepository_af498592dcc04b9ad85a65cd84e004155}{getAllCustomersData}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ QSqlDatabase\ db;\ \ }
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CUSTOMERQSQLREPOSITORY\_H}}
+
+\end{DoxyCode}

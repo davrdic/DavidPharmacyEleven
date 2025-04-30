@@ -1,0 +1,120 @@
+\doxysection{ICustomer\+Repository Class Reference}
+\hypertarget{classICustomerRepository}{}\label{classICustomerRepository}\index{ICustomerRepository@{ICustomerRepository}}
+
+
+Interface for Customer repository operations.  
+
+
+
+
+{\ttfamily \#include $<$icustomerrepository.\+h$>$}
+
+
+
+Inheritance diagram for ICustomer\+Repository\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classICustomerRepository_a0589b3d4a822a91f533dfe3075b30bb4}{add\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer)=0
+\begin{DoxyCompactList}\small\item\em Add a new customer to the repository. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classICustomerRepository_a666d661d59a644cec9c9de814e5a39c8}{update\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer)=0
+\begin{DoxyCompactList}\small\item\em Update an existing customer in the repository. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classICustomerRepository_a3d28e1c531c9a34962445de0b2e8e264}{delete\+Customer}} (const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&customer)=0
+\begin{DoxyCompactList}\small\item\em Delete a customer from the repository. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} $>$ \mbox{\hyperlink{classICustomerRepository_a596deafb6a5ae06a52261c5a88f2fef5}{get\+All\+Customers\+Data}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieve a list of all customers and their associated doctors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for Customer repository operations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classICustomerRepository_a0589b3d4a822a91f533dfe3075b30bb4}\label{classICustomerRepository_a0589b3d4a822a91f533dfe3075b30bb4} 
+\index{ICustomerRepository@{ICustomerRepository}!addCustomer@{addCustomer}}
+\index{addCustomer@{addCustomer}!ICustomerRepository@{ICustomerRepository}}
+\doxysubsubsection{\texorpdfstring{addCustomer()}{addCustomer()}}
+{\footnotesize\ttfamily virtual bool ICustomer\+Repository\+::add\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a new customer to the repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The customer data to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCustomerQSqlRepository_adb6ae081ce3205fd9a36cfb7396bee4c}{Customer\+QSql\+Repository}}.
+
+\Hypertarget{classICustomerRepository_a3d28e1c531c9a34962445de0b2e8e264}\label{classICustomerRepository_a3d28e1c531c9a34962445de0b2e8e264} 
+\index{ICustomerRepository@{ICustomerRepository}!deleteCustomer@{deleteCustomer}}
+\index{deleteCustomer@{deleteCustomer}!ICustomerRepository@{ICustomerRepository}}
+\doxysubsubsection{\texorpdfstring{deleteCustomer()}{deleteCustomer()}}
+{\footnotesize\ttfamily virtual bool ICustomer\+Repository\+::delete\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Delete a customer from the repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The customer to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCustomerQSqlRepository_a7c6fcdd7dcab51058dff8499199fe726}{Customer\+QSql\+Repository}}.
+
+\Hypertarget{classICustomerRepository_a596deafb6a5ae06a52261c5a88f2fef5}\label{classICustomerRepository_a596deafb6a5ae06a52261c5a88f2fef5} 
+\index{ICustomerRepository@{ICustomerRepository}!getAllCustomersData@{getAllCustomersData}}
+\index{getAllCustomersData@{getAllCustomersData}!ICustomerRepository@{ICustomerRepository}}
+\doxysubsubsection{\texorpdfstring{getAllCustomersData()}{getAllCustomersData()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} $>$ ICustomer\+Repository\+::get\+All\+Customers\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieve a list of all customers and their associated doctors. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{structCustomerDTO}{Customer\+DTO} objects. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCustomerQSqlRepository_af498592dcc04b9ad85a65cd84e004155}{Customer\+QSql\+Repository}}.
+
+\Hypertarget{classICustomerRepository_a666d661d59a644cec9c9de814e5a39c8}\label{classICustomerRepository_a666d661d59a644cec9c9de814e5a39c8} 
+\index{ICustomerRepository@{ICustomerRepository}!updateCustomer@{updateCustomer}}
+\index{updateCustomer@{updateCustomer}!ICustomerRepository@{ICustomerRepository}}
+\doxysubsubsection{\texorpdfstring{updateCustomer()}{updateCustomer()}}
+{\footnotesize\ttfamily virtual bool ICustomer\+Repository\+::update\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structCustomerDTO}{Customer\+DTO}} \&}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update an existing customer in the repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The updated customer data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCustomerQSqlRepository_a439be4e701bd5a0662cdfb8ad6894e6d}{Customer\+QSql\+Repository}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/\+IRepositories/icustomerrepository.\+h\end{DoxyCompactItemize}

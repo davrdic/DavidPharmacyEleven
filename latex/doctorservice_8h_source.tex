@@ -1,0 +1,31 @@
+\doxysection{doctorservice.\+h}
+\hypertarget{doctorservice_8h_source}{}\label{doctorservice_8h_source}\index{Services/doctorservice.h@{Services/doctorservice.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DOCTORSERVICE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DOCTORSERVICE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}IRepositories/idoctorrepository.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}doctordto.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDoctorService}{DoctorService}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classDoctorService}{DoctorService}}(std::shared\_ptr<IDoctorRepository>\ iDoctorRepository);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoctorService_a882ca52ca383e7a74a19390461f3d6f5}{addDoctor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structDoctorDTO}{DoctorDTO}}\&\ doctor);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoctorService_a864fb054dc2c67c7a3cc1b5b27503780}{updateDoctor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structDoctorDTO}{DoctorDTO}}\&\ doctor);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoctorService_a9ec2c3840b09cb102e697ede96b73989}{deleteDoctor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structDoctorDTO}{DoctorDTO}}\&\ doctor);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ std::vector<DoctorDTO>\ \mbox{\hyperlink{classDoctorService_a951f1653d935fa877a467b58c9f90785}{getDoctorList}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ std::shared\_ptr<IDoctorRepository>\ iDoctorRepository;\ }
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DOCTORSERVICE\_H}}
+
+\end{DoxyCode}

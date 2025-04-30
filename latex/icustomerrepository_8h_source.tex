@@ -1,0 +1,23 @@
+\doxysection{icustomerrepository.\+h}
+\hypertarget{icustomerrepository_8h_source}{}\label{icustomerrepository_8h_source}\index{Repositories/IRepositories/icustomerrepository.h@{Repositories/IRepositories/icustomerrepository.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}customerdto.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classICustomerRepository}{ICustomerRepository}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classICustomerRepository}{\string~ICustomerRepository}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classICustomerRepository_a0589b3d4a822a91f533dfe3075b30bb4}{addCustomer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\&\ customer)\ =\ 0;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classICustomerRepository_a666d661d59a644cec9c9de814e5a39c8}{updateCustomer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\&\ customer)\ =\ 0;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classICustomerRepository_a3d28e1c531c9a34962445de0b2e8e264}{deleteCustomer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCustomerDTO}{CustomerDTO}}\&\ customer)\ =\ 0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<CustomerDTO>\ \mbox{\hyperlink{classICustomerRepository_a596deafb6a5ae06a52261c5a88f2fef5}{getAllCustomersData}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00039\ \};}
+
+\end{DoxyCode}

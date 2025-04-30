@@ -1,0 +1,121 @@
+\doxysection{Doctor\+Service Class Reference}
+\hypertarget{classDoctorService}{}\label{classDoctorService}\index{DoctorService@{DoctorService}}
+
+
+The \doxylink{classDoctorService}{Doctor\+Service} class provides business logic operations for managing doctors. It acts as an intermediary between the UI and the data repository.  
+
+
+
+
+{\ttfamily \#include $<$doctorservice.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDoctorService_a193f33f4e7c981b398aa329db6197662}{Doctor\+Service}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIDoctorRepository}{IDoctor\+Repository}} $>$ i\+Doctor\+Repository)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classDoctorService}{Doctor\+Service} with a given doctor repository. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoctorService_a882ca52ca383e7a74a19390461f3d6f5}{add\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor)
+\begin{DoxyCompactList}\small\item\em Adds a new doctor to the system. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoctorService_a864fb054dc2c67c7a3cc1b5b27503780}{update\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor)
+\begin{DoxyCompactList}\small\item\em Updates an existing doctor\textquotesingle{}s information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoctorService_a9ec2c3840b09cb102e697ede96b73989}{delete\+Doctor}} (const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&doctor)
+\begin{DoxyCompactList}\small\item\em Deletes a doctor from the system. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} $>$ \mbox{\hyperlink{classDoctorService_a951f1653d935fa877a467b58c9f90785}{get\+Doctor\+List}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves a list of all doctors, sorted alphabetically by name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classDoctorService}{Doctor\+Service} class provides business logic operations for managing doctors. It acts as an intermediary between the UI and the data repository. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDoctorService_a193f33f4e7c981b398aa329db6197662}\label{classDoctorService_a193f33f4e7c981b398aa329db6197662} 
+\index{DoctorService@{DoctorService}!DoctorService@{DoctorService}}
+\index{DoctorService@{DoctorService}!DoctorService@{DoctorService}}
+\doxysubsubsection{\texorpdfstring{DoctorService()}{DoctorService()}}
+{\footnotesize\ttfamily Doctor\+Service\+::\+Doctor\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIDoctorRepository}{IDoctor\+Repository}} $>$}]{i\+Doctor\+Repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{classDoctorService}{Doctor\+Service} with a given doctor repository. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Doctor\+Repository} & A shared pointer to an implementation of \doxylink{classIDoctorRepository}{IDoctor\+Repository}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDoctorService_a882ca52ca383e7a74a19390461f3d6f5}\label{classDoctorService_a882ca52ca383e7a74a19390461f3d6f5} 
+\index{DoctorService@{DoctorService}!addDoctor@{addDoctor}}
+\index{addDoctor@{addDoctor}!DoctorService@{DoctorService}}
+\doxysubsubsection{\texorpdfstring{addDoctor()}{addDoctor()}}
+{\footnotesize\ttfamily bool Doctor\+Service\+::add\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})}
+
+
+
+Adds a new doctor to the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The \doxylink{structDoctorDTO}{Doctor\+DTO} object containing the doctor\textquotesingle{}s data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the operation was successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classDoctorService_a9ec2c3840b09cb102e697ede96b73989}\label{classDoctorService_a9ec2c3840b09cb102e697ede96b73989} 
+\index{DoctorService@{DoctorService}!deleteDoctor@{deleteDoctor}}
+\index{deleteDoctor@{deleteDoctor}!DoctorService@{DoctorService}}
+\doxysubsubsection{\texorpdfstring{deleteDoctor()}{deleteDoctor()}}
+{\footnotesize\ttfamily bool Doctor\+Service\+::delete\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})}
+
+
+
+Deletes a doctor from the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The \doxylink{structDoctorDTO}{Doctor\+DTO} object representing the doctor to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the deletion was successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classDoctorService_a951f1653d935fa877a467b58c9f90785}\label{classDoctorService_a951f1653d935fa877a467b58c9f90785} 
+\index{DoctorService@{DoctorService}!getDoctorList@{getDoctorList}}
+\index{getDoctorList@{getDoctorList}!DoctorService@{DoctorService}}
+\doxysubsubsection{\texorpdfstring{getDoctorList()}{getDoctorList()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} $>$ Doctor\+Service\+::get\+Doctor\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a list of all doctors, sorted alphabetically by name. 
+
+\begin{DoxyReturn}{Returns}
+A sorted vector of \doxylink{structDoctorDTO}{Doctor\+DTO} objects. 
+\end{DoxyReturn}
+\Hypertarget{classDoctorService_a864fb054dc2c67c7a3cc1b5b27503780}\label{classDoctorService_a864fb054dc2c67c7a3cc1b5b27503780} 
+\index{DoctorService@{DoctorService}!updateDoctor@{updateDoctor}}
+\index{updateDoctor@{updateDoctor}!DoctorService@{DoctorService}}
+\doxysubsubsection{\texorpdfstring{updateDoctor()}{updateDoctor()}}
+{\footnotesize\ttfamily bool Doctor\+Service\+::update\+Doctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDoctorDTO}{Doctor\+DTO}} \&}]{doctor }\end{DoxyParamCaption})}
+
+
+
+Updates an existing doctor\textquotesingle{}s information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doctor} & The \doxylink{structDoctorDTO}{Doctor\+DTO} object with updated data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the update was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Services/doctorservice.\+h\item 
+Services/doctorservice.\+cpp\end{DoxyCompactItemize}

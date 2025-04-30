@@ -1,0 +1,58 @@
+\doxysection{customereditdialog.\+h}
+\hypertarget{customereditdialog_8h_source}{}\label{customereditdialog_8h_source}\index{UI/CustomDialogs/CustomerDialogs/customereditdialog.h@{UI/CustomDialogs/CustomerDialogs/customereditdialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CUSTOMEREDITDIALOG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CUSTOMEREDITDIALOG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QComboBox>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}doctorservice.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}PostgresQSqlRepositories/doctorqsqlrepository.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}doctordto.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}customerdto.h"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCustomerEditDialog}{CustomerEditDialog}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classCustomerEditDialog}{CustomerEditDialog}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classCustomerEditDialog}{CustomerEditDialog}}(\textcolor{keyword}{const}\ QVariantMap\&\ customer,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classCustomerEditDialog_a9ca0d5828fc41bd8041ee6b9e12d2683}{\string~CustomerEditDialog}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ QString\ \mbox{\hyperlink{classCustomerEditDialog_a3694d9660f8a665755b266681547e315}{getNewCustomerName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCustomerEditDialog_a5c1de2b424d31370cf701f539cc56088}{getNewDoctorId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ signals:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCustomerEditDialog_a47374680d9e2412f291503ee5fc28ec5}{saveClicked}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCustomerEditDialog_af0f51b80fb2dc22898df07574186ad8f}{cancelClicked}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCustomerEditDialog_a881a292764b990c03d7b108fa031e8b8}{deleteClicked}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ \ \ \ \ QLineEdit*\ customerNameLineEdit;}
+\DoxyCodeLine{00073\ \ \ \ \ QComboBox*\ doctorComboBox;}
+\DoxyCodeLine{00074\ \ \ \ \ QPushButton*\ saveButton;}
+\DoxyCodeLine{00075\ \ \ \ \ QPushButton*\ cancelButton;}
+\DoxyCodeLine{00076\ \ \ \ \ QPushButton*\ deleteButton;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{classDoctorService}{DoctorService}}*\ doctorService;}
+\DoxyCodeLine{00079\ \ \ \ \ std::shared\_ptr<IDoctorRepository>\ doctorRepository;}
+\DoxyCodeLine{00080\ \ \ \ \ std::vector<DoctorDTO>\ doctorList;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{bool}\ isEditMode\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CUSTOMEREDITDIALOG\_H}}
+
+\end{DoxyCode}

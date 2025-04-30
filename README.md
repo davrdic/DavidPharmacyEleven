@@ -12,6 +12,7 @@ TODO items:
     Add more robust logging techniques.
     Add Unit Tests.
     Add input validation.
+    Review/Improve exception handling.
     ManageCustomersWindow and ManageCustomersWindow
         refactor on_edit... and on_add into reusable/shareable subroutines.
     Qsqlrepostiries

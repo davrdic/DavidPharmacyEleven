@@ -23,6 +23,9 @@ set(PROJECT_SOURCES
     DTOs/doctordto.h
     DTOs/customerdto.h
 
+    #Helpers
+    Helpers/customeruiadapter.h
+
     # Repositories - Database Communications
     Repositories/PostgresQSqlRepositories/doctorqsqlrepository.cpp
     Repositories/PostgresQSqlRepositories/doctorqsqlrepository.h
@@ -74,6 +77,7 @@ else()
             Services/customerservice.h Services/customerservice.cpp
             UI/CustomDialogs/CustomerDialogs/customereditdialog.h UI/CustomDialogs/CustomerDialogs/customereditdialog.cpp
             UI/ManageCustomersWindow/managecustomerswindow.h UI/ManageCustomersWindow/managecustomerswindow.cpp UI/ManageCustomersWindow/managecustomerswindow.ui
+            Helpers/customeruiadapter.h
 
 
         )
@@ -86,6 +90,7 @@ target_link_libraries(DavidPharmacyEleven PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
 # Include directories (so all headers are found properly)
 target_include_directories(DavidPharmacyEleven PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/DTOs
+    ${CMAKE_CURRENT_SOURCE_DIR}/Helpers
     ${CMAKE_CURRENT_SOURCE_DIR}/Repositories
     ${CMAKE_CURRENT_SOURCE_DIR}/Services
     ${CMAKE_CURRENT_SOURCE_DIR}/Utilities

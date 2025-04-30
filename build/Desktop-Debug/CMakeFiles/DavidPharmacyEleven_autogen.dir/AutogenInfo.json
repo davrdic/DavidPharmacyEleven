@@ -90,6 +90,12 @@
 			null
 		],
 		[
+			"/home/david/DavidPharmacyEleven/Helpers/customeruiadapter.h",
+			"MU",
+			"WQESTPIH7K/moc_customeruiadapter.cpp",
+			null
+		],
+		[
 			"/home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h",
 			"MU",
 			"NZ4STNQU6W/moc_icustomerrepository.cpp",
@@ -182,6 +188,7 @@
 	"MOC_INCLUDES" : 
 	[
 		"/home/david/DavidPharmacyEleven/DTOs",
+		"/home/david/DavidPharmacyEleven/Helpers",
 		"/home/david/DavidPharmacyEleven/Repositories",
 		"/home/david/DavidPharmacyEleven/Services",
 		"/home/david/DavidPharmacyEleven/Utilities",

@@ -2,6 +2,7 @@ DavidPharmacyEleven_autogen/timestamp: \
 	/home/david/DavidPharmacyEleven/CMakeLists.txt \
 	/home/david/DavidPharmacyEleven/DTOs/customerdto.h \
 	/home/david/DavidPharmacyEleven/DTOs/doctordto.h \
+	/home/david/DavidPharmacyEleven/Helpers/customeruiadapter.h \
 	/home/david/DavidPharmacyEleven/Repositories/IRepositories/icustomerrepository.h \
 	/home/david/DavidPharmacyEleven/Repositories/IRepositories/idoctorrepository.h \
 	/home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.cpp \

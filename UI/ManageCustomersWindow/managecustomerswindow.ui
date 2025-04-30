@@ -16,11 +16,17 @@
   <widget class="QPushButton" name="backButton">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>470</y>
-     <width>88</width>
+     <x>589</x>
+     <y>532</y>
+     <width>80</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="text">
     <string>Back</string>
@@ -29,11 +35,17 @@
   <widget class="QPushButton" name="addCustomerButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>470</y>
-     <width>121</width>
+     <x>130</x>
+     <y>532</y>
+     <width>105</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="text">
     <string>Add Customer</string>
@@ -42,11 +54,17 @@
   <widget class="QPushButton" name="editCustomerButton">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>470</y>
-     <width>121</width>
+     <x>360</x>
+     <y>532</y>
+     <width>104</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="text">
     <string>Edit Customer</string>
@@ -55,11 +73,17 @@
   <widget class="QTableWidget" name="customerTableWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>781</width>
-     <height>431</height>
+     <x>11</x>
+     <y>11</y>
+     <width>771</width>
+     <height>471</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
   </widget>
  </widget>

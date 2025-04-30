@@ -363,4 +363,6 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/ManageCustomersWindow/managecustomerswindo
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtableview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /home/david/DavidPharmacyEleven/Repositories/PostgresQSqlRepositories/customerqsqlrepository.h \
- /home/david/DavidPharmacyEleven/Utilities/stringutils.h
+ /home/david/DavidPharmacyEleven/Utilities/stringutils.h \
+ /home/david/DavidPharmacyEleven/Helpers/customeruiadapter.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariantMap

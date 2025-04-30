@@ -8,12 +8,13 @@ Current functionality includes:
 
 TODO items:
     Add exception handling
-    Refactor assignments/conversions on UI to use ui adaptors.
-    Mark all files that are C++ only and restructure/rename to separate the files into marked folders.
-    Add doctor edit dialog.
     Add more robust logging techniques.
     Add Unit Tests.
-    Add input validation.
+    
+    Add doctor edit dialog.
+    Add input validation and bad user request. (trying to delete a customer that has a doctor assigned)
+    Refactor assignments/conversions on UI to use ui adaptors.
+    Maybe mark files/Folders that are C++ only and restructure/rename if needed.
     ManageCustomersWindow and ManageCustomersWindow
         refactor on_edit... and on_add... into reusable/shareable subroutines.
     Qsqlrepostiries

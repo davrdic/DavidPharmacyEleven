@@ -1,12 +1,12 @@
 #include "customereditdialog.h"
 #include <QLabel>
-#include <stringutils.h>
 #include <QDebug>
+#include "stringutils.h"
 
+// Constructor for editing an existing customer
 CustomerEditDialog::CustomerEditDialog(const QVariantMap& customer, QWidget* parent)
-    : QDialog(parent)
+    : QDialog(parent), isEditMode(true)
 {
-    isEditMode = true;
     customerNameLineEdit = new QLineEdit(customer["name"].toString(), this);
 
     const char* database = std::getenv("database");
@@ -18,15 +18,11 @@ CustomerEditDialog::CustomerEditDialog(const QVariantMap& customer, QWidget* par
     doctorComboBox = new QComboBox(this);
 
     doctorList = doctorService->getDoctorList();
-    // Add doctors to the combo box
     for (const DoctorDTO& doctor : doctorList) {
         doctorComboBox->addItem(StringUtils::toQString(doctor.name), doctor.id);
     }
 
     int oldDoctorId = customer["doctor_id"].toInt();
-
-    qDebug() << "oldDoctorId:" << oldDoctorId;
-
     int index = doctorComboBox->findData(oldDoctorId);
     if (index != -1) {
         doctorComboBox->setCurrentIndex(index);
@@ -57,12 +53,10 @@ CustomerEditDialog::CustomerEditDialog(const QVariantMap& customer, QWidget* par
     setWindowTitle(tr("Edit Customer"));
 }
 
-// Constructor for Add mode
+// Constructor for adding a new customer
 CustomerEditDialog::CustomerEditDialog(QWidget* parent)
-    : QDialog(parent)
+    : QDialog(parent), isEditMode(false)
 {
-    isEditMode = false;
-    // Setup doctorService and doctorList same as in edit constructor
     const char* database = std::getenv("database");
     const char* username = std::getenv("username");
     const char* password = std::getenv("password");
@@ -70,8 +64,6 @@ CustomerEditDialog::CustomerEditDialog(QWidget* parent)
     doctorRepository = std::make_shared<DoctorQSqlRepository>(database, username, password);
     doctorService = new DoctorService(doctorRepository);
     doctorList = doctorService->getDoctorList();
-
-    QVBoxLayout* mainLayout = new QVBoxLayout(this);
 
     customerNameLineEdit = new QLineEdit(this);
     doctorComboBox = new QComboBox(this);
@@ -84,6 +76,7 @@ CustomerEditDialog::CustomerEditDialog(QWidget* parent)
         doctorComboBox->addItem(QString::fromStdString(doctor.name), doctor.id);
     }
 
+    QVBoxLayout* mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(customerNameLineEdit);
     mainLayout->addWidget(doctorComboBox);
 
@@ -91,10 +84,9 @@ CustomerEditDialog::CustomerEditDialog(QWidget* parent)
     buttonLayout->addWidget(saveButton);
     buttonLayout->addWidget(cancelButton);
     buttonLayout->addWidget(deleteButton);
-
     mainLayout->addLayout(buttonLayout);
 
-    // Hide delete button in Add mode
+    // Hide the delete button in add mode
     deleteButton->hide();
 
     connect(saveButton, &QPushButton::clicked, this, &CustomerEditDialog::saveClicked);

@@ -333,9 +333,9 @@ CMakeFiles/DavidPharmacyEleven.dir/UI/CustomDialogs/CustomerDialogs/customeredit
  /home/david/DavidPharmacyEleven/DTOs/customerdto.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
- /home/david/DavidPharmacyEleven/Utilities/stringutils.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+ /home/david/DavidPharmacyEleven/Utilities/stringutils.h

@@ -2,7 +2,7 @@
 #include "sortingutils.h"
 
 CustomerService::CustomerService(std::shared_ptr<ICustomerRepository> iCustomerRepository)
-    : iCustomerRepository(iCustomerRepository) {}
+    : iCustomerRepository(std::move(iCustomerRepository)) {}
 
 bool CustomerService::addCustomer(const CustomerDTO& customer) {
     return iCustomerRepository->addCustomer(customer);

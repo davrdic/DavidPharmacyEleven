@@ -2,7 +2,7 @@
 #include "sortingutils.h"
 
 DoctorService::DoctorService(std::shared_ptr<IDoctorRepository> iDoctorRepository)
-    : iDoctorRepository(iDoctorRepository) {}
+    : iDoctorRepository(std::move(iDoctorRepository)) {}
 
 bool DoctorService::addDoctor(const DoctorDTO& doctor) {
     return iDoctorRepository->addDoctor(doctor);
